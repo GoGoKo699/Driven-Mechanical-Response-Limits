@@ -240,7 +240,7 @@ Shi et al. [N3] likewise show that nonreciprocal dynamics can be embedded in a l
 
 ## 7. Relation to established asymmetry bounds
 
-Brandner and Seifert [N1, Eq. (15) and Appendix A] use this asymmetry index to constrain Onsager matrices and their Schur complements. Their bound follows from current conservation and substochastic scattering matrices; its resource is not a mechanical stiffness contrast. The related three-terminal PRL [N4] already demonstrates why a response asymmetry limit must use microscopic constraints beyond a positive symmetric part.
+Brandner and Seifert [N1, Eq. (15) and Appendix A] use this asymmetry index to constrain Onsager matrices and their Schur complements. Their bound follows from current conservation and substochastic scattering matrices; its resource is not a mechanical stiffness contrast. The related three-terminal study [N4] already demonstrates why a response asymmetry limit must use microscopic constraints beyond a positive symmetric part.
 
 We inherit the index and its basic geometry. We have not established that the mechanical constant derived here is absent from every operator-bound theorem. This is a useful common interpretation and an exact consequence of the previous mechanical proofs, not a new independent centerpiece based on a familiar matrix functional. A shared mathematical language does not equate scattering, heat-engine efficiency, and externally driven elastic compliance.
 

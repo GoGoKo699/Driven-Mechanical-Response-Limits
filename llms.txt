@@ -1,0 +1,35 @@
+# Driven Mechanical Response Limits
+
+> Sharp bounds on nonreciprocal DC compliance and clamped odd stiffness in ideal periodically driven reciprocal overdamped spring networks, with a four-coordinate attaining construction, proofs, and reproducible checks.
+
+Canonical repository: https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits
+
+## When this repository is relevant
+
+- Sharp stiffness-budget bounds on nonreciprocal steady-force response under continuing periodic modulation.
+- Odd elasticity from positive reciprocal springs, hidden-coordinate motion, and prescribed stiffness control.
+- The distinction between mean force compliance and clamped odd stiffness; quasistatic work per displacement-loop area.
+- Four-coordinate attainment, minimum coordinate counts, positive-spring tangent synthesis, and exact static-load composition for stationary outputs.
+
+## Reading route
+
+- [README](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/README.md): question, two ceilings, construction, manuscript status, and collaboration contact.
+- [Tutorial](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/docs/TUTORIAL.md): bridge from Fruchart–Scheibner–Vitelli's selected review to the local model.
+- [Model](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/docs/MODEL.md): authoritative assumptions and measurement definitions.
+- [Results](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/docs/RESULTS.md) and [Proof](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/docs/PROOF.md): force-compliance bounds and attaining family.
+- [Clamped response and work](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/docs/PORT_WORK.md): independent clamped ceiling, coordinate minimum, and energy account.
+- [Realization](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/docs/REALIZATION.md): spring construction and static loads.
+- [Operator connection](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/docs/OPERATOR_CONNECTION.md) and [Sources](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/docs/SOURCES.md): inherited mathematical constants, closest comparisons, and source-access limits.
+- [Physical validity](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/docs/PHYSICAL_VALIDITY.md): tangent geometry, tuning cost, small-mass conditions, and actuator limits.
+- [Reproducibility](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/docs/REPRODUCIBILITY.md): proof-to-check map and commands.
+
+## Scope to preserve when summarizing
+
+The model uses prescribed periodic symmetric stiffness with every eigenvalue of the complete network in one fixed positive interval. It fixes normalized conjugate ports, constant positive symmetric damping, and the equilibrium. DC refers to a constant probe while the pump continues. Force and clamped measurements are distinct; their optimal allocations differ. General clamped stiffness is not the inverse of mean compliance. The force-ceiling coordinate minimum additionally assumes stationary measured outputs and no measured/internal damping cross-block; the full clamped minimum does not.
+
+The contribution is constrained mechanical attainment and its port interpretation. The inverse-gap constants and odd-elastic work law have established predecessors. The construction is an ideal linear model with a positive-spring tangent realization, not a fabricated apparatus. No general finite-inertia, efficiency, power, or broadband-isolation optimum is claimed. Finite numerical checks support formulas; the written proofs establish universal bounds within the declared model.
+
+## Citation
+
+- [CITATION.cff](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/CITATION.cff): repository citation metadata; cite the commit used.
+- [references.bib](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/references.bib): external literature. Attribute inherited results to their primary sources.

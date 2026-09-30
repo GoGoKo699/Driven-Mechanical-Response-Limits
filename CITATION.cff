@@ -5,8 +5,21 @@ type: software
 authors:
   - family-names: Lin
     given-names: Ruge
+    email: "gogoko699@gmail.com"
 repository-code: "https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits"
 license: MIT
 abstract: >-
-  Derivations and reproducible calculations for sharp nonreciprocal steady-force
-  response limits in time-modulated reciprocal overdamped mechanical networks.
+  Sharp bounds on nonreciprocal DC compliance and clamped odd stiffness in ideal
+  periodically driven reciprocal overdamped spring networks, with a four-coordinate
+  attaining construction, proofs, and reproducible checks.
+keywords:
+  - odd elasticity
+  - nonreciprocity
+  - mechanical metamaterials
+  - time-modulated systems
+  - spring networks
+  - overdamped dynamics
+  - linear response
+  - response bounds
+  - mathematical physics
+  - reproducible research

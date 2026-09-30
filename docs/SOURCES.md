@@ -76,7 +76,7 @@ The full text explains why modulating a physical parameter can introduce conserv
 
 ## Full-text primitive check
 
-Three additional primary sources complete a focused eight-paper check together with R4–R8. They include three PRLs. This is collective evidence for the constituent physics, not eight precedents for every apparatus assumption.
+Three additional primary sources complete a focused eight-paper check together with R4–R8. This is collective evidence for the constituent physics, not eight precedents for every apparatus assumption.
 
 ### R10
 
@@ -132,7 +132,7 @@ The final bounded comparison targets the closest mechanisms and exact mathematic
 | Huang et al. (2023), R13 below | Oscillatory drive produces time-averaged odd elasticity, force deflection, and quasistatic work | Their history-dependent chiral contact forces differ from prescribed reciprocal linear stiffness; the inspected equations do not give our stiffness-budget optimum |
 | Rahimi–Park (2026), work-note W5 | Driven odd response with passive mechanical components and no electronic feedback | Contact changes and locked new equilibria differ from our fixed-equilibrium coefficient control; the broad mechanism is not a novelty claim |
 
-Full primary model passages were inspected for all rows. For Scheibner W1, the accepted manuscript's constitutive equations, closed-cycle work, and reciprocity discussion were checked; its separate supplemental information was not inspected. The Chen comparison concerns the constitutive and work passages; its experimental waves and simulated work cycles remain distinct. Rahimi–Park was already in the repository and was rechecked, not newly discovered in this assessment. The work note also records a full-text comparison of Fodor–Souslov W3: its response-level efficiency excludes the microscopic mechanism sustaining activity, whereas our explicit energy ledger includes the modeled internal holding loss.
+Full primary model passages were inspected for all rows. For Scheibner W1, the accepted manuscript's constitutive equations, closed-cycle work, and reciprocity discussion were checked; its separate supplemental information was not inspected. The Chen comparison concerns the constitutive and work passages; its experimental waves and simulated work cycles remain distinct. The work note also records a full-text comparison of Fodor–Souslov W3: its response-level efficiency excludes the microscopic mechanism sustaining activity, whereas our explicit energy ledger includes the modeled internal holding loss.
 
 ### R13 — Driven mean odd elasticity is prior work
 
@@ -148,6 +148,4 @@ The primary preprint's main Eq. (1), p. 2, states exchanged force/displacement r
 
 ## Research decision
 
-The [scope assessment](RESEARCH_STATUS.md#why-this-supports-a-paper) is positive for a focused ideal-theory paper about constrained mechanical optimality and attainment. The inspected prior work supplies the broad phenomenon and the operator tools; the complete resource-matched realization and clamped coordinate result remain the defensible contribution. Working originality is supported at that scope, with no exhaustive priority certificate or publication-outcome prediction.
-
-The combined apparatus still lacks the requested per-clause precedent and verification. This is a retained limitation, not a new open-ended research program. A concrete subsuming source or proof defect would reopen the decision; additional numerical examples cannot settle priority or significance.
+The [scope assessment](RESEARCH_STATUS.md) records the research conclusion and writing boundary. This source comparison is not exhaustive priority verification, and the combined apparatus still lacks the requested per-clause precedent and validation.
