@@ -28,9 +28,11 @@ The [full author-hosted published PDF](https://millergroup.yale.edu/sites/defaul
 
 ### R3
 
-Sarah A. M. Loos, Simon Hermann, and Sabine H. L. Klapp, *Non-reciprocal hidden degrees of freedom: A unifying perspective on memory, feedback, and activity*, [arXiv:1910.08372](https://arxiv.org/abs/1910.08372).
+Sarah A. M. Loos, Simon M. Hermann, and Sabine H. L. Klapp, *Non-reciprocal hidden degrees of freedom: A unifying perspective on memory, feedback, and activity*, [arXiv:1910.08372](https://arxiv.org/abs/1910.08372) (2019 preprint).
 
 The [full primary PDF](https://arxiv.org/pdf/1910.08372), Section II, Eqs. (1)–(2), was inspected in the scope assessment. It starts from Markovian Langevin networks allowing unequal directed couplings and eliminates hidden coordinates into memory. Thus auxiliary-variable elimination and its thermodynamic interpretation are established. The inspected model does not impose our reciprocal positive instantaneous stiffness budget or supply its attaining spring construction. Different variable names or the use of a rotating frame would not alone establish novelty.
+
+The primary arXiv record lists the 18 October 2019 version without a journal reference. No final journal citation was verified for this three-author item.
 
 ## Overdamped harmonic-control precedents
 
@@ -86,7 +88,7 @@ C. Kwon, J. D. Noh, and H. Park, *Work fluctuations in a time-dependent harmonic
 
 ### R12
 
-S. Dago et al., *Engineered swift equilibration of Brownian particles: consequences of hydrodynamic coupling* (2020), [full primary preprint](https://arxiv.org/pdf/2005.04939). Equations (2)–(4) and Appendices A.3–A.4 describe coupled optical traps using constant symmetric mobility evaluated at fixed mean separation. The small-displacement and time-scale approximations explain why drag constancy must be checked in a physical device.
+Salambô Dago, Benjamin Besga, Raphaël Mothe, David Guéry-Odelin, Emmanuel Trizac, Artyom Petrosyan, Ludovic Bellon, and Sergio Ciliberto, *Engineered swift equilibration of Brownian particles: consequences of hydrodynamic coupling*, SciPost Physics **9**, 064 (2020), [published article](https://doi.org/10.21468/SciPostPhys.9.5.064), [full primary preprint](https://arxiv.org/pdf/2005.04939). The primary arXiv record confirms the journal citation; 064 is the article number. Equations (2)–(4) and Appendices A.3–A.4 of the inspected preprint describe coupled optical traps using constant symmetric mobility evaluated at fixed mean separation. The small-displacement and time-scale approximations explain why drag constancy must be checked in a physical device.
 
 | Primitive | Inspected primary evidence | Limit of the inference |
 |---|---|---|
@@ -130,13 +132,19 @@ The final bounded comparison targets the closest mechanisms and exact mathematic
 | Huang et al. (2023), R13 below | Oscillatory drive produces time-averaged odd elasticity, force deflection, and quasistatic work | Their history-dependent chiral contact forces differ from prescribed reciprocal linear stiffness; the inspected equations do not give our stiffness-budget optimum |
 | Rahimi–Park (2026), work-note W5 | Driven odd response with passive mechanical components and no electronic feedback | Contact changes and locked new equilibria differ from our fixed-equilibrium coefficient control; the broad mechanism is not a novelty claim |
 
-Full primary model text was inspected for the rows except Scheibner W1, whose attribution remains abstract-level. The Chen comparison concerns the constitutive and work passages; its experimental waves and simulated work cycles remain distinct. Rahimi–Park was already in the repository and was rechecked, not newly discovered in this assessment.
+Full primary model passages were inspected for all rows. For Scheibner W1, the accepted manuscript's constitutive equations, closed-cycle work, and reciprocity discussion were checked; its separate supplemental information was not inspected. The Chen comparison concerns the constitutive and work passages; its experimental waves and simulated work cycles remain distinct. Rahimi–Park was already in the repository and was rechecked, not newly discovered in this assessment. The work note also records a full-text comparison of Fodor–Souslov W3: its response-level efficiency excludes the microscopic mechanism sustaining activity, whereas our explicit energy ledger includes the modeled internal holding loss.
 
 ### R13 — Driven mean odd elasticity is prior work
 
 R. Huang, R. Mandal, C. Scheibner, and V. Vitelli, *Odd elasticity in driven granular matter*, [arXiv:2311.18720v1](https://arxiv.org/html/2311.18720v1) (2023).
 
 The primary HTML, main Eqs. (1)–(5), and supplementary Sections S1.1, S2.2, and S2.5.2 were inspected. The model uses inertial grains and chiral Coulomb friction. Its contact forces retain history; the mean stress response is measured after subtracting the oscillatory baseline. The paper directly precedes the concepts of driven mean odd response and quasistatic loop work. It does not state the fixed full-spectrum, arbitrary-network sharp limit considered here. That specific comparison does not establish priority over all related granular or continuum theories.
+
+### R14 — Static nonreciprocity through geometric nonlinearity
+
+Corentin Coulais, Dimitrios Sounas, and Andrea Alù, *Static non-reciprocity in mechanical metamaterials*, Nature **542**, 461–464 (2017), [published article](https://doi.org/10.1038/nature21044), [full primary preprint](https://arxiv.org/pdf/1704.03305).
+
+The primary preprint's main Eq. (1), p. 2, states exchanged force/displacement reciprocity. Pages 3–4 distinguish the reciprocal leading linear response from the finite-force asymmetry produced by geometric nonlinearity. This is a precedent for static nonreciprocal response, not a realization of our linear periodically driven constitutive class. The present claim is not the first static nonreciprocal mechanical effect. Our distinction between driven mean compliance and clamped reaction follows from their separate definitions and the local derivations, not from this source.
 
 ## Research decision
 
