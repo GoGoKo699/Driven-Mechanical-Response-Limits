@@ -127,6 +127,8 @@ For the worked $[k_0,3k_0]$ force and clamped-work allocations, this strict lowe
 
 These are requirements of the current construction, not universal lower bounds on actuators or alternative spring decompositions. They also distinguish the full-network spectral contrast of three from the individual spring tuning ratio of twenty-one.
 
+The [finite-tuning analysis](TUNING_RANGE.md) gives the exact smaller-contrast interval attainable with any connecting-spring ratio $r>1$ in this same decomposition, including a finite support reserve. The resulting relative nonreciprocity shrinks quadratically with weak tuning.
+
 ## What the experimental precedents support
 
 Martínez et al. [R6](SOURCES.md#r6) implement an overdamped optical confinement whose stiffness is controlled by laser power while its mean center stays fixed. The full published text reports a transient peak of $37$ times the initial stiffness. That supports large-range scalar confinement, not an eight-coupling spring network.
@@ -134,6 +136,8 @@ Martínez et al. [R6](SOURCES.md#r6) implement an overdamped optical confinement
 Trainiti et al. [R7](SOURCES.md#r7) implement switched piezoelectric shunts: the inspected experimental description reports about a 14% reduction of effective beam bending stiffness, with electrical stabilization. This supports physical stiffness modulation but does not supply the required continuous 21:1 connecting-spring law or prove constant damping.
 
 The [full-text assumption map](SOURCES.md#full-text-primitive-check) supports harmonic control and local drag as established primitives. A complete device needs an elastic-element model covering the required tuning range and harmonics, residual force at zero extension, damping changes, and retained actuator states. Finite guide/support compliance must also be counted if appreciable. Component precedents cannot be combined into an unmeasured device performance claim.
+
+One concrete candidate has now been resolved: a [positive capacitive piezoelectric shunt](CAPACITIVE_ACTUATION.md) gives the intended ideal law in an isolated zero-charge sector, but fixed nonzero leakage makes its attracting DC response reciprocal. This candidate does not certify the proposed mechanical device. Small-mass convergence and finite tuning do not remove that electrical obstruction.
 
 ## Verification
 

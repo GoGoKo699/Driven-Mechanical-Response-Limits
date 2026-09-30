@@ -45,6 +45,7 @@ A force at one measured coordinate moves the other in the opposite sense to the 
 | Inspect the mathematical statement | [Model](docs/MODEL.md) → [Results](docs/RESULTS.md) → [Proof](docs/PROOF.md) |
 | Examine the device and its loads | [Construction and spring geometry](docs/REALIZATION.md) |
 | Check physical assumptions and remaining research | [Physical validity](docs/PHYSICAL_VALIDITY.md) and [research status](docs/RESEARCH_STATUS.md) |
+| Inspect a concrete actuator and its limitation | [Capacitive shunt obstruction](docs/CAPACITIVE_ACTUATION.md) and [finite tuning range](docs/TUNING_RANGE.md) |
 | Compare force and displacement control | [Clamped work](docs/PORT_WORK.md) and [scale-free response](docs/SCALE_FREE_RESPONSE.md) |
 | Compare with existing work | [Sources and assumption register](docs/SOURCES.md) |
 | Reproduce the evidence | [Reproducibility and claim map](docs/REPRODUCIBILITY.md) |
@@ -71,6 +72,7 @@ python checks/run.py --output results.local.json
 python checks/port_work.py --output port-work.local.json
 python checks/scale_free.py --output scale-free.local.json
 python checks/finite_mass.py --output finite-mass.local.json
+python checks/capacitive_shunt.py --output capacitive-shunt.local.json
 python checks/check_docs.py
 ```
 
@@ -80,6 +82,6 @@ The main suite covers the bound, equality construction, forced/loaded/clamped dy
 
 The main result concerns linear overdamped dynamics, constant damping, prescribed periodic stiffness, fixed equilibrium, and normalized force/displacement ports. It does not establish a universal inertial, feedback-controlled, broadband, or bulk-material response law. The proposed geometry requires 21:1 connecting-spring tuning in the worked design; it is not a fabricated device, and controller losses are not optimized.
 
-The [source comparison](docs/SOURCES.md) identifies established ingredients and the remaining operator-bound and implementation questions. This is a research repository, not a manuscript or a hardware report.
+Finite tuning permits ideal attainment at smaller contrast, with a quadratically smaller relative response. A concrete capacitive-piezoelectric candidate illustrates why electrical states matter: fixed leakage restores reciprocal long-time response, despite the tunable frozen stiffness. The [source comparison](docs/SOURCES.md) and [research status](docs/RESEARCH_STATUS.md) retain the ideal-theory scope. This is a research repository, not a manuscript or a hardware report.
 
 Copyright © 2026 Ruge Lin. [MIT license](LICENSE).

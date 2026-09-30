@@ -31,3 +31,7 @@ jobs:
         env:
           OPENBLAS_NUM_THREADS: '1'
           OMP_NUM_THREADS: '1'
+      - run: python checks/capacitive_shunt.py --output capacitive-shunt.local.json
+        env:
+          OPENBLAS_NUM_THREADS: '1'
+          OMP_NUM_THREADS: '1'
