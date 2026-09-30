@@ -141,3 +141,7 @@ $$
 The nominal value is $0.08931639748/k_0$. The actual stiffness interval may expand to $[0.99k_0,3.03k_0]$. This is a conservative robustness statement for periodic coefficient errors, not proof of exact optimality after perturbation or of tolerance to all implementation errors.
 
 Prescribed mechanical stiffness modulation has direct experimental precedent [R7](SOURCES.md#r7). The full guide/rest-length/damping construction still requires platform-specific analysis. [Source and model limitations](SOURCES.md#assumption-register) remain separate from the exact elastic decomposition.
+
+## Work cycles and the choice of objective
+
+The inverse static response of the special four-coordinate architecture supports an externally imposed displacement cycle. The [clamped-response and work analysis](PORT_WORK.md) gives a sharp odd-stiffness ceiling under the same instantaneous spectral budget, identifies a different optimal stiffness allocation, and charges the modulation and internal viscous loss explicitly. A maximal cross-displacement is not the same objective as work per displacement-loop area, maximum power, or efficiency.
