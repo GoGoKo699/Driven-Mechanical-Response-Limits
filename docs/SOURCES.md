@@ -112,6 +112,12 @@ All eight papers were accessed in full primary text for these specific model/imp
 
 The requested five-to-ten-paper provenance threshold has **not** been certified for every load-bearing clause of the combined guided-slider implementation. Related citations are not counted as identical model support. Inherited broader source lists are recorded in the checkpoint hashes; this page prioritizes the references actually checked for this consolidation.
 
+## A concrete actuator screen
+
+The [capacitive-actuation note](CAPACITIVE_ACTUATION.md#primary-sources-and-access) checks established piezoelectric constitutive laws, positive capacitive tuning, and leakage before eliminating electrical states. Its new local deduction is an exact obstruction: with constant coupling, constant short-circuit stiffness, and a constant leakage conductance connecting the electrical voltages, positive capacitance modulation has reciprocal attracting DC response. The ideal zero-charge reduction has a singular long-time leakage limit. The finite-frequency tuning sources are not used as evidence for a different DC observable.
+
+The [finite-tuning calculation](TUNING_RANGE.md) separately shows that the original 21:1 coefficient range can be reduced by narrowing the stiffness contrast. This is an algebraic design option, not a repair of the leakage obstruction or a measured actuator range.
+
 ## Remaining scientific work
 
-The [research status](RESEARCH_STATUS.md) records the bounded remaining decision: assess a concrete tunable connecting-element model, or retain a precisely scoped ideal theoretical realization. The exact operator constants now have identified precedents. Priority and significance of the complete mechanical realization, per-clause community precedent for the apparatus, and its actuator/damping feasibility remain open. Numerical tests cannot settle those questions.
+The [research status](RESEARCH_STATUS.md) retains a precisely scoped ideal theoretical realization after the concrete capacitive model failed the strict DC screen. The exact operator constants have identified precedents. Priority and significance of the mechanically constrained realization remain the paper-level questions; per-clause apparatus precedent and a verified hardware implementation are not claimed. Numerical tests cannot settle those questions.
