@@ -8,7 +8,7 @@ The comparison below uses primary sources. Access was checked on 30 September 20
 
 ## Direct operator comparison
 
-The [operator connection](OPERATOR_CONNECTION.md#direct-primary-source-comparison) now gives a direct normalization into a positive operator plus a skew-adjoint operator. It compares the result with Pavliotis (2010), Duncan–Lelièvre–Pavliotis (2016), and Milton's 2020 operator formulations. The disk geometry and the symmetric-resolvent monotonicity follow from established methods; they are not independent novelty claims. The same calculation strengthens the bound for a fixed schedule by using its slow and fast response endpoints. It does not alter the global ceiling or certify priority of the mechanical architecture.
+The [operator connection](OPERATOR_CONNECTION.md#direct-primary-source-comparison) gives a direct normalization into a positive operator plus a skew-adjoint operator. The disk geometry and symmetric-resolvent monotonicity are established methods. A further [exact theorem substitution](OPERATOR_CONNECTION.md#the-exact-inverse-gap-constants-are-established) identifies both dimensional resource constants in Moslehian–Nakamoto–Seo (2011), Theorem 2.1(i). The full lens and scale-free bound follow by scalar optimization and sector geometry. The candidate contribution concerns the mechanically admissible attaining construction and its port/resource interpretation, not independent new operator inequalities.
 
 ## Closest response-bound comparison
 
@@ -24,7 +24,7 @@ Our operator is $K(t)+\Gamma\partial_t$ on periodic trajectories. The time deriv
 
 Christian Kern, Owen D. Miller, and Graeme W. Milton, *Tight Bounds on the Effective Complex Permittivity of Isotropic Composites and Related Problems*, Physical Review Applied **14**, 054068 (2020), [arXiv:2006.03830](https://arxiv.org/abs/2006.03830).
 
-The primary abstract describes lens-shaped bounds and attaining microstructures. That supports a close conceptual comparison, not a claim that its complete proof has been excluded as a possible source of our bound. In our complex bookkeeping variable, the imaginary part is spatial antisymmetry, not dielectric loss.
+The [full author-hosted published PDF](https://millergroup.yale.edu/sites/default/files/files/2020_11-Kern.pdf) was inspected. Equations (1)–(9) concern a spatial two-phase field problem, a positive-measure Stieltjes representation, and constraints from volume fraction and isotropy. Real positive constituent permittivities give a real interval; directly substituting $m,M$ cannot generate our nonzero $\beta$. The single-pole boundary-construction strategy is explicitly established. A broader operator reduction remains possible; different observables alone do not prove novelty.
 
 ### R3
 
@@ -38,31 +38,31 @@ The retrieved primary abstract and prior checkpoint comparison establish interna
 
 Roger Filliger and Peter Reimann, *The Brownian gyrator: a minimal heat engine on the nano-scale*, Physical Review Letters **99**, 230602 (2007), [arXiv:0710.3735](https://arxiv.org/abs/0710.3735).
 
-Supports a two-dimensional dissipative harmonic setting and clarifies the distinction between circulation of fluctuations and mean force response. For a fixed symmetric $K$, additive zero-mean noise still gives the reciprocal mean compliance $K^{-1}$. The gyrator is not evidence for our driven-response bound.
+The [full primary preprint](https://arxiv.org/pdf/0710.3735), Eq. (2), supports a two-dimensional dissipative harmonic setting and clarifies the distinction between circulation of fluctuations and mean force response. For a fixed symmetric $K$, additive zero-mean noise still gives the reciprocal mean compliance $K^{-1}$. The gyrator is not evidence for our driven-response bound.
 
 ### R5
 
 Carlos A. Plata, David Guery-Odelin, Emmanuel Trizac, and Antonio Prados, *Optimal work in a harmonic trap with bounded stiffness*, Physical Review E **99**, 012140 (2019), [arXiv:1812.09557](https://arxiv.org/abs/1812.09557).
 
-The primary abstract explicitly treats overdamped harmonic control under a stiffness bound. It optimizes finite-time work between states, not steady-force antisymmetric response. It supports bounded stiffness as a physical design budget, not our exact combination of constraints.
+The [full primary preprint](https://arxiv.org/pdf/1812.09557), Eq. (6), treats bounded harmonic stiffness with constant drag and requires fluid relaxation faster than stiffness control. It optimizes finite-time work between states. This supports the control primitive and its time-scale condition, not our exact full-network resource budget.
 
 ### R6
 
 Ignacio A. Martinez and collaborators, *Engineered swift equilibration of a Brownian particle*, Nature Physics **12**, 843–846 (2016), [arXiv:1512.07821](https://arxiv.org/abs/1512.07821).
 
-Supports prescribed harmonic-trap control and an experimental connection to relaxation dynamics. It does not certify our independent two-axis actuation, damping tensor, or slider topology.
+The [full author-hosted published PDF](https://www.lptms.universite-paris-saclay.fr/membres/trizac/Articles/nphys3758.pdf), printed p. 844, describes optical stiffness control of an overdamped particle at fixed mean position. Its transient peak stiffness reaches $37$ times the initial value. This establishes a large-range scalar confinement primitive, not connecting springs or our slider topology.
 
 ### R7
 
-Giuseppe Trainiti and collaborators, *Time-periodic stiffness modulation in elastic metamaterials for selective wave filtering: theory and experimental investigations*, Physical Review Letters **122**, 124301 (2019), [arXiv:1804.09209](https://arxiv.org/abs/1804.09209).
+Giuseppe Trainiti and collaborators, *Time-Periodic Stiffness Modulation in Elastic Metamaterials for Selective Wave Filtering: Theory and Experiment*, Physical Review Letters **122**, 124301 (2019), [arXiv:1804.09209](https://arxiv.org/abs/1804.09209).
 
-The primary record supports implemented time-dependent stiffness modulation. Its inertial wave-filtering setting is not our overdamped, constant-force measurement. It supports a component capability, not a full-device certificate.
+The [full institutional preprint](https://re.public.polimi.it/retrieve/e0c31c0e-adad-4599-e053-1705fe0aef77/11311-1096784_Cazzulani.pdf), experimental implementation and Eq. (12), was inspected. Switched negative-capacitance piezoelectric shunts change beam stiffness; the reported effective beam reduction is about 14%. The circuit includes electrical stabilization. Its inertial, two-level wave experiment supports a component capability, not our continuous 21:1 connecting-spring schedule or constant damping.
 
 ### R8
 
 Andrea Baldassarri, Andrea Puglisi, and Luca Sesta, *Engineered Swift Equilibration of a Brownian Gyrator*, Physical Review E **102**, 030105(R) (2020), [arXiv:2009.06989](https://arxiv.org/abs/2009.06989).
 
-Supports time-dependent two-dimensional harmonic control. Its controlled states and objective differ from our mean response. In this consolidation, the bibliographic record and primary abstract were checked; the inherited assumption comparison is not promoted to an independently reproduced proof.
+The [full primary preprint](https://arxiv.org/pdf/2009.06989), Eq. (1), uses a reciprocal two-dimensional quadratic potential with time-dependent diagonal and cross coefficients and fixed mobility. This supports the controlled harmonic model; its fluctuation-state objective differs from our mean response and is not a four-coordinate construction.
 
 ## Why deriving the device equations matters
 
@@ -72,21 +72,46 @@ Jiaxin Li and collaborators, *Reciprocity of thermal diffusion in time-modulated
 
 The full text explains why modulating a physical parameter can introduce conservation-law terms absent from a naive coefficient-switched equation. This is a methodological precedent, not a mechanical theorem imported from heat diffusion. Our fixed-rest-length construction explicitly checks that changing spring stiffness does not move the reference equilibrium.
 
+## Full-text primitive check
+
+Three additional primary sources complete a focused eight-paper check together with R4–R8. They include three PRLs. This is collective evidence for the constituent physics, not eight precedents for every apparatus assumption.
+
+### R10
+
+T. Schmiedl and U. Seifert, *Optimal finite-time processes in stochastic thermodynamics*, Physical Review Letters **98**, 108301 (2007), [full primary preprint](https://arxiv.org/pdf/cond-mat/0701554). Equations (1) and (11) give constant-mobility overdamped dynamics and a fixed-position trap with controlled harmonic strength. Its one-dimensional work optimization does not supply the proposed coupling network.
+
+### R11
+
+C. Kwon, J. D. Noh, and H. Park, *Work fluctuations in a time-dependent harmonic potential: rigorous results beyond the overdamped limit*, Physical Review E **88**, 062102 (2013), [full primary preprint](https://arxiv.org/pdf/1303.6742). Equations (1) and (8) retain mass, fixed damping, and stiffness-drive work in a breathing harmonic potential. These support the constitutive account, not a response ceiling.
+
+### R12
+
+S. Dago et al., *Engineered swift equilibration of Brownian particles: consequences of hydrodynamic coupling* (2020), [full primary preprint](https://arxiv.org/pdf/2005.04939). Equations (2)–(4) and Appendices A.3–A.4 describe coupled optical traps using constant symmetric mobility evaluated at fixed mean separation. The small-displacement and time-scale approximations explain why drag constancy must be checked in a physical device.
+
+| Primitive | Inspected primary evidence | Limit of the inference |
+|---|---|---|
+| Fixed-center prescribed harmonic control | R5, R6, R8, R10, R11 | Supports an established constitutive model, not eight physical connecting actuators. |
+| Multicoordinate quadratic dynamics and local drag | R4 Eq. (2), R8 Eq. (1), R12 Eqs. (2)–(4) | General constant symmetric drag is admitted by the bound; exact attainment additionally uses suitable hidden drag. |
+| Implemented stiffness modulation | R6 optical confinement; R7 piezoelectric beam | Neither demonstrates the complete geometry and tuning schedule together. |
+| Small inertia and stiffness-drive work | R11; local [small-mass proof](PHYSICAL_VALIDITY.md#a-controlled-small-mass-limit) | Supports a controlled model check, not neglected actuator or fluid modes. |
+
+All eight papers were accessed in full primary text for these specific model/implementation passages. Some repeated retrievals failed; the author and institution copies above identify the versions inspected. No figure measurements or third-party files are reproduced. Bibliographic dates follow original records, not regenerated arXiv HTML body dates.
+
 ## Assumption register
 
 | Assumption or design choice | Evidence and remaining boundary |
 |---|---|
-| Overdamped harmonic dynamics | Established ingredients in R4–R6 and R8. The deterministic force-response objective differs from their fluctuation/control objectives. |
-| Prescribed time-dependent stiffness | R5–R8 support the primitive. An actual actuator must not introduce omitted forces or damping changes. |
+| Overdamped harmonic dynamics | Established ingredients in R4–R6, R8, R10–R12. The deterministic force-response objective differs from their fluctuation/control objectives. |
+| Prescribed time-dependent stiffness | R5–R8 and R10–R12 support the primitive. An actual actuator must not introduce omitted forces or damping changes. |
 | Constant positive symmetric damping | A declared physical model with local-drag examples; no claim that every modulated structure realizes it. |
 | Positive uniform stiffness interval | R5 directly supports a bounded control resource. Our complete-network spectral interval and fixed port normalization are the selected optimization budget. |
 | Static conjugate force and displacement ports | Defined by probe power in the model; not interchangeable with wave transmission or clamped displacement throughout arbitrary drive cycles. |
 | Exact guides, fixed supports, no prestress | Ideal mechanical constraints of the proposed construction. Their finite compliance and friction require additional analysis. |
-| Eight independently controlled spring coefficients | Proposed design. The exact twelve-spring realization is not asserted to have five identical precedents. |
+| Eight independently controlled spring coefficients | Proposed design with a quantified [21:1 tuning requirement](PHYSICAL_VALIDITY.md#the-existing-spring-schedule-requires-a-large-tuning-range). No complete actuator realization is certified. |
 | No period or actuation-power ceiling | A fundamental response infimum/supremum class, not a fixed-bandwidth technology claim. |
 
 The requested five-to-ten-paper provenance threshold has **not** been certified for every load-bearing clause of the combined guided-slider implementation. Related citations are not counted as identical model support. Inherited broader source lists are recorded in the checkpoint hashes; this page prioritizes the references actually checked for this consolidation.
 
 ## Remaining scientific work
 
-The generic relation to skew-adjoint resolvents is now explicit. The remaining questions are whether an existing result already supplies the complete sharp mechanical realization, a complete community-precedent register for the proposed implementation, and concrete actuator/damping feasibility. These are not settled by the supplied numerical tests. There is no fabricated-device evidence or exhaustive novelty claim. The code, proof, and source comparison address different questions and should not be treated as interchangeable forms of validation.
+The [research status](RESEARCH_STATUS.md) records the bounded remaining decision: assess a concrete tunable connecting-element model, or retain a precisely scoped ideal theoretical realization. The exact operator constants now have identified precedents. Priority and significance of the complete mechanical realization, per-clause community precedent for the apparatus, and its actuator/damping feasibility remain open. Numerical tests cannot settle those questions.

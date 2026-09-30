@@ -72,7 +72,7 @@ $$
 
 over the admissible $h$. The maximizing value is $h=\sqrt{(m+M)/\alpha-D}$. Rearrangement gives the [spectral envelope](RESULTS.md#spectral-ceiling). Its real-axis range is $1/M\leq\alpha\leq1/m$.
 
-These are applications of standard projection and scalar inverse bounds. The proposed scientific statement is their mechanical response consequence and attaining architecture, not a new general Cauchy–Schwarz inequality.
+These are applications of standard projection and scalar inverse bounds. The [explicit positive-map comparison](OPERATOR_CONNECTION.md#the-exact-inverse-gap-constants-are-established) identifies a published theorem giving the exact optimized inverse-gap constant. The proposed scientific statement is the mechanical response consequence and attaining architecture.
 
 ## Attainment
 

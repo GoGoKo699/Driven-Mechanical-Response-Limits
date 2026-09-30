@@ -126,6 +126,30 @@ $$
 
 The normalized vector $f$ consequently satisfies $\rho\leq(\sqrt M-\sqrt m)^2$, proving the ceiling. Zero internal coordinates give $G=\overline A$ and $\kappa=0$ directly. No count of modes or discretization enters the proof.
 
+### Four coordinates are necessary for clamped attainment
+
+The same proof gives a coordinate-count consequence without requiring stationary outputs in the force-controlled experiment. Set $c_*=(\sqrt M-\sqrt m)^2$ and let $r$ be the number of hidden coordinates. Pointwise,
+
+$$
+H(t)=BC^{-1}B^T\preceq c_*I_2,\qquad
+\operatorname{rank}H(t)\leq\min(r,2).
+$$
+
+For $f=(1,i)^T/\sqrt2$, reality and symmetry of $H$ imply $f^\dagger Hf=\operatorname{tr}H/2$. Hence
+
+$$
+\rho=\tfrac12\overline{\operatorname{tr}H}
+\leq\tfrac{c_*}{2}\min(r,2),
+$$
+
+$$
+|\kappa|\leq\frac{c_*}{4}\min(r,2).
+$$
+
+With one hidden coordinate, the clamped coefficient is at most half the full ceiling. Thus full attainment at $m<M$ requires at least two hidden coordinates, or four total. The construction below attains that minimum. The one-hidden-coordinate bound is not asserted sharp.
+
+This trace estimate is pointwise before averaging: rotating a rank-one coupling does not evade it. Measured/internal damping cross-blocks are allowed because their mean derivative reaction vanishes. This clamped minimum is distinct from the [conditional force-response minimum](PROOF.md#coordinate-minimum).
+
 ### Attainment with the same architecture
 
 Use the existing rotating-coupling family, but exchange its measured and internal stiffness allocations:
