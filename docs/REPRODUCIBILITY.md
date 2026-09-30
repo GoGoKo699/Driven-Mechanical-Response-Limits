@@ -24,6 +24,16 @@ The runner calls eleven named diagnostic groups, then compares independently rec
 
 The runner, standalone operator comparison, and four companion diagnostics reject an output path resolving to the stored reference file before running their checks. Their assertions-disabled guards also reject `-OO`.
 
+The documentation release checks additionally use Node.js 22 or later:
+
+```sh
+python -m unittest discover -s checks -p 'test_check_docs.py'
+npm ci --prefix checks --ignore-scripts
+npm --prefix checks run check
+```
+
+These dependencies are only for documentation validation. The scientific calculations remain Python-only.
+
 ## Claim map
 
 | Scientific claim | Analytic location | Executed diagnostic |
@@ -58,7 +68,11 @@ The finite-length outputs can slightly exceed the tangent ceiling because their 
 
 [check_docs.py](../checks/check_docs.py) verifies relative destinations, Markdown section anchors, and preserved script/license hashes. Its math-source checks cover GitHub `math` fences, dollar-delimited displays, protected and legacy inline formulas, balanced delimiters and braces, nonempty formulas, escaped table pipes, and short display lines. Ordinary fenced and inline code is excluded from math checks; unsupported TeX math delimiters, equation tags, and document wrappers are rejected. The script also checks the stored reference ceiling against its recorded value. Agreement of numerical values quoted in the prose is reviewed separately; this script does not parse and verify every such quotation.
 
-The checker also rejects `\operatorname` in math because the observed renderer refused that macro; use `\mathrm{...}` with explicit spacing where needed. This targeted check is not a complete renderer macro allowlist. This is a source and consistency check, not a guarantee of GitHub's live mathematical rendering. Displays are intentionally short; no equation tags or TeX document wrappers are used. Automated workflow results must be read separately from local execution records.
+The checker also rejects `\operatorname` and raw less-than signs in math, following the observed unsupported-command and truncated-formula failures. Use `\mathrm{...}` for operation names and `\lt` for strict inequalities. The [regression tests](../checks/test_check_docs.py) retain those failures and malformed delimiter, fence, brace, and table cases, alongside valid code exclusions.
+
+[check_math.cjs](../checks/check_math.cjs) independently sends each complete Markdown document through a GFM parser and compares every formula's exact source and order with the source extractor. It then renders all mathematics with pinned MathJax base and AMS packages, with error suppression disabled. Unknown commands, malformed environments, empty renders, dropped or duplicated formulas, and inconsistent table widths fail the gate. Raw HTML requires an explicit format-policy decision rather than silently bypassing the Markdown path. Installed dependency documents are excluded.
+
+Both checks run in CI. They validate the repository source and a complete local rendering path; they cannot guarantee every future browser or GitHub renderer version. Live GitHub inspection is recorded separately in the [build record](../provenance/BUILD.md). Displays are intentionally short, with no equation tags or TeX document wrappers.
 
 ## Provenance
 

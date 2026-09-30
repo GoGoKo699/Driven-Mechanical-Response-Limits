@@ -14,7 +14,15 @@ jobs:
           python-version: '3.13'
           cache: pip
       - run: python -m pip install -r requirements.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: checks/package-lock.json
+      - run: npm ci --prefix checks --ignore-scripts
+      - run: python -m unittest discover -s checks -p 'test_check_docs.py'
       - run: python checks/check_docs.py
+      - run: npm --prefix checks run check
       - run: python checks/run.py --output results.local.json
         env:
           OPENBLAS_NUM_THREADS: '1'

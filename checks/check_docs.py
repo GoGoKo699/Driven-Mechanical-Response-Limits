@@ -11,6 +11,13 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def markdown_paths() -> list[Path]:
+    """Return project documents, excluding installed dependencies and Git data."""
+    excluded = {"node_modules", ".venv", ".git"}
+    return sorted(path for path in ROOT.rglob("*.md")
+                  if not excluded.intersection(path.relative_to(ROOT).parts))
+
+
 class MathExpression(NamedTuple):
     """A validated formula, with its source and one-based Markdown line."""
 
@@ -221,7 +228,7 @@ def anchors(text: str) -> set[str]:
 
 def main() -> None:
     links = displays = inlines = 0
-    for path in sorted(ROOT.rglob("*.md")):
+    for path in markdown_paths():
         text = path.read_text()
         math = extract_math(text, str(path.relative_to(ROOT)))
         displays += sum(item.kind == "display" for item in math)

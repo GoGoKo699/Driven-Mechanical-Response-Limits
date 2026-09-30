@@ -9,3 +9,4 @@ port-work.local.json
 scale-free.local.json
 finite-mass.local.json
 capacitive-shunt.local.json
+node_modules/
