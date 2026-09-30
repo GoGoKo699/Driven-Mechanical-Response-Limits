@@ -83,6 +83,26 @@ The full text explains why modulating a physical parameter can introduce conserv
 
 The requested five-to-ten-paper provenance threshold has **not** been certified for every load-bearing clause of the combined guided-slider implementation. Related citations are not counted as identical model support. Inherited broader source lists are recorded in the checkpoint hashes; this page prioritizes the references actually checked for this consolidation.
 
+## Direct operator precedents
+
+### R10
+
+A. B. Duncan, T. Lelievre, and G. A. Pavliotis, *Variance Reduction Using Nonreversible Langevin Samplers*, Journal of Statistical Physics **163**, 457–491 (2016), [publisher full text](https://link.springer.com/article/10.1007/s10955-016-1491-2), [arXiv:1506.04934](https://arxiv.org/abs/1506.04934).
+
+The full publisher HTML was inspected, especially Lemma 3 / Eq. (29), Eqs. (31)–(34), and Theorem 4. It transforms a symmetric-plus-antisymmetric generator by its positive square root, evaluates its symmetric inverse, and separates a zero-mode contribution from a positive spectral sum. This is a direct predecessor to the resolvent method and rate-monotonicity calculation in [the operator bridge](OPERATOR_BRIDGE.md). The source also credits earlier diffusion and homogenization work; no general technique is assigned exclusively to this paper.
+
+The source's observable is the asymptotic variance of a sampling estimator. Its weighted spaces, differential generator, and compactness conditions are not our stiffness multiplication operator and periodic derivative. The mechanical specialization is therefore written explicitly, including the domain and the zero-mode projection. The inspected results do not supply the positive-spring realization or the conditional four-coordinate minimum. This comparison does not establish that no other operator theorem already contains the particular mechanical bound.
+
+### R11
+
+Graeme W. Milton, *A unifying perspective on linear continuum equations prevalent in science. Part V: resolvents; bounds on their spectrum; and their Stieltjes integral representations when the operator is not selfadjoint*, [arXiv:2006.03162v2](https://arxiv.org/pdf/2006.03162).
+
+The 16-page PDF's parsed text was inspected at Section 2, Eqs. (2.19)–(2.23), and Sections 4–5, especially the positive-plus-skew discussion and Theorem 1. It explicitly relates projected resolvents to effective parameters and develops non-selfadjoint resolvent representations. A static conductivity comparison alone therefore does not exhaust the relevant effective-response theory.
+
+The source uses a spectral parameter and projection framework distinct from simply scaling the mechanical drive rate. No equality between its complete Stieltjes representation and our signed-rate spectral measure is assumed. The algebra needed here is derived in [OPERATOR_BRIDGE.md](OPERATOR_BRIDGE.md), not inferred from an ambiguous parsed formula. Browser screenshot rendering repeatedly failed, and full HTML was unavailable; no figure or visual formula check of this PDF is claimed.
+
 ## Remaining scientific work
 
-The main unresolved questions are the relation to general skew-adjoint/effective-response bounds, a complete community-precedent register for the proposed implementation, and concrete actuator/damping feasibility. These are not settled by the supplied numerical tests. There is no fabricated-device evidence or exhaustive novelty claim. The code, proof, and source comparison address different questions and should not be treated as interchangeable forms of validation.
+The generic positive-plus-skew resolvent method is established, with direct antecedents above. The particular mechanical resource budget, reciprocal static endpoints, equality construction, and positive-spring topology must be assessed together; they are not evidence for a new general spectral method. Whether the complete bound and realization are already implicit in broader operator/effective-response theory remains unresolved.
+
+The implementation also needs a complete community-precedent register and concrete actuator/damping feasibility. These questions are not settled by numerical tests. There is no fabricated-device evidence or exhaustive novelty claim. The code, proof, and source comparison address different questions and should not be treated as interchangeable forms of validation.

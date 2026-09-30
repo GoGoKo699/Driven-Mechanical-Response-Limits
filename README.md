@@ -44,12 +44,12 @@ A force at one measured coordinate moves the other in the opposite sense to the 
 | Understand the physical question | [A short explanation](docs/START_HERE.md) |
 | Inspect the mathematical statement | [Model](docs/MODEL.md) → [Results](docs/RESULTS.md) → [Proof](docs/PROOF.md) |
 | Examine the device and its loads | [Construction and spring geometry](docs/REALIZATION.md) |
-| Compare with existing work | [Sources and assumption register](docs/SOURCES.md) |
+| Compare with existing work | [Operator connection](docs/OPERATOR_BRIDGE.md) and [sources](docs/SOURCES.md) |
 | Reproduce the evidence | [Reproducibility and claim map](docs/REPRODUCIBILITY.md) |
 
 ## What the result includes
 
-The proof first resolves a response disk using the stiffness allocated to the measured directions, then optimizes over that allocation. This distinguishes a fixed measured-stiffness budget from a fixed spectrum of the complete network.
+The proof first resolves a response disk using the stiffness allocated to the measured directions, then optimizes over that allocation. This distinguishes a fixed measured-stiffness budget from a fixed spectrum of the complete network. For a specified waveform, a [sharper bound](docs/OPERATOR_BRIDGE.md) limits the antisymmetric response to half the gap between its slow and fast reciprocal reference compliances. The underlying positive-plus-skew spectral method has established predecessors.
 
 Four coordinates are the minimum for **exact ceiling attainment with both outputs stationary for every constant force**, when measured and internal coordinates have no direct damping cross-block. This is not a minimum for all nonreciprocal response or for the number of springs.
 

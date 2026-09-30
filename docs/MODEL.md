@@ -63,6 +63,10 @@ The inverse in $j$ is the inverse of the **full** stiffness. It allows hidden di
 
 Holding the spectral interval fixed does not hold $h$ fixed. Holding the global trace fixed does not do so either. The [results](RESULTS.md) state both resource questions explicitly.
 
+## Comparing modulation rates
+
+A rate comparison means $K_\omega(t)=K(\omega t)$ for one fixed $2\pi$-periodic phase waveform, with the same damping, ports, stiffness amplitudes, and phase dwell fractions. It does not compare separately optimized waveforms at each rate. Two static references, $\overline{P^TK^{-1}P}$ and $P^T\overline K^{-1}P$, give the slow and fast limits and a sharper disk; see [the operator bridge](OPERATOR_BRIDGE.md). The fast limit is a mathematical limit of the stated overdamped equation, not a validation of neglecting inertia at unlimited physical frequency.
+
 ## Static loading
 
 For a generic modulated device, mean compliance is not a substitute for its full time-dependent input–output relation. A load acts on the actual trajectory, including its within-cycle motion.

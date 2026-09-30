@@ -12,6 +12,16 @@ $$
 
 In particular $1/h\leq\alpha\leq j$. The disk is a statement about two scalar response quantities, not every entry of the full compliance matrix. Its proof is [one weighted projection argument](PROOF.md#weighted-projection).
 
+## Two reciprocal endpoints
+
+For a fixed phase waveform, let $\chi_{\mathrm s}=\overline{P^TK^{-1}P}$ and $\chi_{\mathrm f}=P^T\overline K^{-1}P$. These are symmetric static reference compliances, with $a_{\mathrm s,f}=\operatorname{tr}\chi_{\mathrm s,f}/2$. Then
+
+$$
+\beta^2\leq(\alpha-a_{\mathrm f})(a_{\mathrm s}-\alpha).
+$$
+
+Here $a_{\mathrm s}=j$ and $a_{\mathrm f}\geq1/h$, so this is a stronger per-waveform disk. When only the traversal rate increases, the symmetric response decreases in the Loewner order from $\chi_{\mathrm s}$ toward $\chi_{\mathrm f}$. This is a limit within the overdamped model, not a promise of valid arbitrarily fast operation in a fixed apparatus. The [derivation, equality conditions, and source comparison](OPERATOR_BRIDGE.md) keep this distinction explicit.
+
 ## Spectral ceiling
 
 When only the complete stiffness interval $[m,M]$ is fixed,

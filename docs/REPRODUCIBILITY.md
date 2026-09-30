@@ -16,13 +16,14 @@ python checks/check_docs.py
 
 On Windows, activate the virtual environment with its platform-specific activation command. All calculations are local and CPU-only. No cloud simulation or network access is needed after dependency installation.
 
-The runner calls ten named diagnostic groups, then compares independently recomputed benchmark values with [reference.json](../checks/reference.json). It does not refresh that reference file. Assertions must be enabled: running with Python's `-O` flag is rejected. Numerical-library roundoff can change the last digits; comparisons use explicit tolerances rather than byte equality across environments.
+The runner calls eleven named diagnostic groups, then compares independently recomputed benchmark values with [reference.json](../checks/reference.json). It does not refresh that reference file. Assertions must be enabled: running with Python's `-O` flag is rejected. Numerical-library roundoff can change the last digits; comparisons use explicit tolerances rather than byte equality across environments.
 
 ## Claim map
 
 | Scientific claim | Analytic location | Executed diagnostic |
 |---|---|---|
 | General network disk | [Weighted projection](PROOF.md#weighted-projection) | `network_disk`: arbitrary 2-, 3-, 4-, 6-coordinate stepped networks; nonisotropic constant drag; periodic energy balances |
+| Reciprocal-endpoint disk, rate limits, and monotonicity | [Operator bridge](OPERATOR_BRIDGE.md) | `operator_bridge`: exact stepped forced responses, separate finite spectral matrices, reference-state controls, and the analytic attaining waveform |
 | Sharp ceiling and envelope | [Removing the waveform](PROOF.md#removing-the-waveform), [attainment](PROOF.md#attainment) | `attainment`: spectra, disk and envelope boundary formulas |
 | Fair stiffness-budget comparison | [Fixed measured stiffness](RESULTS.md#fixed-measured-stiffness) | `resource_matched_comparison`: padded planar reference with matched spectrum |
 | Stationary outputs and static loads | [Port law](REALIZATION.md#stationary-outputs-and-static-loads) | `loaded_clamped_dynamics`: from-rest trajectories, isotropic/anisotropic spring loads, port damping, and clamp reactions |
@@ -32,7 +33,7 @@ The runner calls ten named diagnostic groups, then compares independently recomp
 | Conditional four-coordinate minimum | [Rank proof](PROOF.md#coordinate-minimum) | `coordinate_minimum_controls`: equality identities and a suboptimal three-coordinate example; not an enumeration over all three-coordinate devices |
 | Coefficient-error guarantee | [Energy estimate](PROOF.md#coefficient-errors) | `calibration_error`: specified unequal spring offsets versus the conservative bound |
 
-The scientific implementations are [network.py](../checks/network.py) and [springs.py](../checks/springs.py), preserved byte-for-byte from the supplied network and realization checkpoints. They are separate computational derivations: the nonlinear forces do not call the target stiffness matrix to manufacture the desired response. [run.py](../checks/run.py) provides the consolidated interface. The module-level historical docstrings are not the canonical scope statement; use the documents above.
+The scientific implementations are [network.py](../checks/network.py) and [springs.py](../checks/springs.py), preserved byte-for-byte from the supplied network and realization checkpoints. They are separate computational derivations: the nonlinear forces do not call the target stiffness matrix to manufacture the desired response. [run.py](../checks/run.py) provides the consolidated interface. [operator_bridge.py](../checks/operator_bridge.py) separately implements affine stage propagation and an odd-grid spectral calculation for the operator comparison. Its finite Fourier tests do not establish convergence for arbitrary waveform discretizations. The module-level historical docstrings are not the canonical scope statement; use the documents above.
 
 ## What passing means
 

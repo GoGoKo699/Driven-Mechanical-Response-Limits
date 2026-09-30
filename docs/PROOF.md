@@ -42,6 +42,27 @@ $$
 
 Both norm identities also handle the degenerate case $j=1/h$, when $\alpha=1/h$ and $\beta=0$. No slow-drive expansion, Fourier truncation, or restriction on dimension has been used.
 
+## Sharper reference for a specified waveform
+
+Retain the full constant reference $c_*=\overline K^{-1}f$ instead of $f/h$. With $a_{\mathrm f}=f^\dagger\overline K^{-1}f$ and $a_{\mathrm s}=j$, use $r=u-c_*$ and $v=K^{-1}f-c_*$. Then
+
+$$
+\|r\|_K^2=\alpha-a_{\mathrm f},\quad
+\|v\|_K^2=a_{\mathrm s}-a_{\mathrm f},
+$$
+
+$$
+\langle v,r\rangle_K=z-a_{\mathrm f}.
+$$
+
+The same projection inequality gives
+
+$$
+\beta^2\leq(\alpha-a_{\mathrm f})(a_{\mathrm s}-\alpha).
+$$
+
+Since $a_{\mathrm f}\geq1/h$, this strengthens the waveform-specific bound. The global stiffness ceiling below is unchanged and attained with equality in this additional inequality. The [operator comparison](OPERATOR_BRIDGE.md) proves that these two references are the slow- and fast-rate limits, derives monotonicity of the symmetric response for a fixed waveform, and attributes the spectral method to its predecessors.
+
 ## Removing the waveform
 
 For $\lambda\in[m,M]$, convexity of the inverse gives
