@@ -15,7 +15,7 @@ The force $`F\in\mathbb R^2`$ is constant. The real $`n\times2`$ matrix $`P=(p_1
 The damping matrix $`\Gamma`$ is constant, symmetric, and positive definite. The real symmetric stiffness is bounded, periodic, and may be piecewise continuous:
 
 ```math
-0<mI\preceq K(t)\preceq MI,\qquad m<M.
+mI\preceq K(t)\preceq MI,\qquad 0\lt m\lt M.
 ```
 
 A bounded measurable periodic schedule also suffices for the averaged proof with absolutely continuous solutions. The construction uses smooth coefficients. All retained compliant coordinates are included in these matrices. Ideal guides and fixed supports are constraints, not omitted soft modes; finite support compliance would need a separate model.

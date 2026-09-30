@@ -92,6 +92,11 @@ def _validate_math(formula: str, kind: str, source: str, line: int) -> None:
     where = f"{source}:{line}"
     if not formula.strip():
         raise AssertionError(f"Empty math expression: {where}")
+    if "<" in formula:
+        raise AssertionError(
+            f"HTML-sensitive less-than sign in math: {where}; "
+            r"use \lt for strict inequalities or \langle for angle brackets"
+        )
     unsupported = re.finditer(r"\\(?:tag\b|(?:begin|end)\s*\{\s*document\s*\})", formula)
     if any(not _escaped(formula, match.start()) for match in unsupported):
         raise AssertionError(f"Unsupported math convention: {where}")

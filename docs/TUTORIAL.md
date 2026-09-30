@@ -52,7 +52,7 @@ The **pump** is the continuing stiffness modulation. A later, slow **probe cycle
 The comparison holds every instantaneous stiffness eigenvalue within one interval:
 
 ```math
-0<mI\preceq K(t)\preceq MI,\qquad m<M.
+mI\preceq K(t)\preceq MI,\qquad 0\lt m\lt M.
 ```
 
 This includes hidden coordinates. Adding a very soft internal mode or changing a lever normalization changes the resource. The port directions are fixed and normalized, $`P^TP=I_2`$, with conjugate forces; rescaling displacement alone is not a free improvement.
@@ -97,7 +97,7 @@ where $`J_{12}=-1`$, $`J_{21}=1`$, and its diagonal entries vanish. Choose
 g=m+M-h,\qquad b^2=(M-h)(h-m).
 ```
 
-For $`m<h<M`$, the spectrum is exactly $`(m,m,M,M)`$ throughout the cycle. Reciprocal coupling appears in transposed blocks; no instantaneous odd spring is inserted.
+For $`m\lt h\lt M`$, the spectrum is exactly $`(m,m,M,M)`$ throughout the cycle. Reciprocal coupling appears in transposed blocks; no instantaneous odd spring is inserted.
 
 Take block-diagonal damping with scalar hidden drag $`\gamma_yI_2`$. In the calculated variable $`w=Ry`$, the equations have constant coefficients. Their attracting constant-force solution has constant $`x,w`$, although $`y`$ continues to rotate. Thus the internal motion produces an odd measured response while the measured outputs remain stationary.
 

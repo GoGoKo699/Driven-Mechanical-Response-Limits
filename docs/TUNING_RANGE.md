@@ -26,13 +26,13 @@ To keep the connecting-spring ratio at most $`r`$, choose $`\eta=2/(r-1)`$. This
 Since $`h/b=(\mathcal R^{1/4}-\mathcal R^{-1/4})^{-1}`$, this becomes
 
 ```math
-1<\mathcal R<\exp\left[4\,\mathrm{arsinh}\,
+1\lt \mathcal R\lt \exp\left[4\,\mathrm{arsinh}\,
 \frac{r-1}{3r+5}\right].
 ```
 
 The endpoint is excluded because a support vanishes there. This is a criterion for the specified decomposition and allocation, not every possible mechanical network. Exchanging measured and internal allocations gives the same criterion for the clamped-work optimizer.
 
-To reserve a fixed support fraction $`0<\rho<1`$, choose
+To reserve a fixed support fraction $`0\lt \rho\lt 1`$, choose
 
 ```math
 \mathcal R=\exp\left[4\,\mathrm{arsinh}\,

@@ -14,7 +14,7 @@ The modulation supplies energy. The result is a design limit for a driven consti
 
 ## Two measurements, two sharp limits
 
-Fix physical coordinates and conjugate forces. The complete instantaneous stiffness $`K(t)`$ is symmetric, and every eigenvalue lies in $`[m,M]`$, with $`0<m<M`$. Damping is constant, symmetric, and positive definite. The origin stays fixed while the stiffness schedule repeats.
+Fix physical coordinates and conjugate forces. The complete instantaneous stiffness $`K(t)`$ is symmetric, and every eigenvalue lies in $`[m,M]`$, with $`0\lt m\lt M`$. Damping is constant, symmetric, and positive definite. The origin stays fixed while the stiffness schedule repeats.
 
 | Measurement | What is imposed and measured | Odd response |
 |---|---|---|

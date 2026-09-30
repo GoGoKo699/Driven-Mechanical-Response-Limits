@@ -12,4 +12,6 @@ Use GitHub-native Markdown with short fenced `math` displays and protected inlin
 
 The observed reader renderer rejects `\operatorname`. Use upright `\mathrm{...}` labels with explicit spacing for named operations. A successful standalone MathJax render does not establish compatibility with the reader's macro restrictions.
 
+Use `\lt` for strict less-than inequalities inside mathematics. A raw `<` can be interpreted as an HTML opener and truncate the displayed formula. Keep scalar positivity separate from matrix-order bounds.
+
 Before a merge run `python checks/run.py --output results.local.json` and `python checks/check_docs.py`. The numerical scripts require assertions enabled. New scientific claims need explicit proofs and declared assumptions, not just more numerical cases. Preserve the source hashes in `provenance/INPUTS.json`.

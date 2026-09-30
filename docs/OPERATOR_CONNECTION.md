@@ -164,7 +164,7 @@ Taking the Hermitian part gives
 \mathrm{Herm}(I+ivT)^{-1}=(I+v^2T^2)^{-1}.
 ```
 
-It decreases in the positive-operator order as $`v`$ increases. Projecting back to the physical force/displacement ports gives, for $`0<v_1<v_2`$,
+It decreases in the positive-operator order as $`v`$ increases. Projecting back to the physical force/displacement ports gives, for $`0\lt v_1\lt v_2`$,
 
 ```math
 \mathrm{Sym}\,\chi(v_1)\succeq\,\mathrm{Sym}\,\chi(v_2),

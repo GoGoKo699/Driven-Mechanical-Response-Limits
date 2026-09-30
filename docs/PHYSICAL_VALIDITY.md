@@ -34,7 +34,7 @@ Direct differentiation, using symmetry of $`K`$, cancels the cross terms:
 Consequently, if
 
 ```math
-\mu M<\gamma^2,
+\mu M\lt \gamma^2,
 ```
 
 then $`\dot V\leq-2cV`$, with
@@ -81,7 +81,7 @@ Define the ratio of momentum-relaxation time to the angular pump time $`1/\Omega
 =\frac{\mu\sqrt D}{\gamma^2}.
 ```
 
-The sufficient stability condition is $`\varepsilon<\sqrt{m/M}`$. At the same pump rate, exact subtraction from the overdamped response gives
+The sufficient stability condition is $`\varepsilon\lt \sqrt{m/M}`$. At the same pump rate, exact subtraction from the overdamped response gives
 
 ```math
 \frac{\beta_\mu}{B_*}=\frac{2}{(1-\varepsilon)^2+1},
@@ -114,7 +114,7 @@ r_\kappa=1+2/\eta.
 Strictly positive fixed support springs require
 
 ```math
-0<\eta<\tfrac12[\min(h,g)/b-3/2].
+0\lt \eta\lt \tfrac12[\min(h,g)/b-3/2].
 ```
 
 Within this particular decomposition, whenever its right side is positive,

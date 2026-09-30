@@ -60,7 +60,7 @@ This recovers the planar fixed-trace bound even with arbitrarily many internal c
 
 ## Attaining four-coordinate family
 
-Let $`x,y\in\mathbb R^2`$ be measured and internal coordinates. For $`m<h<M`$, choose
+Let $`x,y\in\mathbb R^2`$ be measured and internal coordinates. For $`m\lt h\lt M`$, choose
 
 ```math
 g=m+M-h,\qquad b^2=(M-h)(h-m).
@@ -118,7 +118,7 @@ For the same damping and ports, if $`\widetilde K=K+E`$, $`\|E\|\leq\delta`$, an
 \|\widetilde\chi-\chi\|\leq\frac{\delta}{m\widetilde m}.
 ```
 
-Relative errors at most $`\varepsilon<1`$ in all positive rank-one spring coefficients give
+Relative errors at most $`\varepsilon\lt 1`$ in all positive rank-one spring coefficients give
 
 ```math
 |\widetilde\beta-\beta|\leq\frac{\varepsilon M}{m^2(1-\varepsilon)}.
