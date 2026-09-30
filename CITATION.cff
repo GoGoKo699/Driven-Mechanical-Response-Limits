@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this repository using the commit corresponding to the result or calculation used."
+title: "Driven Mechanical Response Limits"
+type: software
+authors:
+  - family-names: Lin
+    given-names: Ruge
+repository-code: "https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits"
+license: MIT
+abstract: >-
+  Derivations and reproducible calculations for sharp nonreciprocal steady-force
+  response limits in time-modulated reciprocal overdamped mechanical networks.

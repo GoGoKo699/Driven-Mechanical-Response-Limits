@@ -1,0 +1,63 @@
+{
+  "consolidated_on": "2026-09-30",
+  "initial_commit": "3d25cc156446fc5788dbc6c176c167a961020ff6",
+  "source_files": [
+    {
+      "file": "merlin_arthur_first_scout.zip",
+      "sha256": "e0772b2a65750f238950f7c0519f19f2f9770d71195b2b85777dc86a35d6f0d7",
+      "bytes": 10051
+    },
+    {
+      "file": "merlin_arthur_mechanics_loading_check.zip",
+      "sha256": "9a3174703b55e8b949b4410d5378671b515e65f12f6804fd1eac28815edc10c5",
+      "bytes": 19001
+    },
+    {
+      "file": "merlin_arthur_mechanics_network_ceiling.zip",
+      "sha256": "a3eeac3b5d3a7db853de0feeee79d658a9073e2efa9b1f07b02fefc48ab51db5",
+      "bytes": 21492
+    },
+    {
+      "file": "merlin_arthur_mechanics_optimum.zip",
+      "sha256": "760141e896d3d73cd317badf8059097a0d43b07815ba6d0e12edb4bf39633fd1",
+      "bytes": 16656
+    },
+    {
+      "file": "merlin_arthur_mechanics_realization.zip",
+      "sha256": "210bab12e50d4b1d40a5047d421ca1a300c6d390a01520302cec2cd4c73ce3d9",
+      "bytes": 24258
+    },
+    {
+      "file": "round04/RESULT.md",
+      "sha256": "ff1d7723716f546f437a3b09544a2a597cff132ea25e91ff94f42188a74aec75",
+      "bytes": 20271
+    },
+    {
+      "file": "round05/REPOSITORY_HANDOFF.md",
+      "sha256": "2af06445cf4ae90dabb2f6a0fe1af698fd63efd404d3a4568801c44068c13454",
+      "bytes": 3967
+    },
+    {
+      "file": "round05/RESULT.md",
+      "sha256": "2ef7875a9ac1a5f7077a8a5ed9316427f43c7d9baebafcc60c3bbcd7fdae38f7",
+      "bytes": 22331
+    },
+    {
+      "file": "round05/SOURCES.md",
+      "sha256": "c0113003b13a698d36a4b7619782d0de741be4d54e5e957cec718cc8b0c818a7",
+      "bytes": 7509
+    }
+  ],
+  "unchanged_scientific_scripts": [
+    {
+      "path": "checks/network.py",
+      "source": "round04/checks.py",
+      "sha256": "38c5c58977e7c0c67ad6e78b62e2fd953926b94929d4f088a3b78fc38a0aee53"
+    },
+    {
+      "path": "checks/springs.py",
+      "source": "round05/checks.py",
+      "sha256": "7461be88651e1f151a3c1c34b905640f62f9d072d421d7d99900fdd337845fa3"
+    }
+  ]
+}
