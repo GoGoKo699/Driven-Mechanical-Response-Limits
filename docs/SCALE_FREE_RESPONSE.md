@@ -48,7 +48,7 @@ One proof uses $`S_{Q^{-1}}=Q^{-T}S_QQ^{-1}`$ and $`A_{Q^{-1}}=-Q^{-T}A_QQ^{-1}`
 
 ## 2. Sharp bound for either experiment
 
-Keep the complete stiffness interval and all other assumptions of the [model](MODEL.md): $`0<mI\preceq K(t)\preceq MI`$, fixed conjugate ports, constant positive symmetric damping, prescribed periodic stiffness, and a fixed equilibrium. The two matrices are the force-controlled mean compliance $`\chi`$ and the independently defined clamped mean reaction $`G`$.
+Keep the complete stiffness interval and all other assumptions of the [model](MODEL.md): $`mI\preceq K(t)\preceq MI`$, with $`0\lt m\lt M`$, fixed conjugate ports, constant positive symmetric damping, prescribed periodic stiffness, and a fixed equilibrium. The two matrices are the force-controlled mean compliance $`\chi`$ and the independently defined clamped mean reaction $`G`$.
 
 Put
 

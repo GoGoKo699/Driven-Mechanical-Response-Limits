@@ -146,7 +146,7 @@ For $`f=(1,i)^T/\sqrt2`$, reality and symmetry of $`H`$ imply $`f^\dagger Hf=\ma
 |\kappa|\leq\frac{c_*}{4}\min(r,2).
 ```
 
-With one hidden coordinate, the clamped coefficient is at most half the full ceiling. Thus full attainment at $`m<M`$ requires at least two hidden coordinates, or four total. The construction below attains that minimum. The one-hidden-coordinate bound is not asserted sharp.
+With one hidden coordinate, the clamped coefficient is at most half the full ceiling. Thus full attainment at $`m\lt M`$ requires at least two hidden coordinates, or four total. The construction below attains that minimum. The one-hidden-coordinate bound is not asserted sharp.
 
 This trace estimate is pointwise before averaging: rotating a rank-one coupling does not evade it. Measured/internal damping cross-blocks are allowed because their mean derivative reaction vanishes. This clamped minimum is distinct from the [conditional force-response minimum](PROOF.md#coordinate-minimum).
 
@@ -278,12 +278,12 @@ P_{\mathrm{drive}}=P_{\mathrm{out}}
 
 The work per port cycle is each power multiplied by $`2\pi/|\omega|`$. The formula remains valid for opposite rotation and for rates exceeding the pump, with signed drive and output powers retained. An efficiency is quoted only when both drive input and delivered output are positive.
 
-For $`0<\omega<\Omega`$ in the work-producing range,
+For $`0\lt \omega\lt \Omega`$ in the work-producing range,
 
 ```math
 \eta_{\mathrm{mech}}=\frac{\omega}{\Omega}
 \left(1-\frac{\gamma_x\omega}{\kappa_\delta}\right)
-<\frac{\omega}{\Omega}.
+\lt \frac{\omega}{\Omega}.
 ```
 
 This is net work delivered to the imposed probe divided by work delivered by the stiffness modulation. It is not wall-plug efficiency. The drive and probe controls are prescribed; autonomous load following or actuator efficiency is not supplied by this calculation.
