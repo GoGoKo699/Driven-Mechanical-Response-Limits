@@ -9,6 +9,7 @@ import numpy as np
 import scipy
 import network
 import springs
+import operator_comparison
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -58,6 +59,7 @@ def main() -> None:
         ("parallel_graph_control", springs.positivity_control),
         ("coordinate_minimum_controls", springs.sharpness_and_three_coordinate_control),
         ("calibration_error", springs.tolerance_checks),
+        ("operator_connection", operator_comparison.run_all),
     ]
     result = {}
     for name, check in groups:

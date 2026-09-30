@@ -49,7 +49,7 @@ A force at one measured coordinate moves the other in the opposite sense to the 
 
 ## What the result includes
 
-The proof first resolves a response disk using the stiffness allocated to the measured directions, then optimizes over that allocation. This distinguishes a fixed measured-stiffness budget from a fixed spectrum of the complete network.
+The proof first resolves a response disk using the stiffness allocated to the measured directions, then optimizes over that allocation. An [operator comparison](docs/OPERATOR_CONNECTION.md) identifies the established resolvent structure and a sharper fixed-schedule budget given by the difference between slow- and fast-driving compliance. This distinguishes a fixed measured-stiffness budget from a fixed spectrum of the complete network.
 
 Four coordinates are the minimum for **exact ceiling attainment with both outputs stationary for every constant force**, when measured and internal coordinates have no direct damping cross-block. This is not a minimum for all nonreciprocal response or for the number of springs.
 

@@ -16,7 +16,7 @@ python checks/check_docs.py
 
 On Windows, activate the virtual environment with its platform-specific activation command. All calculations are local and CPU-only. No cloud simulation or network access is needed after dependency installation.
 
-The runner calls ten named diagnostic groups, then compares independently recomputed benchmark values with [reference.json](../checks/reference.json). It does not refresh that reference file. Assertions must be enabled: running with Python's `-O` flag is rejected. Numerical-library roundoff can change the last digits; comparisons use explicit tolerances rather than byte equality across environments.
+The runner calls eleven named diagnostic groups, then compares independently recomputed benchmark values with [reference.json](../checks/reference.json). It does not refresh that reference file. Assertions must be enabled: running with Python's `-O` flag is rejected. Numerical-library roundoff can change the last digits; comparisons use explicit tolerances rather than byte equality across environments.
 
 ## Claim map
 
@@ -31,8 +31,9 @@ The runner calls ten named diagnostic groups, then compares independently recomp
 | Parallel difference-spring graph limitation | [Positivity argument](PROOF.md#parallel-guide-obstruction) | `parallel_graph_control`: unequal but nonnegative exchanged responses |
 | Conditional four-coordinate minimum | [Rank proof](PROOF.md#coordinate-minimum) | `coordinate_minimum_controls`: equality identities and a suboptimal three-coordinate example; not an enumeration over all three-coordinate devices |
 | Coefficient-error guarantee | [Energy estimate](PROOF.md#coefficient-errors) | `calibration_error`: specified unequal spring offsets versus the conservative bound |
+| Fixed-schedule endpoint disk and operator relationship | [Operator connection](OPERATOR_CONNECTION.md) | `operator_connection`: four subgroups for resolvent reconstruction, phase-speed sweeps, equality, and excluded controls |
 
-The scientific implementations are [network.py](../checks/network.py) and [springs.py](../checks/springs.py), preserved byte-for-byte from the supplied network and realization checkpoints. They are separate computational derivations: the nonlinear forces do not call the target stiffness matrix to manufacture the desired response. [run.py](../checks/run.py) provides the consolidated interface. The module-level historical docstrings are not the canonical scope statement; use the documents above.
+The original scientific implementations are [network.py](../checks/network.py) and [springs.py](../checks/springs.py), preserved byte-for-byte from the supplied network and realization checkpoints. They are separate computational derivations: the nonlinear forces do not call the target stiffness matrix to manufacture the desired response. [run.py](../checks/run.py) provides the consolidated interface. The self-contained [operator-comparison module](../checks/operator_comparison.py) tests the additional fixed-schedule identities without importing either of those two modules. The module-level historical docstrings are not the canonical scope statement; use the documents above.
 
 ## What passing means
 
@@ -51,3 +52,5 @@ This is a source and consistency check, not a guarantee of GitHub's live mathema
 [INPUTS.json](../provenance/INPUTS.json) identifies the supplied checkpoints by SHA-256 and records which scripts are retained exactly. The original archives remain separate historical inputs rather than nested dependencies of the main reading path. They are not claimed to be fully republished in this repository.
 
 The [build record](../provenance/BUILD.md) records what was actually rerun during consolidation. Its function is provenance, not certification of novelty or publication status.
+
+The [operator-comparison record](../provenance/OPERATOR_COMPARISON.md) documents the subsequent fixed-schedule refinement and its source/test boundaries.
