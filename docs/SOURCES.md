@@ -18,13 +18,13 @@ Christian Kern and Graeme W. Milton, *Limits to the Hall effect and other nonrec
 
 The full HTML formulation and Eq. (12) were inspected. The paper uses a conductivity-equivalent spatial field problem with a weak local antisymmetric contribution. Its formula for the effective Hall coefficient is linear in that local contribution; setting it to zero gives zero in that model.
 
-Our operator is $K(t)+\Gamma\partial_t$ on periodic trajectories. The time derivative supplies a skew-adjoint part although each $K(t)$ is symmetric. Substituting instantaneous stiffness eigenvalues into the static formula is not an identification of these operators. A deeper reduction to general effective-response bounds remains a substantive open comparison. Bounds plus attaining architectures are not new as a research strategy.
+Our operator is $K(t)+\Gamma\partial_t$ on periodic trajectories. The time derivative supplies a skew-adjoint part although each $K(t)$ is symmetric. Substituting instantaneous stiffness eigenvalues into the static formula is not an identification of these operators. A direct reduction to this particular spatial Hall problem has not been established; the general positive-map and resolvent connection is already identified above. Bounds plus attaining architectures are not new as a research strategy.
 
 ### R2
 
 Christian Kern, Owen D. Miller, and Graeme W. Milton, *Tight Bounds on the Effective Complex Permittivity of Isotropic Composites and Related Problems*, Physical Review Applied **14**, 054068 (2020), [arXiv:2006.03830](https://arxiv.org/abs/2006.03830).
 
-The [full author-hosted published PDF](https://millergroup.yale.edu/sites/default/files/files/2020_11-Kern.pdf) was inspected. Equations (1)–(9) concern a spatial two-phase field problem, a positive-measure Stieltjes representation, and constraints from volume fraction and isotropy. Real positive constituent permittivities give a real interval; directly substituting $m,M$ cannot generate our nonzero $\beta$. The single-pole boundary-construction strategy is explicitly established. A broader operator reduction remains possible; different observables alone do not prove novelty.
+The [full author-hosted published PDF](https://millergroup.yale.edu/sites/default/files/files/2020_11-Kern.pdf) was inspected. Equations (1)–(9) concern a spatial two-phase field problem, a positive-measure Stieltjes representation, and constraints from volume fraction and isotropy. Real positive constituent permittivities give a real interval; directly substituting $m,M$ cannot generate our nonzero $\beta$. The single-pole boundary-construction strategy is explicitly established. A direct reduction to these particular composite bounds has not been established; the general operator connection is known, and different observables alone do not prove novelty.
 
 ### R3
 
@@ -114,7 +114,7 @@ The requested five-to-ten-paper provenance threshold has **not** been certified 
 
 ## A concrete actuator screen
 
-The [capacitive-actuation note](CAPACITIVE_ACTUATION.md#primary-sources-and-access) checks established piezoelectric constitutive laws, positive capacitive tuning, and leakage before eliminating electrical states. Its new local deduction is an exact obstruction: with constant coupling, constant short-circuit stiffness, and a constant leakage conductance connecting the electrical voltages, positive capacitance modulation has reciprocal attracting DC response. The ideal zero-charge reduction has a singular long-time leakage limit. The finite-frequency tuning sources are not used as evidence for a different DC observable.
+The [capacitive-actuation note](CAPACITIVE_ACTUATION.md#primary-sources-and-access) checks established piezoelectric constitutive laws, positive capacitive tuning, and leakage before eliminating electrical states. The local deduction is an exact obstruction: with constant coupling, constant short-circuit stiffness, and a constant leakage conductance connecting the electrical voltages, positive capacitance modulation has reciprocal attracting DC response. The ideal zero-charge reduction has a singular long-time leakage limit. The finite-frequency tuning sources are not used as evidence for a different DC observable.
 
 The [finite-tuning calculation](TUNING_RANGE.md) separately shows that the original 21:1 coefficient range can be reduced by narrowing the stiffness contrast. This is an algebraic design option, not a repair of the leakage obstruction or a measured actuator range.
 

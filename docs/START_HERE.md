@@ -14,7 +14,7 @@ These statements concern the model developed here. Time-modulated mechanics and 
 
 ## Keep the moving parts in the accounting
 
-An early example is an anisotropic two-coordinate trap whose principal axes rotate. Its mean response can be antisymmetric, but the measured object moves within every cycle. Attaching a spring changes that motion; one cannot generally add the load after replacing the device by its mean inverse compliance.
+An early example is an anisotropic two-coordinate trap whose principal axes rotate. Its mean response can contain an antisymmetric part, but the measured object moves within every cycle. Attaching a spring changes that motion; one cannot generally add the load after replacing the device by its mean inverse compliance.
 
 The attaining construction in this repository separates the roles. Two coordinates are measured and two are internal. Under a constant force, the measured pair settles to a constant displacement. The internal pair keeps cycling. The zero-frequency response therefore composes correctly with a static spring attached to the measured coordinates.
 
@@ -38,7 +38,7 @@ Complex numbers here combine two spatial experiments. Their imaginary part is no
 
 **Would a damper exert a nonzero average force on a periodic trajectory?** No: its force averages to zero. It can still change the mean response by changing the within-cycle motion.
 
-**Does four being minimal mean three coordinates cannot be nonreciprocal?** No. The minimum concerns exact global-ceiling attainment with stationary measured outputs and block-diagonal damping. A suboptimal three-coordinate control is supplied.
+**Does four being minimal mean three coordinates cannot be nonreciprocal?** No. For force compliance, the minimum concerns exact ceiling attainment with stationary measured outputs and block-diagonal damping. Separately, four coordinates are necessary for the full clamped-response ceiling without those extra conditions. A suboptimal three-coordinate force-response control is supplied.
 
 **Do positive physical spring constants permit any matrix coupling between parallel sliders?** No. Ordinary positive difference springs on parallel guides impose a positivity restriction. The proposed perpendicular guides and diagonal attachments supply the required generalized signs without negative physical springs.
 

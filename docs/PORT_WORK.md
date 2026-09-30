@@ -214,7 +214,7 @@ For the rotating architecture, the stronger finite-rate result below avoids a ge
 
 ### Exact dynamics for arbitrary port motion
 
-For scalar measured drag $\gamma_xI_2$, transform only the hidden variables, $w=R(\Omega t)y$. Then
+For the rotating architecture with $\Gamma=\operatorname{diag}(\gamma_xI_2,\gamma_yI_2)$, transform only the hidden variables, $w=R(\Omega t)y$. Then
 
 $$
 \gamma_y\dot w+(gI_2-\gamma_y\Omega J)w=-bx,
@@ -348,7 +348,7 @@ Our continuously positive homogeneous linear stiffness, fixed equilibrium, and p
 
 The combination now provides two distinct resource-matched limits: cross-displacement per force, and clamped odd force per displacement. The latter gives a maximal slow-cycle work per oriented area. Both have small constructions in the same reciprocal driven network class. Their operators and energy accounts are explicit.
 
-The new proof uses established projection, Schur-complement, and scalar inverse geometry. It is not a new general theory of odd elasticity or an efficiency theorem. The inspected architecture papers do not state this fixed-spectrum arbitrary-network ceiling, but a broader operator result may already imply it. No exhaustive priority certificate, platform feasibility, or technological energy saving is established here.
+The proof uses established projection, Schur-complement, and scalar inverse geometry. The [exact positive-map substitution](OPERATOR_CONNECTION.md#the-exact-inverse-gap-constants-are-established) identifies the published inverse-gap constant used in this ceiling. The inspected architecture papers do not supply the complete resource-matched mechanical attainment and clamped coordinate minimum. No new general theory of odd elasticity, efficiency theorem, exhaustive priority certificate, platform feasibility, or technological energy saving is established here.
 
 The comparison removes two possible overclaims: our original compliance optimizer is not an optimizer for every useful mechanical task, and finite odd work does not imply efficient conversion when internal cycling losses are charged. The original force-response theorem, fixed references, and positive-spring implementation remain unchanged.
 
