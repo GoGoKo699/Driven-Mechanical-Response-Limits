@@ -95,6 +95,13 @@ def _validate_math(formula: str, kind: str, source: str, line: int) -> None:
     unsupported = re.finditer(r"\\(?:tag\b|(?:begin|end)\s*\{\s*document\s*\})", formula)
     if any(not _escaped(formula, match.start()) for match in unsupported):
         raise AssertionError(f"Unsupported math convention: {where}")
+    # This macro was rejected by the observed renderer; this is not a full allowlist.
+    operators = re.finditer(r"\\operatorname(?![A-Za-z])", formula)
+    if any(not _escaped(formula, match.start()) for match in operators):
+        raise AssertionError(
+            f"Renderer-rejected \\operatorname: {where}; "
+            r"use \mathrm{...} with explicit spacing where needed"
+        )
     depth = 0
     for i, char in enumerate(formula):
         if _escaped(formula, i):

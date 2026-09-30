@@ -41,15 +41,15 @@ Positive capacitive stiffness tuning has an experimental precedent [A2]. That su
 
 ## Keeping the leakage state
 
-For a network let $`q`$ collect all retained mechanical coordinates, let the columns of $`U`$ define the connecting elongations $`e=U^Tq`$, and let $`\Theta=\operatorname{diag}(\theta_j)`$. Put
+For a network let $`q`$ collect all retained mechanical coordinates, let the columns of $`U`$ define the connecting elongations $`e=U^Tq`$, and let $`\Theta=\mathrm{diag}(\theta_j)`$. Put
 
 ```math
 H=U\Theta,\qquad
-\mathcal C(t)=\operatorname{diag}(C_{p,j}+C_{s,j}(t)),
+\mathcal C(t)=\mathrm{diag}(C_{p,j}+C_{s,j}(t)),
 ```
 
 ```math
-K_E=K_{\rm support}+U\operatorname{diag}(k_{E,j})U^T\succ0.
+K_E=K_{\rm support}+U\,\mathrm{diag}(k_{E,j})U^T\succ0.
 ```
 
 Take positive continuously differentiable periodic capacitances, constant mechanical damping $`\Gamma\succ0`$, and a constant symmetric positive-definite conductance matrix $`G_{\rm leak}`$. Independent positive leakage conductances on each electrode pair are the simplest case. The complete equations are

@@ -35,11 +35,11 @@ For a fixed piecewise-continuous uniformly positive schedule they are the limiti
 Define their mean direct compliances
 
 ```math
-a_{\rm s}=\tfrac12\operatorname{tr}\chi_{\rm slow},\qquad
-a_{\rm f}=\tfrac12\operatorname{tr}\chi_{\rm fast}.
+a_{\rm s}=\tfrac12\,\mathrm{tr}\,\chi_{\rm slow},\qquad
+a_{\rm f}=\tfrac12\,\mathrm{tr}\,\chi_{\rm fast}.
 ```
 
-The physical target at intermediate speed remains $`\alpha(v)=\operatorname{tr}\chi(v)/2`$ and $`\beta(v)=(\chi_{21}(v)-\chi_{12}(v))/2`$.
+The physical target at intermediate speed remains $`\alpha(v)=\mathrm{tr}\,\chi(v)/2`$ and $`\beta(v)=(\chi_{21}(v)-\chi_{12}(v))/2`$.
 
 ## Fixed-schedule disk
 
@@ -151,7 +151,7 @@ The four-coordinate construction already in the repository has a single active n
 
 ```math
 A_0=\begin{pmatrix}hI&bI\\bI&gI\end{pmatrix},\qquad
-D_0=\operatorname{diag}(0,-\gamma_yJ).
+D_0=\mathrm{diag}(0,-\gamma_yJ).
 ```
 
 In this finite reduction the operator is $`A_0+\Omega D_0`$, where $`\Omega`$ is the coupling angular frequency. The force lies in $`\ker D_0`$. The active value is $`\lambda_* =\gamma_y h/(mM)`$, the slow endpoint is $`g/(mM)`$, and the fast endpoint is $`1/h`$. Thus its response traces the circle exactly. In the period-one phase convention used above, $`\Omega=2\pi v`$ and the active spectral value is multiplied by $`2\pi`$; the product of rate and spectral value is unchanged. This is a modal explanation of the existing equality construction, not an additional device or an optimality claim based on fitting a one-pole curve.
@@ -161,13 +161,13 @@ In this finite reduction the operator is $`A_0+\Omega D_0`$, where $`\Omega`$ is
 Taking the Hermitian part gives
 
 ```math
-\operatorname{Herm}(I+ivT)^{-1}=(I+v^2T^2)^{-1}.
+\mathrm{Herm}(I+ivT)^{-1}=(I+v^2T^2)^{-1}.
 ```
 
 It decreases in the positive-operator order as $`v`$ increases. Projecting back to the physical force/displacement ports gives, for $`0<v_1<v_2`$,
 
 ```math
-\operatorname{Sym}\chi(v_1)\succeq\operatorname{Sym}\chi(v_2),
+\mathrm{Sym}\,\chi(v_1)\succeq\,\mathrm{Sym}\,\chi(v_2),
 ```
 
 and in particular $`\alpha(v)`$ is nonincreasing. This is the same positive/skew mechanism behind the symmetric-resolvent comparison in [P2, Lemma 3 and Theorem 4], specialized to changing the speed of a fixed stiffness schedule. It is not claimed as a new general monotonicity theorem.

@@ -41,7 +41,7 @@ A bar denotes a normalized average over one period after transients. Define
 ```
 
 ```math
-\alpha=\tfrac12\operatorname{tr}\chi,\qquad
+\alpha=\tfrac12\,\mathrm{tr}\,\chi,\qquad
 \beta=\tfrac12(\chi_{21}-\chi_{12}).
 ```
 
@@ -52,11 +52,11 @@ The target is $`|\beta|`$: absolute antisymmetric steady-force compliance. It is
 Define scalars
 
 ```math
-h=\tfrac12\overline{\operatorname{tr}(P^TKP)},
+h=\tfrac12\overline{\mathrm{tr}(P^TKP)},
 ```
 
 ```math
-j=\tfrac12\overline{\operatorname{tr}(P^TK^{-1}P)}.
+j=\tfrac12\overline{\mathrm{tr}(P^TK^{-1}P)}.
 ```
 
 The inverse in $`j`$ is the inverse of the **full** stiffness. It allows hidden displacement in the frozen static problem. It is neither the inverse of the measured stiffness block nor the inverse of the final mean response.
