@@ -11,3 +11,26 @@ The consolidated runner executed ten diagnostic groups and matched the fixed ben
 Source records for the close effective-response comparison and selected physical precedents were checked through primary full HTML or abstracts, as distinguished in `docs/SOURCES.md`. This is not a completed assumption-precedent audit for every clause of the proposed guide/actuator model.
 
 No independent researcher reviewed this consolidation. Local and hosted check outcomes concern execution and consistency, not a novelty verdict or laboratory feasibility. GitHub Actions outcomes belong to their actual commit runs; this record does not predeclare a hosted run successful.
+
+## Full sanity audit — 30 September 2026
+
+Baseline: `9564df7`. Fresh internal reviews re-derived the force projection and equality conditions, the unbounded operator normalization, the clamped rank and work results, the normalized-response bounds, the spring tangent construction, the scalar small-mass limit, and the capacitive leakage obstruction. No blocking mathematical error was found within the stated assumptions. Source attribution and scope were checked for consistency. This was an internal assistant audit, not external peer review or formal proof verification.
+
+The audit found three maintained diagnostic entry points that could overwrite `checks/reference.json` when explicitly given that output path. The operator, port-work, and scale-free scripts now reject it before running checks. Existing one-hidden-coordinate clamped cases now also assert the half-ceiling consequence; no new sweep or benchmark was added.
+
+Documentation now makes the operator domain and infinite-speed endpoint precise, restates the damping assumption for the architecture-specific finite-rate work law, distinguishes the two coordinate minima, and replaces stale attribution caveats with the established operator connection. The documentation-check description now accurately limits what it verifies automatically.
+
+| Validation | Result |
+|---|---|
+| Main eleven-group suite and stored benchmark | Passed |
+| Port-work and scale-free companion suites | All five groups in each passed, including the added rank-bound assertion |
+| Scalar finite-mass companion | All four existing cases passed |
+| Capacitive-shunt companion | All four groups passed |
+| Standalone operator comparison | Passed; also included in the main suite |
+| Six maintained CLI safeguards | All rejected both `-O` and `-OO`; all rejected the protected output path before scientific execution |
+| Documentation, whitespace, source hashes, and license | Passed |
+| Installed dependency consistency | `pip check` passed |
+
+The local environment was Python 3.12.14, NumPy 2.3.5, SciPy 1.17.0. The reference SHA-256 remained `0b214e9c14ca6b27a38c721f8a97abe3b9fdad40857d21115cabf5292303601f`; the two original scientific modules and license were unchanged.
+
+The [research conclusion](../docs/RESEARCH_STATUS.md) remains readiness for a focused ideal-theory manuscript. The audit does not certify a complete apparatus, a new broad nonreciprocity mechanism, exhaustive priority, or a publication outcome. The fixed-leakage circuit result remains negative. Hosted workflow outcomes belong to the merged change's actual run and are separate from this local record.

@@ -100,7 +100,7 @@ $$
 \beta=\frac{b^2\nu}{D^2+h^2\nu^2}.
 $$
 
-Its largest magnitude is $b^2/(2hD)$ at $|\nu|=D/h$. Choosing $h=\sqrt D$ attains $B_*$. For fixed $h$, varying $\nu$ traces the disk boundary with endpoints $1/h$ and $g/D$. For a nonzero boundary point of the outer envelope, take the maximizing $h$ above and
+Its largest magnitude is $b^2/(2hD)$ at $|\nu|=D/h$. Choosing $h=\sqrt D$ attains $B_*$. For fixed $h$, varying $\nu$ traces the disk boundary: $g/D$ occurs at $\nu=0$, while $1/h$ is approached as $|\nu|\to\infty$. For a nonzero boundary point of the outer envelope, take the maximizing $h$ above and
 
 $$
 \nu=\frac{D\beta}{h(\alpha-1/h)}.

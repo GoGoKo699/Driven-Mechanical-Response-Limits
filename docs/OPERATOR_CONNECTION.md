@@ -96,7 +96,7 @@ $$
 T=-iA^{-1/2}DA^{-1/2},\qquad q=A^{-1/2}f.
 $$
 
-The domain of $T$ is the set of vectors for which $A^{-1/2}q$ lies in periodic $H^1$. Bounded invertibility of $A^{-1/2}$ makes this a selfadjoint congruence of $-iD$; no differentiability of a piecewise stiffness square root is assumed. This domain qualification is important: $T$ need not be a bounded matrix or bounded operator.
+The domain of $T$ consists of vectors $\psi$ for which $A^{-1/2}\psi$ lies in periodic $H^1$. Bounded invertibility of $A^{-1/2}$ makes this a selfadjoint congruence of $-iD$; no differentiability of a piecewise stiffness square root is assumed. The forcing vector $q$ only needs to belong to $L^2$ for the resolvent below to act on it. This domain qualification is important: $T$ need not be a bounded matrix or bounded operator.
 
 The measured complex scalar is exactly
 

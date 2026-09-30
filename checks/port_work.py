@@ -125,6 +125,8 @@ def test_universal_clamp_bound():
                 slack = (alpha-s)*(f-alpha)-kappa*kappa
                 require(slack >= -3e-9, 'Clamped response disk')
                 require(abs(kappa) <= cap+2e-10, 'Global clamped ceiling')
+                if hidden == 1:
+                    require(abs(kappa) <= cap/2+2e-10, 'One-hidden-coordinate half-ceiling')
                 reverse = stepped_clamp(Ks[::-1], fractions[::-1], damping, speed)
                 near(reverse, G.T, 'Clamped schedule reversal', 2e-8)
                 rows.append(dict(hidden=hidden, speed=speed, even=float(alpha), odd=kappa,
@@ -293,6 +295,9 @@ def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--output',type=Path,default=Path('port-work.local.json'))
     args=ap.parse_args()
+    reference = Path(__file__).resolve().parent/'reference.json'
+    if args.output.resolve() == reference.resolve():
+        ap.error('The stored reference file cannot be overwritten by this diagnostic')
     groups={}
     for name,fn in [('clamped_bound',test_universal_clamp_bound),
                     ('sharpness_and_allocation',test_attainment_and_budget),

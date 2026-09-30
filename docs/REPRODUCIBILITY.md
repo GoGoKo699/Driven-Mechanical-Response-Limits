@@ -22,6 +22,8 @@ On Windows, activate the virtual environment with its platform-specific activati
 
 The runner calls eleven named diagnostic groups, then compares independently recomputed benchmark values with [reference.json](../checks/reference.json). It does not refresh that reference file. Assertions must be enabled: running with Python's `-O` flag is rejected. Numerical-library roundoff can change the last digits; comparisons use explicit tolerances rather than byte equality across environments.
 
+The runner, standalone operator comparison, and four companion diagnostics reject an output path resolving to the stored reference file before running their checks. Their assertions-disabled guards also reject `-OO`.
+
 ## Claim map
 
 | Scientific claim | Analytic location | Executed diagnostic |
@@ -37,7 +39,7 @@ The runner calls eleven named diagnostic groups, then compares independently rec
 | Coefficient-error guarantee | [Energy estimate](PROOF.md#coefficient-errors) | `calibration_error`: specified unequal spring offsets versus the conservative bound |
 | Fixed-schedule endpoint disk and operator relationship | [Operator connection](OPERATOR_CONNECTION.md) | `operator_connection`: four subgroups for resolvent reconstruction, phase-speed sweeps, equality, and excluded controls |
 | Clamped ceiling and work account | [Clamped proof and cycles](PORT_WORK.md) | `port_work.py`: exact clamped maps, allocation, laboratory work ledger, finite-rate cycles, reversal controls |
-| Four-coordinate clamped minimum | [Pointwise rank and trace proof](PORT_WORK.md#four-coordinates-are-necessary-for-clamped-attainment) | Analytic consequence; existing four-coordinate equality check supplies sufficiency. No numerical enumeration is used. |
+| Four-coordinate clamped minimum | [Pointwise rank and trace proof](PORT_WORK.md#four-coordinates-are-necessary-for-clamped-attainment) | Existing one-hidden-coordinate stepped cases check the half-ceiling; the four-coordinate equality check supplies sufficiency. The necessity statement is analytic, not a numerical enumeration. |
 | Full matrix asymmetry and inverse-pair product | [Numerical-range and sector proofs](SCALE_FREE_RESPONSE.md) | `scale_free.py`: five groups for general matrices, equality, loads, scope, and spring synthesis |
 | Small-mass persistence of the same construction | [Stability and exact error](PHYSICAL_VALIDITY.md#a-controlled-small-mass-limit) | `finite_mass.py`: four laboratory integrations, two unit forces each, off-orbit Lyapunov identity, equal-spectrum control |
 | Connecting-spring tuning requirement | [Exact extrema](PHYSICAL_VALIDITY.md#the-existing-spring-schedule-requires-a-large-tuning-range) | Algebraic extrema of the existing synthesis; no new simulation |
@@ -54,7 +56,7 @@ The finite-length outputs can slightly exceed the tangent ceiling because their 
 
 ## Documentation validation
 
-[check_docs.py](../checks/check_docs.py) verifies relative destinations, Markdown section anchors, math-fence balance, supported short display syntax, and preserved script/license hashes. It also checks that the benchmark quoted in the README and results remains tied to the stored reference.
+[check_docs.py](../checks/check_docs.py) verifies relative destinations, Markdown section anchors, math-fence balance, supported short display syntax, and preserved script/license hashes. It also checks the stored reference ceiling against its recorded value. Agreement of numerical values quoted in the prose is reviewed separately; this script does not parse and verify every such quotation.
 
 This is a source and consistency check, not a guarantee of GitHub's live mathematical rendering. Displays are intentionally short; no equation tags or TeX document wrappers are used. Automated workflow results must be read separately from local execution records.
 

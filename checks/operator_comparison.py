@@ -235,6 +235,9 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--output',type=Path,default=Path('operator-results.local.json'))
     args=p.parse_args()
+    reference=Path(__file__).resolve().parent/'reference.json'
+    if args.output.resolve()==reference.resolve():
+        p.error('The stored reference file cannot be overwritten by this diagnostic')
     result=run_all()
     args.output.write_text(json.dumps(result,indent=2,allow_nan=False)+'\n')
     print('PASS operator comparison:',result['cases'],'finite diagnostic cases')
