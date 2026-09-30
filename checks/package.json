@@ -1,0 +1,17 @@
+{
+  "name": "mechanics-documentation-checks",
+  "private": true,
+  "scripts": {
+    "check": "node check_math.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "marked": "17.0.5",
+    "mathjax-full": "3.2.2"
+  },
+  "overrides": {
+    "@xmldom/xmldom": "0.9.12"
+  }
+}
