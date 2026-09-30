@@ -1,32 +1,32 @@
 # Scientific background for the focused theory paper
 
-[Home](../README.md) · [Tutorial options](TUTORIAL_OPTIONS.md) · [Source register](SOURCES.md) · [Research status](RESEARCH_STATUS.md)
+[Home](../README.md) · [Tutorial bridge](TUTORIAL.md) · [Selected review](TUTORIAL_OPTIONS.md) · [Source register](SOURCES.md)
 
 This is a research and citation guide, not manuscript text. It consolidates the background needed for the current ideal-theory claim, separates established ingredients from the local result, and records the explanations a reader still needs. The canonical statements remain [Model](MODEL.md), [Results](RESULTS.md), [Proof](PROOF.md), and the linked companion derivations. Access and comparisons were checked on 30 September 2026.
 
 ## 1. Begin with the measurement, not with a general claim of nonreciprocity
 
-In a static reciprocal linear network, the energy is $U=q^TKq/2$ with $K=K^T\succ0$. With normalized conjugate ports $P$ and a constant applied force $PF$,
+In a static reciprocal linear network, the energy is $`U=q^TKq/2`$ with $`K=K^T\succ0`$. With normalized conjugate ports $`P`$ and a constant applied force $`PF`$,
 
-$$
+```math
 \chi_{\rm static}=P^TK^{-1}P=\chi_{\rm static}^T.
-$$
+```
 
-In coordinates split into measured and hidden parts, write the static stiffness as blocks $A,B,B^T,C$. Eliminating the hidden coordinates gives
+In coordinates split into measured and hidden parts, write the static stiffness as blocks $`A,B,B^T,C`$. Eliminating the hidden coordinates gives
 
-$$
+```math
 G_{\rm static}=A-BC^{-1}B^T=\chi_{\rm static}^{-1}.
-$$
+```
 
 These elementary identities express static linear reciprocity and explain why ordinary hidden-coordinate elimination alone cannot generate an odd static response. Coulais, Sounas, and Alù's nonlinear static metamaterial work provides a useful contrast: its leading linear terms are reciprocal, while finite-force asymmetry relies on geometric nonlinearity ([R14](SOURCES.md#r14--static-nonreciprocity-through-geometric-nonlinearity)). Neither that result nor wave isolation is the observable optimized here.
 
-Our constant probe acts while stiffness modulation continues. The periodic state can have internal motion even when measured coordinates are stationary. Its mean force compliance $\chi$ and the mean stiffness $G$ measured with coordinates held fixed are different experiments. In general $G\ne\chi^{-1}$; the attaining family has the extra stationary-output property that makes equality and static-load composition exact. This distinction must be taught locally, rather than inferred from a generic effective-medium analogy.
+Our constant probe acts while stiffness modulation continues. The periodic state can have internal motion even when measured coordinates are stationary. Its mean force compliance $`\chi`$ and the mean stiffness $`G`$ measured with coordinates held fixed are different experiments. In general $`G\ne\chi^{-1}`$; the attaining family has the extra stationary-output property that makes equality and static-load composition exact. This distinction must be taught locally, rather than inferred from a generic effective-medium analogy.
 
 ## 2. Odd elasticity supplies the physical context and work language
 
-The recommended single review is [Fruchart–Scheibner–Vitelli](TUTORIAL_OPTIONS.md#1-fruchart-scheibner-and-vitelli--recommended-physics-anchor). The original Scheibner paper and Chen's active architecture establish odd constitutive response and deformation-cycle work ([W1–W2](PORT_WORK.md#6-comparison-with-actual-odd-elastic-architectures)). These precedents prevent claims to invent odd elasticity, its area law, or an operating odd element.
+The selected single review is [Fruchart–Scheibner–Vitelli](TUTORIAL_OPTIONS.md#1-fruchart-scheibner-and-vitelli--selected-physics-anchor). The original Scheibner paper and Chen's active architecture establish odd constitutive response and deformation-cycle work ([W1–W2](PORT_WORK.md#6-comparison-with-actual-odd-elastic-architectures)). These precedents prevent claims to invent odd elasticity, its area law, or an operating odd element.
 
-For the two conjugate displacement ports, our convention is $G=\operatorname{Sym}G-\kappa J$, with $J_{12}=-1$. The existing work note derives delivered quasistatic work $W_{\rm qs}=2\kappa\mathcal A$ for signed loop area $\mathcal A$. The scientific addition is the sharp constraint on $\kappa$ within the declared whole-network stiffness budget and its admissible attainment. A nonsymmetric compliance alone does not establish this work law for a differently constrained experiment.
+For the two conjugate displacement ports, our convention is $`G=\operatorname{Sym}G-\kappa J`$, with $`J_{12}=-1`$. The existing work note derives delivered quasistatic work $`W_{\rm qs}=2\kappa\mathcal A`$ for signed loop area $`\mathcal A`$. The scientific addition is the sharp constraint on $`\kappa`$ within the declared whole-network stiffness budget and its admissible attainment. A nonsymmetric compliance alone does not establish this work law for a differently constrained experiment.
 
 Driven mean odd response also precedes this project. Huang and collaborators' granular model, Lin and collaborators' driven dissipative-coordinate model, and Rahimi–Park's passive-component driven architecture are compared at the equation level in [SOURCES](SOURCES.md#focused-paper-level-comparison), [PORT_WORK](PORT_WORK.md#6-comparison-with-actual-odd-elastic-architectures), and [SCALE_FREE_RESPONSE](SCALE_FREE_RESPONSE.md). Their existence rules out broad first-mechanism claims. Their differing constitutive assumptions do not by themselves prove our narrower priority; the comparison concerns the complete constrained optimum and equality family.
 
@@ -47,9 +47,9 @@ The local result combines those tools with a four-coordinate reciprocal equality
 
 For differentiable prescribed stiffness, the model directly gives
 
-$$
+```math
 \dot U=(PF)^T\dot q-\dot q^T\Gamma\dot q+\tfrac12q^T\dot Kq.
-$$
+```
 
 The last term is stiffness-control power supplied to the mechanical system; it follows by differentiating the energy, not by assigning a passive label to the springs. Piecewise control requires the corresponding energy jumps. This mechanical account does not model controller losses.
 
@@ -67,7 +67,7 @@ The [physical-validity note](PHYSICAL_VALIDITY.md) separates the tangent spring 
 
 | Purpose | Use |
 |---|---|
-| One external learning anchor | Choose one of [the three tutorial options](TUTORIAL_OPTIONS.md); the physics review is recommended |
+| One external learning anchor | The selected [Fruchart–Scheibner–Vitelli review](TUTORIAL_OPTIONS.md), followed by the [local tutorial bridge](TUTORIAL.md) |
 | Introduce reciprocity and odd elastic work | The review, Scheibner, and the exact constitutive comparisons above; Coulais if contrasting nonlinear static response |
 | Attribute the proof ingredients | Moslehian–Nakamoto–Seo, Pavliotis, and Duncan–Lelièvre–Pavliotis at the relevant mathematical steps |
 | Position the proposed contribution | Closest driven/hidden-variable mechanisms and the full resource-matched equality comparison |
@@ -76,4 +76,4 @@ The [physical-validity note](PHYSICAL_VALIDITY.md) separates the tangent spring 
 
 The [curated bibliography](../references.bib) provides reusable records for these central comparisons and tutorial candidates. It is not an instruction to cite every entry: the full linked source registers include additional supporting and contextual records. Strang's complete text was not inspected; peripheral abstract-only access limitations remain explicitly labeled in their original notes. The central Scheibner and Fodor–Souslov access gaps have been closed with full primary texts.
 
-At the present narrow theory scope, the necessary background is assembled and the remaining task is pedagogical integration after choosing an anchor, followed by manuscript preparation. This is a bounded literature assessment, not an exhaustive priority guarantee. No new theorem, research campaign, apparatus certification, or manuscript is introduced by this guide.
+At the present narrow theory scope, the necessary background is assembled and the selected review is connected to the results through the local tutorial and documentation map. Manuscript preparation remains a later stage. This is a bounded literature assessment, not an exhaustive priority guarantee. No new theorem, research campaign, apparatus certification, or manuscript is introduced by this guide.

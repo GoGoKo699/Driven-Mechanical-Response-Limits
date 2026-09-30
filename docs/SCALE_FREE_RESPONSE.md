@@ -8,130 +8,130 @@ The additional mechanical result is a sharp stiffness-contrast bound on that ind
 
 ## 1. The common quantity
 
-For a real two-by-two response matrix $Q$, let
+For a real two-by-two response matrix $`Q`$, let
 
-$$
+```math
 S_Q=(Q+Q^T)/2,\qquad A_Q=(Q-Q^T)/2.
-$$
+```
 
 The symmetric part of either response considered here is positive definite. Define
 
-$$
+```math
 \mathfrak a(Q)=\left\|S_Q^{-1/2}A_QS_Q^{-1/2}\right\|_2.
-$$
+```
 
-Equivalently, it is the least $s\geq0$ such that $sS_Q+iA_Q$ is positive semidefinite. This is the convention of Brandner and Seifert [N1, Eq. (15)], specialized to a positive-definite symmetric part. In two dimensions,
+Equivalently, it is the least $`s\geq0`$ such that $`sS_Q+iA_Q`$ is positive semidefinite. This is the convention of Brandner and Seifert [N1, Eq. (15)], specialized to a positive-definite symmetric part. In two dimensions,
 
-$$
+```math
 \mathfrak a(Q)=\frac{|Q_{21}-Q_{12}|}{2\sqrt{\det S_Q}}.
-$$
+```
 
 It is zero exactly when the response is reciprocal. It can exceed one in other resource regimes; it is not a probability, an efficiency, a transmission isolation ratio, or a universal measure of every nonreciprocal phenomenon.
 
-For an isotropic symmetric response, $Q=aI+bJ$, it reduces to $|b|/a$. For an anisotropic response, replacing the denominator by half the trace would change the measure and generally underestimate it.
+For an isotropic symmetric response, $`Q=aI+bJ`$, it reduces to $`|b|/a`$. For an anisotropic response, replacing the denominator by half the trace would change the measure and generally underestimate it.
 
 Real invertible congruence preserves the index:
 
-$$
+```math
 \mathfrak a(TQT^T)=\mathfrak a(Q).
-$$
+```
 
 This is the transformation relevant to paired force/displacement changes that preserve power. Changing units or adding an ideal reciprocal coordinate transformer therefore does not inflate this index. The stiffness eigenvalue budget must still be specified in the original physical coordinate normalization.
 
 Inversion also preserves the index:
 
-$$
+```math
 \mathfrak a(Q^{-1})=\mathfrak a(Q).
-$$
+```
 
-One proof uses $S_{Q^{-1}}=Q^{-T}S_QQ^{-1}$ and $A_{Q^{-1}}=-Q^{-T}A_QQ^{-1}$, with the congruence definition. These algebraic properties are not new physics. In particular, they do **not** imply that two different physical experiments produce inverse matrices.
+One proof uses $`S_{Q^{-1}}=Q^{-T}S_QQ^{-1}`$ and $`A_{Q^{-1}}=-Q^{-T}A_QQ^{-1}`$, with the congruence definition. These algebraic properties are not new physics. In particular, they do **not** imply that two different physical experiments produce inverse matrices.
 
 ## 2. Sharp bound for either experiment
 
-Keep the complete stiffness interval and all other assumptions of the [model](MODEL.md): $0<mI\preceq K(t)\preceq MI$, fixed conjugate ports, constant positive symmetric damping, prescribed periodic stiffness, and a fixed equilibrium. The two matrices are the force-controlled mean compliance $\chi$ and the independently defined clamped mean reaction $G$.
+Keep the complete stiffness interval and all other assumptions of the [model](MODEL.md): $`0<mI\preceq K(t)\preceq MI`$, fixed conjugate ports, constant positive symmetric damping, prescribed periodic stiffness, and a fixed equilibrium. The two matrices are the force-controlled mean compliance $`\chi`$ and the independently defined clamped mean reaction $`G`$.
 
 Put
 
-$$
+```math
 k=(m+M)/2,\qquad D=mM.
-$$
+```
 
 Then
 
-$$
+```math
 \boxed{\mathfrak a(\chi),\ \mathfrak a(G)\ \leq\mathfrak a_*},
-$$
+```
 
-$$
+```math
 \mathfrak a_*=\frac{(M-m)^2}{4(M+m)\sqrt{mM}}.
-$$
+```
 
-The bound depends only on the contrast $M/m$, not on the common stiffness scale, waveform, internal dimension, or traversal rate. As before, a suitable four-coordinate family attains it; attainment for each separately fixed damping tensor or topology is not asserted.
+The bound depends only on the contrast $`M/m`$, not on the common stiffness scale, waveform, internal dimension, or traversal rate. As before, a suitable four-coordinate family attains it; attainment for each separately fixed damping tensor or topology is not asserted.
 
-This bound covers anisotropic measured response. It is stronger than simply maximizing $|\beta|/\alpha$ for the isotropic example. No assumption $G=\chi^{-1}$ is needed to bound the two experiments separately.
+This bound covers anisotropic measured response. It is stronger than simply maximizing $`|\beta|/\alpha`$ for the isotropic example. No assumption $`G=\chi^{-1}`$ is needed to bound the two experiments separately.
 
 ### Full numerical-range proof for force response
 
-Take any complex unit vector $e\in\mathbb C^2$ and use $f=Pe$. The [weighted projection proof](PROOF.md#weighted-projection) uses only $\|f\|=1$, not the special choice $f=(p_1+ip_2)/\sqrt2$. Write $z=e^\dagger\chi e=x+iy$ and
+Take any complex unit vector $`e\in\mathbb C^2`$ and use $`f=Pe`$. The [weighted projection proof](PROOF.md#weighted-projection) uses only $`\|f\|=1`$, not the special choice $`f=(p_1+ip_2)/\sqrt2`$. Write $`z=e^\dagger\chi e=x+iy`$ and
 
-$$
+```math
 h=\overline{f^\dagger Kf},\qquad j=\overline{f^\dagger K^{-1}f}.
-$$
+```
 
-It gives $y^2\leq(x-1/h)(j-x)$, while $j\leq(m+M-h)/D$. Maximizing over $h$ gives
+It gives $`y^2\leq(x-1/h)(j-x)`$, while $`j\leq(m+M-h)/D`$. Maximizing over $`h`$ gives
 
-$$
+```math
 D|z|^2-(m+M)x+2\sqrt D\,|y|+1\leq0.
-$$
+```
 
-Thus the complete numerical range, not just its center and vertical endpoint, lies in the same spectral lens already derived for one force combination. The symmetric part is positive because $x\geq1/h>0$ for every $e$.
+Thus the complete numerical range, not just its center and vertical endpoint, lies in the same spectral lens already derived for one force combination. The symmetric part is positive because $`x\geq1/h>0`$ for every $`e`$.
 
 ### Corresponding clamped proof
 
-Partition $K$ into measured block $A$, coupling $B$, and hidden block $C$ as in [the clamped note](PORT_WORK.md). Fix an arbitrary complex unit measured displacement $e$ and write $z=e^\dagger Ge=x+iy$. The existing projection argument gives
+Partition $`K`$ into measured block $`A`$, coupling $`B`$, and hidden block $`C`$ as in [the clamped note](PORT_WORK.md). Fix an arbitrary complex unit measured displacement $`e`$ and write $`z=e^\dagger Ge=x+iy`$. The existing projection argument gives
 
-$$
+```math
 y^2\leq(x-s)(h-x),\qquad h=\overline{e^\dagger Ae},
-$$
+```
 
-where $s=\overline{e^\dagger(A-BC^{-1}B^T)e}$. We have used the weaker fast endpoint $h$; the actual fast endpoint can be smaller.
+where $`s=\overline{e^\dagger(A-BC^{-1}B^T)e}`$. We have used the weaker fast endpoint $`h`$; the actual fast endpoint can be smaller.
 
-Let $S=A-BC^{-1}B^T$. The inverse chord bound on the full $K$ implies
+Let $`S=A-BC^{-1}B^T`$. The inverse chord bound on the full $`K`$ implies
 
-$$
+```math
 S^{-1}\preceq\frac{(m+M)I-A}{D}.
-$$
+```
 
 Inverse order, scalar Cauchy–Schwarz, and convexity under time averaging yield
 
-$$
+```math
 s\geq\frac{D}{m+M-h}.
-$$
+```
 
-Maximizing $(x-D/(m+M-h))(h-x)$ over $h$ gives
+Maximizing $`(x-D/(m+M-h))(h-x)`$ over $`h`$ gives
 
-$$
+```math
 |z|^2-(m+M)x+2\sqrt D\,|y|+D\leq0.
-$$
+```
 
-No internal coordinates gives $G=\overline A$ and zero asymmetry directly. Damping cross-blocks do not spoil the clamped mean because their derivative contribution averages to zero. The positive symmetric part follows also from the full averaged elastic energy with a nonzero imposed displacement.
+No internal coordinates gives $`G=\overline A`$ and zero asymmetry directly. Damping cross-blocks do not spoil the clamped mean because their derivative contribution averages to zero. The positive symmetric part follows also from the full averaged elastic energy with a nonzero imposed displacement.
 
 ### One sector for both lenses
 
-Normalize the force scalar by $w=\sqrt D\,z$ and the clamped scalar by $w=z/\sqrt D$. Both inequalities become
+Normalize the force scalar by $`w=\sqrt D\,z`$ and the clamped scalar by $`w=z/\sqrt D`$. Both inequalities become
 
-$$
+```math
 |w|^2-2\xi\operatorname{Re}w+2|\operatorname{Im}w|+1\leq0,
 \qquad \xi=\frac{k}{\sqrt D}.
-$$
+```
 
-For $t=|\operatorname{Im}w|/\operatorname{Re}w$, existence of a positive real part requires
+For $`t=|\operatorname{Im}w|/\operatorname{Re}w`$, existence of a positive real part requires
 
-$$
+```math
 (\xi-t)^2\geq1+t^2.
-$$
+```
 
-Therefore $t\leq(\xi^2-1)/(2\xi)=\mathfrak a_*$. Holding for every complex $e$, this is precisely the matrix inequality $\mathfrak a_*S_Q\pm iA_Q\succeq0$, proving the claimed index bound.
+Therefore $`t\leq(\xi^2-1)/(2\xi)=\mathfrak a_*`$. Holding for every complex $`e`$, this is precisely the matrix inequality $`\mathfrak a_*S_Q\pm iA_Q\succeq0`$, proving the claimed index bound.
 
 These are ordinary numerical-range and sector arguments. The result should be treated as a sharpened interpretation of the existing mechanical theorem, not as a new general theory of matrix asymmetry.
 
@@ -139,26 +139,26 @@ These are ordinary numerical-range and sector arguments. The result should be tr
 
 In the existing rotating-coupling family choose
 
-$$
+```math
 h=g=k,\qquad b=(M-m)/2,\qquad \gamma_y\Omega=\sqrt D.
-$$
+```
 
-All instantaneous stiffness eigenvalues remain $(m,m,M,M)$. The measured coordinates remain stationary under every constant force. Direct elimination gives
+All instantaneous stiffness eigenvalues remain $`(m,m,M,M)`$. The measured coordinates remain stationary under every constant force. Direct elimination gives
 
-$$
+```math
 \chi=\alpha I+\beta J,
-$$
+```
 
-$$
+```math
 \alpha=\frac{2k}{k^2+D},\qquad
 \beta=\frac{k^2-D}{\sqrt D(k^2+D)}.
-$$
+```
 
-Thus $\beta/\alpha=\mathfrak a_*$, $\det\chi=1/D$, and $G=\chi^{-1}$ attains the same index. The original two dimensional objectives are not changed.
+Thus $`\beta/\alpha=\mathfrak a_*`$, $`\det\chi=1/D`$, and $`G=\chi^{-1}`$ attains the same index. The original two dimensional objectives are not changed.
 
-For the worked spectrum $(1,1,3,3)k_0$ and the same modulation rate, compare:
+For the worked spectrum $`(1,1,3,3)k_0`$ and the same modulation rate, compare:
 
-| Allocation | $k_0\beta$ | $\kappa/k_0$ | Common index when $G=\chi^{-1}$ |
+| Allocation | $`k_0\beta`$ | $`\kappa/k_0`$ | Common index when $`G=\chi^{-1}`$ |
 |---|---:|---:|---:|
 | Cross-displacement optimum | 0.089316397 | 0.197418394 | 0.133974596 |
 | Balanced | 0.082478610 | 0.247435830 | **0.144337567** |
@@ -166,71 +166,71 @@ For the worked spectrum $(1,1,3,3)k_0$ and the same modulation rate, compare:
 
 There is no claim that the balanced device is better for every application. It maximizes relative asymmetry rather than either absolute cross coefficient. It is not an efficiency optimization.
 
-At this contrast the existing twelve-spring geometry remains strictly positive. With the existing smoothing choice $\eta=0.1$, all four fixed support coefficients equal $0.3k_0$ and the eight connecting coefficients range from $0.1k_0$ to $2.1k_0$. The guide, actuator, and damping idealizations are unchanged. The same layout is not claimed feasible for arbitrary contrast.
+At this contrast the existing twelve-spring geometry remains strictly positive. With the existing smoothing choice $`\eta=0.1`$, all four fixed support coefficients equal $`0.3k_0`$ and the eight connecting coefficients range from $`0.1k_0`$ to $`2.1k_0`$. The guide, actuator, and damping idealizations are unchanged. The same layout is not claimed feasible for arbitrary contrast.
 
 The force-only index bound can also be attained by the planar rotating example. This note does not prove a new minimum coordinate count for the index. The four-coordinate construction is useful because **one and the same device** attains both indices while its measured coordinates are stationary.
 
 ## 4. The absolute optima cannot both be reached by an inverse pair
 
-For a two-port device whose stationary measured outputs ensure $G=\chi^{-1}$, write $\chi=S+\beta J$. Since $\det\chi=\det S+\beta^2$,
+For a two-port device whose stationary measured outputs ensure $`G=\chi^{-1}`$, write $`\chi=S+\beta J`$. Since $`\det\chi=\det S+\beta^2`$,
 
-$$
+```math
 \beta\kappa=\frac{\mathfrak a(\chi)^2}{1+\mathfrak a(\chi)^2}.
-$$
+```
 
 Consequently,
 
-$$
+```math
 \boxed{\beta\kappa\leq
 \left(\frac{k^2-D}{k^2+D}\right)^2.}
-$$
+```
 
-The balanced allocation attains the product bound. At $m=k_0,M=3k_0$ it is $1/49\simeq0.0204082$. Multiplying the two separate absolute ceilings would instead give approximately $0.0239323$, which cannot be simultaneously attained by an inverse response pair.
+The balanced allocation attains the product bound. At $`m=k_0,M=3k_0`$ it is $`1/49\simeq0.0204082`$. Multiplying the two separate absolute ceilings would instead give approximately $`0.0239323`$, which cannot be simultaneously attained by an inverse response pair.
 
 This product statement must not be applied to arbitrary mean force and clamped measurements that are not inverses. The earlier rotating planar device remains a counterexample to identifying the experiments: it has a nonzero force-controlled antisymmetric response but a symmetric clamped reaction.
 
 ## 5. A reciprocal load can look perfectly directional
 
-For any positive-definite symmetric part and a static symmetric positive-semidefinite addition $L$,
+For any positive-definite symmetric part and a static symmetric positive-semidefinite addition $`L`$,
 
-$$
+```math
 \mathfrak a(Q+L)\leq\mathfrak a(Q).
-$$
+```
 
-Indeed, the skew part is unchanged and its quadratic form is normalized by a larger positive form. When a stationary-output device is loaded at the measured coordinates, $G_L=G+L$ and $\chi_L=G_L^{-1}$, so the normalized index cannot grow. This is a matrix property plus the exact static load law, not a general assertion for devices with port micromotion or altered internal loading.
+Indeed, the skew part is unchanged and its quadratic form is normalized by a larger positive form. When a stationary-output device is loaded at the measured coordinates, $`G_L=G+L`$ and $`\chi_L=G_L^{-1}`$, so the normalized index cannot grow. This is a matrix property plus the exact static load law, not a general assertion for devices with port micromotion or altered internal loading.
 
-Nevertheless, a directional **ratio** can become arbitrarily large. For the balanced $[k_0,3k_0]$ example,
+Nevertheless, a directional **ratio** can become arbitrarily large. For the balanced $`[k_0,3k_0]`$ example,
 
-$$
+```math
 G=k_0\begin{pmatrix}12/7&\sqrt3/7\\-\sqrt3/7&12/7\end{pmatrix}.
-$$
+```
 
 Attach one reciprocal difference-spring load
 
-$$
+```math
 L=\frac{\sqrt3k_0}{7}\begin{pmatrix}1&-1\\-1&1\end{pmatrix}.
-$$
+```
 
 It is positive semidefinite. The loaded result is
 
-$$
+```math
 k_0\chi_L\simeq
 \begin{pmatrix}0.509756343&0\\0.128593157&0.509756343\end{pmatrix}.
-$$
+```
 
-One exchanged cross-response vanishes, while the other remains nonzero. Yet the index falls from $0.144337567$ to $0.127147451$. This is cancellation between reciprocal and antisymmetric couplings, not an increase in normalized asymmetry. It is a zero-frequency directional response, not broadband isolation. Small load error destroys exact cancellation; no robustness of an infinite directional ratio is claimed.
+One exchanged cross-response vanishes, while the other remains nonzero. Yet the index falls from $`0.144337567`$ to $`0.127147451`$. This is cancellation between reciprocal and antisymmetric couplings, not an increase in normalized asymmetry. It is a zero-frequency directional response, not broadband isolation. Small load error destroys exact cancellation; no robustness of an infinite directional ratio is claimed.
 
-The load also changes the complete instantaneous stiffness interval to approximately $[1,3.277593337]k_0$. It is not an admissible way to claim an improvement at the unchanged $[1,3]k_0$ budget. Direct integration of the laboratory-frame forced equations verifies the loaded matrix from rest.
+The load also changes the complete instantaneous stiffness interval to approximately $`[1,3.277593337]k_0`$. It is not an admissible way to claim an improvement at the unchanged $`[1,3]k_0`$ budget. Direct integration of the laboratory-frame forced equations verifies the loaded matrix from rest.
 
 ## 6. A real predecessor exposes the physical boundary
 
 Lin et al. [N2] derive an overdamped particle above a driven rotating disk. Their small-displacement equation (12), with an added constant test force, has effective reaction
 
-$$
+```math
 G_{\rm disk}=kI-\frac{f\xi}{\zeta_s}J.
-$$
+```
 
-Here $f$ is the applied driving torque, and $\xi,\zeta_s$ are their friction coefficients. Its asymmetry index is $|f\xi|/(k\zeta_s)$ even though the ordinary confining springs are isotropic. Thus a ceiling inferred from the springs alone with $m=M=k$ would fail for that published device.
+Here $`f`$ is the applied driving torque, and $`\xi,\zeta_s`$ are their friction coefficients. Its asymmetry index is $`|f\xi|/(k\zeta_s)`$ even though the ordinary confining springs are isotropic. Thus a ceiling inferred from the springs alone with $`m=M=k`$ would fail for that published device.
 
 This is **not** a counterexample to our theorem. The rotating disk creates a drive-dependent viscous positional force. Before elimination, its dissipation matrix depends on the mechanical coordinates and its extra driven coordinate is not uniformly confined by a positive quadratic stiffness. It is not a prescribed, uniformly positive stiffness modulation with constant damping and fixed equilibrium on all accounted coordinates.
 

@@ -1,6 +1,8 @@
 # Why reciprocal springs can have a nonreciprocal driven response
 
-[Home](../README.md) · [Model](MODEL.md) · [Results](RESULTS.md)
+[Home](../README.md) · [Tutorial bridge](TUTORIAL.md) · [Model](MODEL.md) · [Results](RESULTS.md)
+
+This is the short physical introduction. The next step, [from odd elasticity to sharp mechanical limits](TUTORIAL.md), builds on the selected Fruchart–Scheibner–Vitelli review and connects these ideas to the equations.
 
 ## Two experiments, not one sideways motion
 
@@ -22,7 +24,7 @@ The internal motion dissipates energy against drag. The apparatus modulating the
 
 ## What is being optimized?
 
-All compliant coordinates are counted, not just the observed ones. At every time, all stiffness eigenvalues must remain in the same interval $[m,M]$. Coordinates and their conjugate forces are fixed; a rescaling or lever that changes the normalized stiffness is not a free improvement.
+All compliant coordinates are counted, not just the observed ones. At every time, all stiffness eigenvalues must remain in the same interval $`[m,M]`$. Coordinates and their conjugate forces are fixed; a rescaling or lever that changes the normalized stiffness is not a free improvement.
 
 The question is how large the absolute antisymmetric compliance can become, over all periods, schedules, and finite numbers of internal coordinates. The [ceiling](RESULTS.md#spectral-ceiling) answers it. Four coordinates attain it.
 
@@ -42,4 +44,4 @@ Complex numbers here combine two spatial experiments. Their imaginary part is no
 
 **Do positive physical spring constants permit any matrix coupling between parallel sliders?** No. Ordinary positive difference springs on parallel guides impose a positivity restriction. The proposed perpendicular guides and diagonal attachments supply the required generalized signs without negative physical springs.
 
-Continue with the [precise model](MODEL.md), then the [short proof](PROOF.md). No prior research project or particular textbook is a prerequisite for this repository.
+Continue with the [review-to-result tutorial](TUTORIAL.md), then the [precise model](MODEL.md) and [short proof](PROOF.md). The tutorial supplies the finite-dimensional bridge; the selected review is the single external physics anchor.

@@ -12,165 +12,165 @@ This is a theorem-level comparison of inspected sources, not an exhaustive prior
 
 ## A fixed schedule and its reciprocal endpoints
 
-Fix a real symmetric periodic path $\mathcal K(\theta)$, with phase period one and $mI\preceq\mathcal K\preceq MI$. Preserve its phase weights and change only its speed:
+Fix a real symmetric periodic path $`\mathcal K(\theta)`$, with phase period one and $`mI\preceq\mathcal K\preceq MI`$. Preserve its phase weights and change only its speed:
 
-$$
+```math
 K_v(t)=\mathcal K(vt),\qquad v>0.
-$$
+```
 
-Thus the physical period is $1/v$. The probe remains constant, and damping $\Gamma$ remains constant positive symmetric. A bar below denotes a phase average, independent of $v$. Ports are the same normalized conjugate pairs as in the [model](MODEL.md).
+Thus the physical period is $`1/v`$. The probe remains constant, and damping $`\Gamma`$ remains constant positive symmetric. A bar below denotes a phase average, independent of $`v`$. Ports are the same normalized conjugate pairs as in the [model](MODEL.md).
 
 Two reciprocal endpoint matrices are
 
-$$
+```math
 \chi_{\rm slow}=P^T\overline{\mathcal K^{-1}}P,
-$$
+```
 
-$$
+```math
 \chi_{\rm fast}=P^T(\overline{\mathcal K})^{-1}P.
-$$
+```
 
-For a fixed piecewise-continuous uniformly positive schedule they are the limiting mean responses as $v\to0$ and $v\to\infty$, respectively. The first lets the full network relax at each phase before averaging. The second averages the full stiffness before inversion. Neither uses the inverse of a two-by-two measured block in place of the full inverse.
+For a fixed piecewise-continuous uniformly positive schedule they are the limiting mean responses as $`v\to0`$ and $`v\to\infty`$, respectively. The first lets the full network relax at each phase before averaging. The second averages the full stiffness before inversion. Neither uses the inverse of a two-by-two measured block in place of the full inverse.
 
 Define their mean direct compliances
 
-$$
+```math
 a_{\rm s}=\tfrac12\operatorname{tr}\chi_{\rm slow},\qquad
 a_{\rm f}=\tfrac12\operatorname{tr}\chi_{\rm fast}.
-$$
+```
 
-The physical target at intermediate speed remains $\alpha(v)=\operatorname{tr}\chi(v)/2$ and $\beta(v)=(\chi_{21}(v)-\chi_{12}(v))/2$.
+The physical target at intermediate speed remains $`\alpha(v)=\operatorname{tr}\chi(v)/2`$ and $`\beta(v)=(\chi_{21}(v)-\chi_{12}(v))/2`$.
 
 ## Fixed-schedule disk
 
 For every positive finite speed,
 
-$$
+```math
 \boxed{\beta(v)^2\leq[\alpha(v)-a_{\rm f}][a_{\rm s}-\alpha(v)].}
-$$
+```
 
 In particular,
 
-$$
+```math
 |\beta(v)|\leq\frac{a_{\rm s}-a_{\rm f}}2.
-$$
+```
 
-The right endpoint is $a_{\rm s}=j$ from the original proof. The left endpoint obeys $a_{\rm f}\geq1/h$, so the new disk is never weaker and can be strictly smaller for a specified path. The difference between the two endpoint compliances is a response budget, not a promise that a particular path uses it nonreciprocally.
+The right endpoint is $`a_{\rm s}=j`$ from the original proof. The left endpoint obeys $`a_{\rm f}\geq1/h`$, so the new disk is never weaker and can be strictly smaller for a specified path. The difference between the two endpoint compliances is a response budget, not a promise that a particular path uses it nonreciprocally.
 
-For example, a static anisotropic stiffness has equal slow and fast responses and hence zero budget. Its old scalar-$h$ disk may have nonzero width: that larger disk was a bound over fewer specified details, not a false prediction of static nonreciprocity.
+For example, a static anisotropic stiffness has equal slow and fast responses and hence zero budget. Its old scalar-$`h`$ disk may have nonzero width: that larger disk was a bound over fewer specified details, not a false prediction of static nonreciprocity.
 
 ### Proof by projection onto all constant displacements
 
-Let $f=(p_1+ip_2)/\sqrt2$ and let $u(\theta)$ solve
+Let $`f=(p_1+ip_2)/\sqrt2`$ and let $`u(\theta)`$ solve
 
-$$
+```math
 v\Gamma u'+\mathcal Ku=f.
-$$
+```
 
-Use the phase-averaged inner product $\langle a,b\rangle_{\mathcal K}=\overline{a^\dagger\mathcal Kb}$. The original balances give $\overline{\mathcal Ku}=f$ and $\|u\|_{\mathcal K}^2=\alpha$. Put
+Use the phase-averaged inner product $`\langle a,b\rangle_{\mathcal K}=\overline{a^\dagger\mathcal Kb}`$. The original balances give $`\overline{\mathcal Ku}=f`$ and $`\|u\|_{\mathcal K}^2=\alpha`$. Put
 
-$$
+```math
 u_0=(\overline{\mathcal K})^{-1}f,
-$$
+```
 
-where $u_0$ is a constant displacement, and define $r=u-u_0$ and $w=\mathcal K^{-1}f-u_0$. Then
+where $`u_0`$ is a constant displacement, and define $`r=u-u_0`$ and $`w=\mathcal K^{-1}f-u_0`$. Then
 
-$$
+```math
 \|r\|_{\mathcal K}^2=\alpha-a_{\rm f},\qquad
 \|w\|_{\mathcal K}^2=a_{\rm s}-a_{\rm f},
-$$
+```
 
-$$
+```math
 \langle w,r\rangle_{\mathcal K}=\alpha-i\beta-a_{\rm f}.
-$$
+```
 
-Cauchy–Schwarz gives the displayed disk. This uses all constant-coordinate test functions rather than projecting only along $f$; no new dynamical hypothesis is needed. Cauchy–Schwarz also gives $(f^\dagger\overline{\mathcal K}f)(f^\dagger(\overline{\mathcal K})^{-1}f)\geq1$, proving $a_{\rm f}\geq1/h$.
+Cauchy–Schwarz gives the displayed disk. This uses all constant-coordinate test functions rather than projecting only along $`f`$; no new dynamical hypothesis is needed. Cauchy–Schwarz also gives $`(f^\dagger\overline{\mathcal K}f)(f^\dagger(\overline{\mathcal K})^{-1}f)\geq1`$, proving $`a_{\rm f}\geq1/h`$.
 
 This proof is sufficient for the bound. The following operator reconstruction supplies the connection to prior methods, the endpoint limits, and the equality interpretation.
 
 ## Exact positive-plus-skew reduction
 
-Work on the complexified phase space $L^2_{\rm per}([0,1];\mathbb C^n)$ with normalized phase measure. Let $A$ be multiplication by $\mathcal K$, and let $D=\Gamma\partial_\theta$ on periodic $H^1$ functions. Then $A$ is bounded coercive selfadjoint and $D$ is skew-adjoint. Define
+Work on the complexified phase space $`L^2_{\rm per}([0,1];\mathbb C^n)`$ with normalized phase measure. Let $`A`$ be multiplication by $`\mathcal K`$, and let $`D=\Gamma\partial_\theta`$ on periodic $`H^1`$ functions. Then $`A`$ is bounded coercive selfadjoint and $`D`$ is skew-adjoint. Define
 
-$$
+```math
 T=-iA^{-1/2}DA^{-1/2},\qquad q=A^{-1/2}f.
-$$
+```
 
-The domain of $T$ consists of vectors $\psi$ for which $A^{-1/2}\psi$ lies in periodic $H^1$. Bounded invertibility of $A^{-1/2}$ makes this a selfadjoint congruence of $-iD$; no differentiability of a piecewise stiffness square root is assumed. The forcing vector $q$ only needs to belong to $L^2$ for the resolvent below to act on it. This domain qualification is important: $T$ need not be a bounded matrix or bounded operator.
+The domain of $`T`$ consists of vectors $`\psi`$ for which $`A^{-1/2}\psi`$ lies in periodic $`H^1`$. Bounded invertibility of $`A^{-1/2}`$ makes this a selfadjoint congruence of $`-iD`$; no differentiability of a piecewise stiffness square root is assumed. The forcing vector $`q`$ only needs to belong to $`L^2`$ for the resolvent below to act on it. This domain qualification is important: $`T`$ need not be a bounded matrix or bounded operator.
 
 The measured complex scalar is exactly
 
-$$
+```math
 z(v)=\alpha(v)-i\beta(v)
 =\langle q,(I+ivT)^{-1}q\rangle.
-$$
+```
 
-The kernel of $T$ consists of $A^{1/2}$ times constant vectors. The orthogonal projection of $q$ onto that kernel is $q_0=A^{1/2}u_0$, with
+The kernel of $`T`$ consists of $`A^{1/2}`$ times constant vectors. The orthogonal projection of $`q`$ onto that kernel is $`q_0=A^{1/2}u_0`$, with
 
-$$
+```math
 \|q_0\|^2=a_{\rm f},\qquad
 \|q-q_0\|^2=a_{\rm s}-a_{\rm f}=:\rho.
-$$
+```
 
-The spectral theorem therefore gives a positive finite measure $\mu$ on the nonzero real spectrum such that
+The spectral theorem therefore gives a positive finite measure $`\mu`$ on the nonzero real spectrum such that
 
-$$
+```math
 z(v)=a_{\rm f}+\int_{\lambda\ne0}\frac{d\mu(\lambda)}{1+iv\lambda},
-$$
+```
 
-$$
+```math
 \mu(\mathbb R\setminus\{0\})=\rho.
-$$
+```
 
 The spectral measure depends on the complete stiffness path, constant damping, and chosen two-port complex force. It is not a probability distribution of thermodynamic states or a density of ordinary vibration frequencies. No stochastic dynamics is imported from the comparison papers.
 
-Bounded convergence gives $z(0^+)=a_{\rm s}$ and $z(+\infty)=a_{\rm f}$. Polarization of the real and imaginary two-port forms gives the endpoint matrices above. This argument controls the limits within the overdamped model; taking infinite speed in a physical apparatus can invalidate neglected inertia or controller assumptions.
+Bounded convergence gives $`z(0^+)=a_{\rm s}`$ and $`z(+\infty)=a_{\rm f}`$. Polarization of the real and imaginary two-port forms gives the endpoint matrices above. This argument controls the limits within the overdamped model; taking infinite speed in a physical apparatus can invalidate neglected inertia or controller assumptions.
 
 ## The disk and equality are resolvent geometry
 
-For every real $y$,
+For every real $`y`$,
 
-$$
+```math
 \left|\frac1{1+iy}-\frac12\right|=\frac12.
-$$
+```
 
-Thus every nonzero spectral component lies on the same circle. A positive weighted average lies inside its disk. Translating by $a_{\rm f}$ and scaling by $\rho$ gives the fixed-schedule bound.
+Thus every nonzero spectral component lies on the same circle. A positive weighted average lies inside its disk. Translating by $`a_{\rm f}`$ and scaling by $`\rho`$ gives the fixed-schedule bound.
 
-More precisely, set $d\nu=d\mu/\rho$ when $\rho>0$, $g_v(\lambda)=(1+iv\lambda)^{-1}$, and $\bar g=\int g_v\,d\nu$. Then
+More precisely, set $`d\nu=d\mu/\rho`$ when $`\rho>0`$, $`g_v(\lambda)=(1+iv\lambda)^{-1}`$, and $`\bar g=\int g_v\,d\nu`$. Then
 
-$$
+```math
 (\alpha-a_{\rm f})(a_{\rm s}-\alpha)-\beta^2
 =\rho^2\int|g_v-\bar g|^2d\nu.
-$$
+```
 
-At a positive finite speed, equality at a nontrivial boundary point requires the force-coupled spectral measure to be supported at one nonzero value of $\lambda$. Degenerate eigenvectors at that same value are permitted. This is not a claim that the whole device has only one normal mode.
+At a positive finite speed, equality at a nontrivial boundary point requires the force-coupled spectral measure to be supported at one nonzero value of $`\lambda`$. Degenerate eigenvectors at that same value are permitted. This is not a claim that the whole device has only one normal mode.
 
 Opposite signed spectral values give opposite handed cross-responses and can cancel. Multiple distinct response factors move the weighted average inside the circle. Neither extra internal coordinates nor more Fourier harmonics automatically improve the response.
 
 The four-coordinate construction already in the repository has a single active nonzero spectral value for the complex force used above. In its constant rotating-frame equations,
 
-$$
+```math
 A_0=\begin{pmatrix}hI&bI\\bI&gI\end{pmatrix},\qquad
 D_0=\operatorname{diag}(0,-\gamma_yJ).
-$$
+```
 
-In this finite reduction the operator is $A_0+\Omega D_0$, where $\Omega$ is the coupling angular frequency. The force lies in $\ker D_0$. The active value is $\lambda_* =\gamma_y h/(mM)$, the slow endpoint is $g/(mM)$, and the fast endpoint is $1/h$. Thus its response traces the circle exactly. In the period-one phase convention used above, $\Omega=2\pi v$ and the active spectral value is multiplied by $2\pi$; the product of rate and spectral value is unchanged. This is a modal explanation of the existing equality construction, not an additional device or an optimality claim based on fitting a one-pole curve.
+In this finite reduction the operator is $`A_0+\Omega D_0`$, where $`\Omega`$ is the coupling angular frequency. The force lies in $`\ker D_0`$. The active value is $`\lambda_* =\gamma_y h/(mM)`$, the slow endpoint is $`g/(mM)`$, and the fast endpoint is $`1/h`$. Thus its response traces the circle exactly. In the period-one phase convention used above, $`\Omega=2\pi v`$ and the active spectral value is multiplied by $`2\pi`$; the product of rate and spectral value is unchanged. This is a modal explanation of the existing equality construction, not an additional device or an optimality claim based on fitting a one-pole curve.
 
 ## Speed dependence of the reciprocal part
 
 Taking the Hermitian part gives
 
-$$
+```math
 \operatorname{Herm}(I+ivT)^{-1}=(I+v^2T^2)^{-1}.
-$$
+```
 
-It decreases in the positive-operator order as $v$ increases. Projecting back to the physical force/displacement ports gives, for $0<v_1<v_2$,
+It decreases in the positive-operator order as $`v`$ increases. Projecting back to the physical force/displacement ports gives, for $`0<v_1<v_2`$,
 
-$$
+```math
 \operatorname{Sym}\chi(v_1)\succeq\operatorname{Sym}\chi(v_2),
-$$
+```
 
-and in particular $\alpha(v)$ is nonincreasing. This is the same positive/skew mechanism behind the symmetric-resolvent comparison in [P2, Lemma 3 and Theorem 4], specialized to changing the speed of a fixed stiffness schedule. It is not claimed as a new general monotonicity theorem.
+and in particular $`\alpha(v)`$ is nonincreasing. This is the same positive/skew mechanism behind the symmetric-resolvent comparison in [P2, Lemma 3 and Theorem 4], specialized to changing the speed of a fixed stiffness schedule. It is not claimed as a new general monotonicity theorem.
 
 The antisymmetric response is different: it vanishes at both limiting speeds, and it can peak or change sign between them. A positive endpoint gap is necessary but not sufficient for a nonzero response. A two-contiguous-stage schedule has the same reversal as a phase shift and remains reciprocal, despite a possible nonzero gap.
 
@@ -178,39 +178,39 @@ These statements require changing **only** the phase speed. They do not hold by 
 
 ## A finite check using the existing design
 
-For the worked interval $[1,3]$ and its optimal allocation,
+For the worked interval $`[1,3]`$ and its optimal allocation,
 
-| Quantity | Value in units with $k_0=1$ |
+| Quantity | Value in units with $`k_0=1`$ |
 |---|---:|
-| $a_{\rm s}$ | 0.755983064144 |
-| $a_{\rm f}$ | 0.577350269190 |
-| $(a_{\rm s}-a_{\rm f})/2$ | 0.089316397477 |
-| Optimum $\alpha$ | 0.666666666667 |
-| Optimum $\beta$ | 0.089316397477 |
+| $`a_{\rm s}`$ | 0.755983064144 |
+| $`a_{\rm f}`$ | 0.577350269190 |
+| $`(a_{\rm s}-a_{\rm f})/2`$ | 0.089316397477 |
+| Optimum $`\alpha`$ | 0.666666666667 |
+| Optimum $`\beta`$ | 0.089316397477 |
 
 Half the difference of the reciprocal endpoints is exactly the attained global spectral ceiling. This may be useful as a design diagnostic because the endpoints have direct limiting-response interpretations. Finite-speed endpoint measurements need convergence and error bounds; two arbitrary rate measurements cannot be substituted for the limits and called a certified ceiling.
 
-The code also checks a two-stage schedule with endpoint gap 0.055329562310 but zero antisymmetric response, and a static anisotropic system for which the stronger endpoint disk collapses to a point. Finally it checks an excluded static skew-force model: positivity of the restoring part alone does not give our disk when the dynamics acts directly on the forced constant subspace. The condition $Df=0$ is essential in the generic operator formulation.
+The code also checks a two-stage schedule with endpoint gap 0.055329562310 but zero antisymmetric response, and a static anisotropic system for which the stronger endpoint disk collapses to a point. Finally it checks an excluded static skew-force model: positivity of the restoring part alone does not give our disk when the dynamics acts directly on the forced constant subspace. The condition $`Df=0`$ is essential in the generic operator formulation.
 
 ## The exact inverse-gap constants are established
 
 Moslehian, Nakamoto, and Seo [P5, Theorem 2.1(i)] prove an operator Klamkin–McLenaghan inequality for positive maps. Its specialization gives both dimensional resource constants used here. They are not new general inequalities.
 
-Let $\mathcal A$ be multiplication by $\mathcal K$ and let $\Phi$ be compression onto all constant trajectories, so $\Phi(\mathcal A)=\overline{\mathcal K}$. In their notation take $A=\mathcal A$, $B=\mathcal A^{-1}$, and lower/upper constants $1/M,1/m$. Their hypothesis holds, $A\mathbin{\#}B=I$, and the conclusion is
+Let $`\mathcal A`$ be multiplication by $`\mathcal K`$ and let $`\Phi`$ be compression onto all constant trajectories, so $`\Phi(\mathcal A)=\overline{\mathcal K}`$. In their notation take $`A=\mathcal A`$, $`B=\mathcal A^{-1}`$, and lower/upper constants $`1/M,1/m`$. Their hypothesis holds, $`A\mathbin{\#}B=I`$, and the conclusion is
 
-$$
+```math
 \overline{\mathcal K^{-1}}-(\overline{\mathcal K})^{-1}
 \preceq(1/\sqrt m-1/\sqrt M)^2I.
-$$
+```
 
-Projection to the measured plane and the fixed-schedule disk give $|\beta|\leq B_*$. No derivative-operator assumption enters this published gap inequality.
+Projection to the measured plane and the fixed-schedule disk give $`|\beta|\leq B_*`$. No derivative-operator assumption enters this published gap inequality.
 
-There is a dual substitution for the clamped experiment. At each phase take their $A=K^{-1}$, $B=K$, constants $m,M$, and $\Phi$ as compression to measured coordinates. Write the mechanical blocks as $K_{xx},B,C$ and $S=K_{xx}-BC^{-1}B^T$. Since $\Phi(K^{-1})=S^{-1}$, the same theorem gives
+There is a dual substitution for the clamped experiment. At each phase take their $`A=K^{-1}`$, $`B=K`$, constants $`m,M`$, and $`\Phi`$ as compression to measured coordinates. Write the mechanical blocks as $`K_{xx},B,C`$ and $`S=K_{xx}-BC^{-1}B^T`$. Since $`\Phi(K^{-1})=S^{-1}`$, the same theorem gives
 
-$$
+```math
 BC^{-1}B^T=K_{xx}-S
 \preceq(\sqrt M-\sqrt m)^2I_2.
-$$
+```
 
 The clamped projection proof then gives the existing odd-stiffness ceiling. These are explicit applications of [P5]; the local proofs remain useful for self-contained reading.
 

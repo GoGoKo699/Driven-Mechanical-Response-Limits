@@ -56,7 +56,7 @@ The finite-length outputs can slightly exceed the tangent ceiling because their 
 
 ## Documentation validation
 
-[check_docs.py](../checks/check_docs.py) verifies relative destinations, Markdown section anchors, math-fence balance, supported short display syntax, and preserved script/license hashes. It also checks the stored reference ceiling against its recorded value. Agreement of numerical values quoted in the prose is reviewed separately; this script does not parse and verify every such quotation.
+[check_docs.py](../checks/check_docs.py) verifies relative destinations, Markdown section anchors, and preserved script/license hashes. Its math-source checks cover GitHub `math` fences, dollar-delimited displays, protected and legacy inline formulas, balanced delimiters and braces, nonempty formulas, escaped table pipes, and short display lines. Ordinary fenced and inline code is excluded from math checks; unsupported TeX math delimiters, equation tags, and document wrappers are rejected. The script also checks the stored reference ceiling against its recorded value. Agreement of numerical values quoted in the prose is reviewed separately; this script does not parse and verify every such quotation.
 
 This is a source and consistency check, not a guarantee of GitHub's live mathematical rendering. Displays are intentionally short; no equation tags or TeX document wrappers are used. Automated workflow results must be read separately from local execution records.
 

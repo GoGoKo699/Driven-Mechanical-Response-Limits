@@ -18,13 +18,13 @@ Christian Kern and Graeme W. Milton, *Limits to the Hall effect and other nonrec
 
 The full HTML formulation and Eq. (12) were inspected. The paper uses a conductivity-equivalent spatial field problem with a weak local antisymmetric contribution. Its formula for the effective Hall coefficient is linear in that local contribution; setting it to zero gives zero in that model.
 
-Our operator is $K(t)+\Gamma\partial_t$ on periodic trajectories. The time derivative supplies a skew-adjoint part although each $K(t)$ is symmetric. Substituting instantaneous stiffness eigenvalues into the static formula is not an identification of these operators. A direct reduction to this particular spatial Hall problem has not been established; the general positive-map and resolvent connection is already identified above. Bounds plus attaining architectures are not new as a research strategy.
+Our operator is $`K(t)+\Gamma\partial_t`$ on periodic trajectories. The time derivative supplies a skew-adjoint part although each $`K(t)`$ is symmetric. Substituting instantaneous stiffness eigenvalues into the static formula is not an identification of these operators. A direct reduction to this particular spatial Hall problem has not been established; the general positive-map and resolvent connection is already identified above. Bounds plus attaining architectures are not new as a research strategy.
 
 ### R2
 
 Christian Kern, Owen D. Miller, and Graeme W. Milton, *Tight Bounds on the Effective Complex Permittivity of Isotropic Composites and Related Problems*, Physical Review Applied **14**, 054068 (2020), [arXiv:2006.03830](https://arxiv.org/abs/2006.03830).
 
-The [full author-hosted published PDF](https://millergroup.yale.edu/sites/default/files/files/2020_11-Kern.pdf) was inspected. Equations (1)–(9) concern a spatial two-phase field problem, a positive-measure Stieltjes representation, and constraints from volume fraction and isotropy. Real positive constituent permittivities give a real interval; directly substituting $m,M$ cannot generate our nonzero $\beta$. The single-pole boundary-construction strategy is explicitly established. A direct reduction to these particular composite bounds has not been established; the general operator connection is known, and different observables alone do not prove novelty.
+The [full author-hosted published PDF](https://millergroup.yale.edu/sites/default/files/files/2020_11-Kern.pdf) was inspected. Equations (1)–(9) concern a spatial two-phase field problem, a positive-measure Stieltjes representation, and constraints from volume fraction and isotropy. Real positive constituent permittivities give a real interval; directly substituting $`m,M`$ cannot generate our nonzero $`\beta`$. The single-pole boundary-construction strategy is explicitly established. A direct reduction to these particular composite bounds has not been established; the general operator connection is known, and different observables alone do not prove novelty.
 
 ### R3
 
@@ -40,7 +40,7 @@ The primary arXiv record lists the 18 October 2019 version without a journal ref
 
 Roger Filliger and Peter Reimann, *The Brownian gyrator: a minimal heat engine on the nano-scale*, Physical Review Letters **99**, 230602 (2007), [arXiv:0710.3735](https://arxiv.org/abs/0710.3735).
 
-The [full primary preprint](https://arxiv.org/pdf/0710.3735), Eq. (2), supports a two-dimensional dissipative harmonic setting and clarifies the distinction between circulation of fluctuations and mean force response. For a fixed symmetric $K$, additive zero-mean noise still gives the reciprocal mean compliance $K^{-1}$. The gyrator is not evidence for our driven-response bound.
+The [full primary preprint](https://arxiv.org/pdf/0710.3735), Eq. (2), supports a two-dimensional dissipative harmonic setting and clarifies the distinction between circulation of fluctuations and mean force response. For a fixed symmetric $`K`$, additive zero-mean noise still gives the reciprocal mean compliance $`K^{-1}`$. The gyrator is not evidence for our driven-response bound.
 
 ### R5
 
@@ -52,7 +52,7 @@ The [full primary preprint](https://arxiv.org/pdf/1812.09557), Eq. (6), treats b
 
 Ignacio A. Martinez and collaborators, *Engineered swift equilibration of a Brownian particle*, Nature Physics **12**, 843–846 (2016), [arXiv:1512.07821](https://arxiv.org/abs/1512.07821).
 
-The [full author-hosted published PDF](https://www.lptms.universite-paris-saclay.fr/membres/trizac/Articles/nphys3758.pdf), printed p. 844, describes optical stiffness control of an overdamped particle at fixed mean position. Its transient peak stiffness reaches $37$ times the initial value. This establishes a large-range scalar confinement primitive, not connecting springs or our slider topology.
+The [full author-hosted published PDF](https://www.lptms.universite-paris-saclay.fr/membres/trizac/Articles/nphys3758.pdf), printed p. 844, describes optical stiffness control of an overdamped particle at fixed mean position. Its transient peak stiffness reaches $`37`$ times the initial value. This establishes a large-range scalar confinement primitive, not connecting springs or our slider topology.
 
 ### R7
 
