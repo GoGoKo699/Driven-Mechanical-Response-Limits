@@ -48,6 +48,7 @@ A force at one measured coordinate moves the other in the opposite sense to the 
 | Inspect a concrete actuator and its limitation | [Capacitive shunt obstruction](docs/CAPACITIVE_ACTUATION.md) and [finite tuning range](docs/TUNING_RANGE.md) |
 | Compare force and displacement control | [Clamped work](docs/PORT_WORK.md) and [scale-free response](docs/SCALE_FREE_RESPONSE.md) |
 | Compare with existing work | [Sources and assumption register](docs/SOURCES.md) |
+| Prepare to understand or present the results | [Scientific background](docs/MANUSCRIPT_BACKGROUND.md) and [single-source tutorial options](docs/TUTORIAL_OPTIONS.md) |
 | Reproduce the evidence | [Reproducibility and claim map](docs/REPRODUCIBILITY.md) |
 
 ## What the result includes

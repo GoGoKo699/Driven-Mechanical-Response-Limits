@@ -314,7 +314,7 @@ This is not a universal bound on all odd engines. Other models optimize other co
 
 C. Scheibner et al., *Odd elasticity*, Nature Physics **16**, 475–480 (2020), [primary record](https://www.nature.com/articles/s41567-020-0795-y), [arXiv:1902.07760](https://arxiv.org/abs/1902.07760).
 
-The primary abstract explicitly characterizes odd-elastic media as producing or absorbing work during quasistatic deformation cycles. We inherit that interpretation. The full arXiv HTML was unavailable in this pass; no unseen formula from it is relied on for the new proof.
+The [full accepted manuscript](https://purehost.bath.ac.uk/ws/portalfiles/portal/205056987/OddElasticity_MainText.pdf) was inspected. Using manuscript pagination, Eq. (1), pp. 1–2, introduces active transverse bonds; Eq. (2), p. 2, gives the odd constitutive matrix; p. 3 states the closed-cycle work formula and explains its area interpretation. Equations (5)–(7), pp. 6–7, connect an elastic potential to major symmetry and static reciprocity. We inherit these concepts. These passages do not supply our positive reciprocal periodic stiffness budget or stationary-port equality construction. The Bath-hosted copy contains a cover followed by the accepted manuscript; its separate supplemental information was not checked, and its numbering should not be mixed with arXiv v1.
 
 ### W2 — A realized active elastic element with a static odd response
 
@@ -326,9 +326,11 @@ Our actuation is a displacement-independent stiffness schedule, and our full ins
 
 ### W3 — Energy conversion has its own objective
 
-E. Fodor and A. Souslov, *Optimal power and efficiency of odd engines*, Physical Review E **104**, L062602 (2021), [primary article record](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.104.L062602), [arXiv:2109.10603](https://arxiv.org/abs/2109.10603).
+Étienne Fodor and Anton Souslov, *Optimal power and efficiency of odd engines*, Physical Review E **104**, L062602 (2021), [primary article record](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.104.L062602), [full primary preprint, v2](https://arxiv.org/pdf/2109.10603v2). The publisher records publication on 27 December 2021.
 
-The primary abstract reports optimization of work and efficiency of deformation cycles in odd materials, including regimes of near-unit efficiency. Only the abstract and publication record were available in this pass; a full equation-by-equation comparison of its energy accounts is not claimed. Our small efficiency and its reported high efficiencies are not contradictory universal claims. The complete, directly computed energy ledger above defines our narrower quantity.
+The full preprint's Eqs. (2)–(5), p. 2, define extracted cycle work, dissipation from the even loss modulus, and the efficiency $E=W/(W+D)$. The text following Eq. (5) explicitly excludes the microscopic mechanisms sustaining the energy input. Page 3 distinguishes some odd solids that do not dissipate at rest from continually active constituents; Eq. (10) gives the quasistatic area work and the Kelvin–Voigt slow-cycle efficiency result. These passages were also visually checked in the rendered PDF.
+
+Our energy ledger explicitly resolves the modeled hidden-coordinate losses, including loss at a held nonzero displacement. Its denominator is therefore not automatically the same as their response-level $W+D$. Our slow-cycle efficiency tending to zero does not contradict their near-unit regimes. Neither result includes every apparatus's controller or fuel-conversion cost, and no equivalence by parameter substitution is claimed.
 
 ### W4 — Eliminating a driven coordinate is also established
 
