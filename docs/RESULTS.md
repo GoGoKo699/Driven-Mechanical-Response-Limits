@@ -12,6 +12,16 @@ $$
 
 In particular $1/h\leq\alpha\leq j$. The disk is a statement about two scalar response quantities, not every entry of the full compliance matrix. Its proof is [one weighted projection argument](PROOF.md#weighted-projection).
 
+## Fixed-schedule refinement
+
+For a fixed phase-weighted stiffness schedule, write $a_{\rm s}=\operatorname{tr}(P^T\overline{K^{-1}}P)/2$ and $a_{\rm f}=\operatorname{tr}(P^T(\overline K)^{-1}P)/2$. The inverse in the second expression is taken after averaging the full stiffness. These are the slow- and fast-modulation direct-response limits with the probe force constant. Then
+
+$$
+\beta^2\leq(\alpha-a_{\rm f})(a_{\rm s}-\alpha).
+$$
+
+Since $a_{\rm s}=j$ and $a_{\rm f}\geq1/h$, this can be stronger for a specified waveform. A positive endpoint gap is necessary, not sufficient, for nonreciprocity. The [proof and operator comparison](OPERATOR_CONNECTION.md#fixed-schedule-disk) derive the refinement and state its relation to established spectral-response methods. The global stiffness-only ceiling below is unchanged.
+
 ## Spectral ceiling
 
 When only the complete stiffness interval $[m,M]$ is fixed,
@@ -77,7 +87,7 @@ $$
 Its positive-orientation response is
 
 $$
-\chi_*=\frac{m+M}{2mM}I_2+B_*J.
+\chi_* =\frac{m+M}{2mM}I_2+B_*J.
 $$
 
 The [realization](REALIZATION.md#stationary-outputs-and-static-loads) derives the exact static load law and modulation-power balance. The measured coordinates are stationary; the internal ones rotate.

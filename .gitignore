@@ -4,3 +4,4 @@ __pycache__/
 results.local.json
 results.json
 *.egg-info/
+operator-results.local.json
