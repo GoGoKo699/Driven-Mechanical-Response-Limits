@@ -1,12 +1,12 @@
-# A single-source starting point
+# Selected review and reading guide
 
-[Home](../README.md) · [Background and citation map](MANUSCRIPT_BACKGROUND.md) · [Research status](RESEARCH_STATUS.md)
+[Home](../README.md) · [Tutorial bridge](TUTORIAL.md) · [Background and citation map](MANUSCRIPT_BACKGROUND.md)
 
-The aim is one external source that leaves a reader close to understanding this project's results. The three options below are alternatives, not a required reading bundle. Our recommendation is **Fruchart, Scheibner, and Vitelli's review** for the physical introduction. Strang is the better alternative when matrix mechanics is the missing foundation. Milton is an advanced option for effective-response theory.
+**The selected teaching anchor is Fruchart, Scheibner, and Vitelli's review.** The route below supplies the physical introduction; the [local tutorial](TUTORIAL.md) carries its reader into the driven measurement, resource budget, proof, and construction. Basic linear algebra and calculus are the mathematical prerequisites.
 
-The recommendation is a teaching judgment. No source replaces the local proof or establishes the proposed apparatus. Selection of an anchor and a subsequent restructuring of the repository remain separate steps; this comparison does not commit to that restructuring.
+Strang and Milton remain recorded as alternative entry points, not additional required reading. The review supplies established physical context; the repository gives its own precise model and derivations. The source does not establish the proposed apparatus.
 
-## 1. Fruchart, Scheibner, and Vitelli — recommended physics anchor
+## 1. Fruchart, Scheibner, and Vitelli — selected physics anchor
 
 Michel Fruchart, Colin Scheibner, and Vincenzo Vitelli, *Odd Viscosity and Odd Elasticity*, Annual Review of Condensed Matter Physics **14**, 471–510 (2023). [Publisher and DOI](https://doi.org/10.1146/annurev-conmatphys-040821-125506) · [Open published PDF](https://par.nsf.gov/servlets/purl/10418598) · [arXiv version](https://arxiv.org/abs/2207.00071).
 
@@ -55,14 +55,14 @@ The focused route is §§12.1 and 12.7–12.10, then §§13.1 and 13.4: projecti
 
 **Access checked:** the complete author-hosted text was available; selected operator and variational passages in Chapters 12–13 and §18.3 were inspected. The optional network and attainment continuations were located primarily through the detailed contents, with the opening of §25.3 checked. Primary contents and preface records were also consulted. This is a selective assessment, not a claim to have studied the whole book.
 
-## What the eventual local bridge must accomplish
+## Continue through the local bridge
 
-Whichever single source is chosen, a reader should be able to move from it through the following short local sequence:
+The [tutorial](TUTORIAL.md) connects the selected review to this sequence:
 
-1. Interpret $q$, its conjugate force, the positive energy Hessian $K(t)$, and the continuing external modulation.
+1. Interpret $`q`$, its conjugate force, the positive energy Hessian $`K(t)`$, and the continuing external modulation.
 2. Distinguish constant-force mean compliance from clamped mean stiffness and from wave transmission.
 3. Understand why normalization and the spectrum of the **whole network** define the resource being optimized.
 4. Follow the weighted-projection proof, then see how the rotating hidden plane attains equality.
 5. Interpret the two optima, coordinate minima, load relation, work cost, and ideal-implementation boundary.
 
-Existing [model](MODEL.md), [proof](PROOF.md), [port-work](PORT_WORK.md), and [realization](REALIZATION.md) notes contain these ingredients. The [background map](MANUSCRIPT_BACKGROUND.md) identifies their external context and attribution. A future tutorial-based presentation should connect them without requiring a second external textbook.
+The [model](MODEL.md), [proof](PROOF.md), [port-work](PORT_WORK.md), and [realization](REALIZATION.md) notes remain the technical homes of these ingredients. The [background map](MANUSCRIPT_BACKGROUND.md) identifies their external context and attribution. The [documentation map](README.md) connects the complete reading route without requiring a second external textbook.

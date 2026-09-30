@@ -1,69 +1,107 @@
 # Driven Mechanical Response Limits
 
-**How much nonreciprocal response can a network produce when every instantaneous spring force is reciprocal?**
+### Reciprocal springs, driven odd response, and a sharp design limit
 
-This repository derives a sharp limit for the response to a constant force in periodically modulated, overdamped mechanical networks. The limit does not depend on the number of internal coordinates. A four-coordinate construction attains it, with stationary measured outputs and cycling internal motion. A twelve-spring guided-slider construction realizes the worked example in the small-displacement limit.
+In a static linear spring network, exchanging the applied force and measured displacement gives the same cross-response. Periodic stiffness control can break that symmetry even though every instantaneous spring force remains reciprocal.
 
-The modulation is externally powered. Reciprocal instantaneous springs do not make the complete driven device passive.
+**How large can the resulting nonreciprocal response be if the stiffness of the entire network stays within a fixed range?**
 
-## The central result
+This repository gives sharp limits for two measurements and a four-coordinate network that attains each limit at a different stiffness allocation. Its two measured coordinates remain stationary under constant forces while two hidden coordinates cycle. A twelve-spring construction realizes the worked example in the small-displacement limit.
 
-Let every instantaneous stiffness eigenvalue lie between $m$ and $M$, where $0<m<M$. Fix the physical coordinate and conjugate-force normalization. Apply two constant force components and measure their conjugate displacements after transients:
+The modulation supplies energy. The result is a design limit for a driven constitutive element, with explicit force, load, and work interpretations.
 
-$$
-\overline{P^Tq}=\chi F.
-$$
+## Two measurements, two sharp limits
 
-The antisymmetric cross-compliance is $\beta=(\chi_{21}-\chi_{12})/2$. Every network in the [stated model](docs/MODEL.md) obeys
+Fix physical coordinates and conjugate forces. The complete instantaneous stiffness $`K(t)`$ is symmetric, and every eigenvalue lies in $`[m,M]`$, with $`0<m<M`$. Damping is constant, symmetric, and positive definite. The origin stays fixed while the stiffness schedule repeats.
 
-$$
-|\beta|\leq B_*.
-$$
+| Measurement | What is imposed and measured | Odd response |
+|---|---|---|
+| Constant-force response | Apply $`F`$ and average the measured displacement: $`\overline{P^Tq}=\chi F`$ | Cross-compliance $`\beta=(\chi_{21}-\chi_{12})/2`$ |
+| Clamped response | Hold measured displacement $`x`$ fixed and average the holding force: $`\overline F=Gx`$ | Odd stiffness $`\kappa=(G_{12}-G_{21})/2`$ |
 
-$$
-B_*=\frac12\left(\frac1{\sqrt m}-\frac1{\sqrt M}\right)^2.
-$$
+The [model](docs/MODEL.md) fixes the port normalization and counts every compliant coordinate. Over this class, the sharp ceilings are
 
-The damping matrix may be any constant symmetric positive-definite matrix. Attainment uses a suitable internal damping plane; optimality for every separately prescribed damping tensor is not asserted.
+```math
+\boxed{
+|\beta|\leq B_*
+=\frac12\left(\frac1{\sqrt m}-\frac1{\sqrt M}\right)^2
+}
+```
 
-For $m=k_0$ and $M=3k_0$, the construction has
+and
 
-$$
-k_0\chi_*=\begin{pmatrix}
-2/3&-(2-\sqrt3)/3\\
-(2-\sqrt3)/3&2/3
+```math
+\boxed{
+|\kappa|\leq K_{\mathrm{odd},*}
+=\frac12\left(\sqrt M-\sqrt m\right)^2.
+}
+```
+
+The bounds hold independently of network size, waveform, and period. Attainment uses suitable hidden-coordinate damping; optimality for every separately prescribed damping tensor or spring graph is not asserted. See the [force theorem](docs/RESULTS.md#spectral-ceiling) and [clamped theorem](docs/PORT_WORK.md#2-a-sharp-clamped-response-ceiling).
+
+**These are distinct experiments.** In general $`G\ne\chi^{-1}`$. The attaining family has stationary measured outputs, which makes $`G=\chi^{-1}`$ and static-load composition exact for that family. Maximizing the two odd coefficients still selects different stiffness allocations.
+
+## Begin with one review
+
+The teaching anchor is **Michel Fruchart, Colin Scheibner, and Vincenzo Vitelli, [*Odd Viscosity and Odd Elasticity*](https://doi.org/10.1146/annurev-conmatphys-040821-125506), Annual Review of Condensed Matter Physics 14, 471–510 (2023)**. An [arXiv version](https://arxiv.org/abs/2207.00071) is also available.
+
+The selected portions explain reciprocity, odd constitutive response, and cyclic work. The local [tutorial bridge](docs/TUTORIAL.md) translates those ideas into our finite-dimensional driven model, distinguishes the measurements, and leads into the proof and construction. It assumes basic linear algebra, calculus, and mechanical work. A second external textbook is not required. The [reading guide](docs/TUTORIAL_OPTIONS.md) gives exact published section numbers and records the alternative entry points.
+
+## Read the repository in three passes
+
+| Pass | Route | Purpose |
+|---|---|---|
+| Orientation | This page → [physical explanation](docs/START_HERE.md) | Question, measurements, and design meaning |
+| Learn the argument | Selected review passages → [tutorial bridge](docs/TUTORIAL.md) | Connect odd elasticity to the budget, proof, and attaining device |
+| Inspect the result | [Model](docs/MODEL.md) → [Results](docs/RESULTS.md) → [Proof](docs/PROOF.md) → [Clamped work](docs/PORT_WORK.md) | Assumptions, exact statements, and derivations |
+
+The [documentation map](docs/README.md) provides direct routes to construction, operator attribution, physical limits, sources, and reproducibility. Each formal statement has a canonical location; the tutorial supplies the connecting explanation.
+
+## The construction at a glance
+
+Two accessible coordinates $`x\in\mathbb R^2`$ couple to a hidden plane $`y\in\mathbb R^2`$. Their individual stiffnesses stay fixed while the coupling rotates:
+
+```math
+K(t)=
+\begin{pmatrix}
+hI_2 & bR(t)\\
+bR(t)^T & gI_2
+\end{pmatrix},
+\qquad R(t)=e^{\Omega tJ}.
+```
+
+Here $`J_{12}=-1`$, $`J_{21}=1`$, $`g=m+M-h`$, and $`b^2=(M-h)(h-m)`$. The full spectrum is always $`(m,m,M,M)`$. The construction uses block-diagonal damping $`\Gamma=\operatorname{diag}(\Gamma_x,\gamma_yI_2)`$, with $`\Gamma_x\succ0`$ and $`\gamma_y>0`$. Both optima use $`|\Omega|=\sqrt{mM}/\gamma_y`$.
+
+| Objective | Measured allocation $`h`$ | Hidden allocation $`g`$ |
+|---|---|---|
+| Largest cross-displacement per force | $`\sqrt{mM}`$ | $`m+M-\sqrt{mM}`$ |
+| Largest clamped odd force per displacement | $`m+M-\sqrt{mM}`$ | $`\sqrt{mM}`$ |
+
+Four coordinates are necessary and sufficient for the **full clamped ceiling**. The separate force-ceiling minimum assumes stationary measured outputs for every constant force and no measured/internal damping cross-block. These are minima for exact attainment, not for every nonzero odd response.
+
+For $`m=k_0`$ and $`M=3k_0`$, the force-optimal response is
+
+```math
+k_0\chi_*=
+\begin{pmatrix}
+2/3 & -(2-\sqrt3)/3\\
+(2-\sqrt3)/3 & 2/3
 \end{pmatrix}.
-$$
+```
 
-A force at one measured coordinate moves the other in the opposite sense to the exchanged experiment. This is not an amplitude isolator or a mechanical diode.
+The exchanged cross-displacements have opposite signs. The [spring realization](docs/REALIZATION.md) uses eight positive modulated springs and four positive fixed supports on ideal guides, with fixed rest lengths and no prestress at the reference origin.
 
-## Choose a reading route
+## Work, attribution, and physical scope
 
-| Goal | Start here |
-|---|---|
-| Understand the physical question | [A short explanation](docs/START_HERE.md) |
-| Inspect the mathematical statement | [Model](docs/MODEL.md) → [Results](docs/RESULTS.md) → [Proof](docs/PROOF.md) |
-| Examine the device and its loads | [Construction and spring geometry](docs/REALIZATION.md) |
-| Check physical assumptions and remaining research | [Physical validity](docs/PHYSICAL_VALIDITY.md) and [research status](docs/RESEARCH_STATUS.md) |
-| Inspect a concrete actuator and its limitation | [Capacitive shunt obstruction](docs/CAPACITIVE_ACTUATION.md) and [finite tuning range](docs/TUNING_RANGE.md) |
-| Compare force and displacement control | [Clamped work](docs/PORT_WORK.md) and [scale-free response](docs/SCALE_FREE_RESPONSE.md) |
-| Compare with existing work | [Sources and assumption register](docs/SOURCES.md) |
-| Prepare to understand or present the results | [Scientific background](docs/MANUSCRIPT_BACKGROUND.md) and [single-source tutorial options](docs/TUTORIAL_OPTIONS.md) |
-| Reproduce the evidence | [Reproducibility and claim map](docs/REPRODUCIBILITY.md) |
+For a slow displacement loop with signed area $`\mathcal A`$, the delivered work is $`W_{\mathrm{qs}}=2\kappa\mathcal A`$. This familiar odd-elastic area law is inherited from the literature. The [work account](docs/PORT_WORK.md#5-finite-circular-cycle-and-complete-power-accounting) also charges internal motion: the device dissipates during holding, and its slow-cycle work does not establish an efficiency or power optimum.
 
-## What the result includes
+The [operator comparison](docs/OPERATOR_CONNECTION.md) attributes the response geometry and exact inverse-gap constants to established methods. The contribution is their constrained mechanical attainment, the clamped coordinate minimum, and the port/resource interpretation. A budget on the measured stiffness alone differs from a budget on the complete network.
 
-The proof first resolves a response disk using the stiffness allocated to the measured directions, then optimizes over that allocation. The [operator comparison](docs/OPERATOR_CONNECTION.md) attributes both the resolvent structure and exact inverse-gap constants to established inequalities. The mechanical content is a resource-matched attaining construction and its force, load, and work interpretation. A fixed measured-stiffness budget differs from a fixed spectrum of the complete network.
+The proposed geometry is an ideal tangent realization. Its worked example requires 21:1 connecting-spring tuning. [Smaller tuning ranges](docs/TUNING_RANGE.md) permit attainment at smaller stiffness contrast; the relative response vanishes quadratically as tuning approaches unity. The [capacitive actuator screen](docs/CAPACITIVE_ACTUATION.md) finds that fixed leakage restores reciprocal long-time response in that circuit. No complete apparatus is certified.
 
-A [scale-free comparison](docs/SCALE_FREE_RESPONSE.md) puts the force and clamped experiments on a common, established matrix-asymmetry scale. It gives a sharp stiffness-contrast bound, a balanced attaining allocation, and an explicit distinction between large normalized nonreciprocity and a large directional ratio obtained by load cancellation. The dimensional compliance and work objectives remain separate.
+The theorem concerns linear overdamped dynamics and prescribed coefficients. The [physical-validity note](docs/PHYSICAL_VALIDITY.md) states the small-mass consistency result and the limits of the geometric and actuator assumptions. The [research status](docs/RESEARCH_STATUS.md) records the focused theory scope; manuscript writing has not begun.
 
-Four coordinates are the minimum for **exact ceiling attainment with both outputs stationary for every constant force**, when measured and internal coordinates have no direct damping cross-block. This is not a minimum for all nonreciprocal response or for the number of springs.
-
-For the separate clamped-work ceiling, four coordinates are necessary without that extra stationarity condition: a single hidden coordinate permits at most half the full ceiling. A [small-mass calculation](docs/PHYSICAL_VALIDITY.md) establishes a stable overdamped limit for the existing construction. Its finite-mass response is outside the exact overdamped bound.
-
-The attaining element composes with static loads at its measured coordinates. Its twelve-spring realization uses eight strictly positive modulated springs, four strictly positive fixed support springs, fixed guides, and fixed rest lengths. Exact-length integrations test the geometric linearization, not the universal theorem.
-
-## Run the checks
+## Reproduce the checks
 
 Use Python 3.11 or later in a virtual environment:
 
@@ -77,14 +115,6 @@ python checks/capacitive_shunt.py --output capacitive-shunt.local.json
 python checks/check_docs.py
 ```
 
-The main suite covers the bound, equality construction, forced/loaded/clamped dynamics, positive-spring synthesis, finite-length mechanics, topology controls, coefficient-error bounds, and operator comparison. The two companion scripts test the work cycles and the common asymmetry bound. Their notes link each additional statement to its derivation. The [claim map](docs/REPRODUCIBILITY.md#claim-map) distinguishes proofs from finite diagnostics. The checked original reference values remain in [checks/reference.json](checks/reference.json).
-
-## Scope
-
-The main result concerns linear overdamped dynamics, constant damping, prescribed periodic stiffness, fixed equilibrium, and normalized force/displacement ports. It does not establish a universal inertial, feedback-controlled, broadband, or bulk-material response law. The proposed geometry requires 21:1 connecting-spring tuning in the worked design; it is not a fabricated device, and controller losses are not optimized.
-
-Finite tuning permits ideal attainment at smaller contrast, with a quadratically smaller relative response. A concrete capacitive-piezoelectric candidate illustrates why electrical states matter: fixed leakage restores reciprocal long-time response, despite the tunable frozen stiffness.
-
-The [source comparison](docs/SOURCES.md#focused-paper-level-comparison) and [scope decision](docs/RESEARCH_STATUS.md) support a focused theoretical paper about constrained mechanical optimality and attainment. The broad odd-response phenomenon and the operator inequalities are established prior work. The research phase is complete at this ideal scope; manuscript writing has not begun, and no complete apparatus is certified.
+The [verification map](docs/REPRODUCIBILITY.md#claim-map) links each result to its proof and finite diagnostic. Numerical checks test formulas and implementation consistency; the proofs establish the universal statements. The original [reference values](checks/reference.json) remain fixed.
 
 Copyright © 2026 Ruge Lin. [MIT license](LICENSE).
