@@ -4,13 +4,16 @@
 
 ## Commands
 
-The tested environment is Python 3.13.5, NumPy 2.3.5, and SciPy 1.17.0. The pinned dependencies require Python 3.11 or later; other interpreter/library combinations have not been tested here.
+The original recorded environment is Python 3.13.5, NumPy 2.3.5, and SciPy 1.17.0. The physical-validity update also passed with Python 3.12.14 and the same numerical-library versions. The pinned dependencies require Python 3.11 or later.
 
 ```sh
 python -m venv .venv
 . .venv/bin/activate
 python -m pip install -r requirements.txt
 python checks/run.py --output results.local.json
+python checks/port_work.py --output port-work.local.json
+python checks/scale_free.py --output scale-free.local.json
+python checks/finite_mass.py --output finite-mass.local.json
 python checks/check_docs.py
 ```
 
@@ -32,6 +35,11 @@ The runner calls eleven named diagnostic groups, then compares independently rec
 | Conditional four-coordinate minimum | [Rank proof](PROOF.md#coordinate-minimum) | `coordinate_minimum_controls`: equality identities and a suboptimal three-coordinate example; not an enumeration over all three-coordinate devices |
 | Coefficient-error guarantee | [Energy estimate](PROOF.md#coefficient-errors) | `calibration_error`: specified unequal spring offsets versus the conservative bound |
 | Fixed-schedule endpoint disk and operator relationship | [Operator connection](OPERATOR_CONNECTION.md) | `operator_connection`: four subgroups for resolvent reconstruction, phase-speed sweeps, equality, and excluded controls |
+| Clamped ceiling and work account | [Clamped proof and cycles](PORT_WORK.md) | `port_work.py`: exact clamped maps, allocation, laboratory work ledger, finite-rate cycles, reversal controls |
+| Four-coordinate clamped minimum | [Pointwise rank and trace proof](PORT_WORK.md#four-coordinates-are-necessary-for-clamped-attainment) | Analytic consequence; existing four-coordinate equality check supplies sufficiency. No numerical enumeration is used. |
+| Full matrix asymmetry and inverse-pair product | [Numerical-range and sector proofs](SCALE_FREE_RESPONSE.md) | `scale_free.py`: five groups for general matrices, equality, loads, scope, and spring synthesis |
+| Small-mass persistence of the same construction | [Stability and exact error](PHYSICAL_VALIDITY.md#a-controlled-small-mass-limit) | `finite_mass.py`: four laboratory integrations, two unit forces each, off-orbit Lyapunov identity, equal-spectrum control |
+| Connecting-spring tuning requirement | [Exact extrema](PHYSICAL_VALIDITY.md#the-existing-spring-schedule-requires-a-large-tuning-range) | Algebraic extrema of the existing synthesis; no new simulation |
 
 The original scientific implementations are [network.py](../checks/network.py) and [springs.py](../checks/springs.py), preserved byte-for-byte from the supplied network and realization checkpoints. They are separate computational derivations: the nonlinear forces do not call the target stiffness matrix to manufacture the desired response. [run.py](../checks/run.py) provides the consolidated interface. The self-contained [operator-comparison module](../checks/operator_comparison.py) tests the additional fixed-schedule identities without importing either of those two modules. The module-level historical docstrings are not the canonical scope statement; use the documents above.
 
@@ -54,3 +62,5 @@ This is a source and consistency check, not a guarantee of GitHub's live mathema
 The [build record](../provenance/BUILD.md) records what was actually rerun during consolidation. Its function is provenance, not certification of novelty or publication status.
 
 The [operator-comparison record](../provenance/OPERATOR_COMPARISON.md) documents the subsequent fixed-schedule refinement and its source/test boundaries.
+
+The [physical-validity record](../provenance/PHYSICAL_VALIDITY.md) records the attribution correction, rank corollary, small-mass check, and concrete implementation boundary.

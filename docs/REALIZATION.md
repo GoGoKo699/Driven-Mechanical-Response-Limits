@@ -90,6 +90,8 @@ For $m=k_0$, $M=3k_0$, $h=\sqrt3k_0$ and $\eta=0.1$:
 
 This positive decomposition is guaranteed for the worked contrast and for parameters satisfying the displayed feasibility condition. It is not claimed for every spectral contrast with the same twelve-spring layout.
 
+The chosen connecting waveforms require each spring to traverse a 21:1 stiffness range. The [physical-validity analysis](PHYSICAL_VALIDITY.md#the-existing-spring-schedule-requires-a-large-tuning-range) derives this requirement and its support-margin trade-off, and separately proves a controlled small-mass limit of the same four-coordinate model.
+
 ## Fixed geometry and exact spring lengths
 
 Let measured sliders translate along horizontal fixed guides and internal sliders along vertical fixed guides. Multiple rigid attachment tabs allow two diagonal slopes for each pair. Crossings may be separated in fixed parallel layers. Guides and fixtures are ideal constraints, and this is not a fabrication drawing.

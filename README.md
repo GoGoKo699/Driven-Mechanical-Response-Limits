@@ -44,17 +44,20 @@ A force at one measured coordinate moves the other in the opposite sense to the 
 | Understand the physical question | [A short explanation](docs/START_HERE.md) |
 | Inspect the mathematical statement | [Model](docs/MODEL.md) → [Results](docs/RESULTS.md) → [Proof](docs/PROOF.md) |
 | Examine the device and its loads | [Construction and spring geometry](docs/REALIZATION.md) |
+| Check physical assumptions and remaining research | [Physical validity](docs/PHYSICAL_VALIDITY.md) and [research status](docs/RESEARCH_STATUS.md) |
 | Compare force and displacement control | [Clamped work](docs/PORT_WORK.md) and [scale-free response](docs/SCALE_FREE_RESPONSE.md) |
 | Compare with existing work | [Sources and assumption register](docs/SOURCES.md) |
 | Reproduce the evidence | [Reproducibility and claim map](docs/REPRODUCIBILITY.md) |
 
 ## What the result includes
 
-The proof first resolves a response disk using the stiffness allocated to the measured directions, then optimizes over that allocation. An [operator comparison](docs/OPERATOR_CONNECTION.md) identifies the established resolvent structure and a sharper fixed-schedule budget given by the difference between slow- and fast-driving compliance. This distinguishes a fixed measured-stiffness budget from a fixed spectrum of the complete network.
+The proof first resolves a response disk using the stiffness allocated to the measured directions, then optimizes over that allocation. The [operator comparison](docs/OPERATOR_CONNECTION.md) attributes both the resolvent structure and exact inverse-gap constants to established inequalities. The mechanical content is a resource-matched attaining construction and its force, load, and work interpretation. A fixed measured-stiffness budget differs from a fixed spectrum of the complete network.
 
 A [scale-free comparison](docs/SCALE_FREE_RESPONSE.md) puts the force and clamped experiments on a common, established matrix-asymmetry scale. It gives a sharp stiffness-contrast bound, a balanced attaining allocation, and an explicit distinction between large normalized nonreciprocity and a large directional ratio obtained by load cancellation. The dimensional compliance and work objectives remain separate.
 
 Four coordinates are the minimum for **exact ceiling attainment with both outputs stationary for every constant force**, when measured and internal coordinates have no direct damping cross-block. This is not a minimum for all nonreciprocal response or for the number of springs.
+
+For the separate clamped-work ceiling, four coordinates are necessary without that extra stationarity condition: a single hidden coordinate permits at most half the full ceiling. A [small-mass calculation](docs/PHYSICAL_VALIDITY.md) establishes a stable overdamped limit for the existing construction. Its finite-mass response is outside the exact overdamped bound.
 
 The attaining element composes with static loads at its measured coordinates. Its twelve-spring realization uses eight strictly positive modulated springs, four strictly positive fixed support springs, fixed guides, and fixed rest lengths. Exact-length integrations test the geometric linearization, not the universal theorem.
 
@@ -67,6 +70,7 @@ python -m pip install -r requirements.txt
 python checks/run.py --output results.local.json
 python checks/port_work.py --output port-work.local.json
 python checks/scale_free.py --output scale-free.local.json
+python checks/finite_mass.py --output finite-mass.local.json
 python checks/check_docs.py
 ```
 
@@ -74,7 +78,7 @@ The main suite covers the bound, equality construction, forced/loaded/clamped dy
 
 ## Scope
 
-The main result concerns linear overdamped dynamics, constant damping, prescribed periodic stiffness, fixed equilibrium, and normalized force/displacement ports. It does not establish an inertial, feedback-controlled, broadband, or bulk-material response law. The proposed geometry is not a fabricated device, and controller losses are not optimized.
+The main result concerns linear overdamped dynamics, constant damping, prescribed periodic stiffness, fixed equilibrium, and normalized force/displacement ports. It does not establish a universal inertial, feedback-controlled, broadband, or bulk-material response law. The proposed geometry requires 21:1 connecting-spring tuning in the worked design; it is not a fabricated device, and controller losses are not optimized.
 
 The [source comparison](docs/SOURCES.md) identifies established ingredients and the remaining operator-bound and implementation questions. This is a research repository, not a manuscript or a hardware report.
 

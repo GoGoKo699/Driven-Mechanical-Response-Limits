@@ -192,6 +192,30 @@ Half the difference of the reciprocal endpoints is exactly the attained global s
 
 The code also checks a two-stage schedule with endpoint gap 0.055329562310 but zero antisymmetric response, and a static anisotropic system for which the stronger endpoint disk collapses to a point. Finally it checks an excluded static skew-force model: positivity of the restoring part alone does not give our disk when the dynamics acts directly on the forced constant subspace. The condition $Df=0$ is essential in the generic operator formulation.
 
+## The exact inverse-gap constants are established
+
+Moslehian, Nakamoto, and Seo [P5, Theorem 2.1(i)] prove an operator Klamkin–McLenaghan inequality for positive maps. Its specialization gives both dimensional resource constants used here. They are not new general inequalities.
+
+Let $\mathcal A$ be multiplication by $\mathcal K$ and let $\Phi$ be compression onto all constant trajectories, so $\Phi(\mathcal A)=\overline{\mathcal K}$. In their notation take $A=\mathcal A$, $B=\mathcal A^{-1}$, and lower/upper constants $1/M,1/m$. Their hypothesis holds, $A\mathbin{\#}B=I$, and the conclusion is
+
+$$
+\overline{\mathcal K^{-1}}-(\overline{\mathcal K})^{-1}
+\preceq(1/\sqrt m-1/\sqrt M)^2I.
+$$
+
+Projection to the measured plane and the fixed-schedule disk give $|\beta|\leq B_*$. No derivative-operator assumption enters this published gap inequality.
+
+There is a dual substitution for the clamped experiment. At each phase take their $A=K^{-1}$, $B=K$, constants $m,M$, and $\Phi$ as compression to measured coordinates. Write the mechanical blocks as $K_{xx},B,C$ and $S=K_{xx}-BC^{-1}B^T$. Since $\Phi(K^{-1})=S^{-1}$, the same theorem gives
+
+$$
+BC^{-1}B^T=K_{xx}-S
+\preceq(\sqrt M-\sqrt m)^2I_2.
+$$
+
+The clamped projection proof then gives the existing odd-stiffness ceiling. These are explicit applications of [P5]; the local proofs remain useful for self-contained reading.
+
+The full spectral lens follows from the inverse chord, the disk, and scalar optimization. The normalized-asymmetry ceiling follows by enclosing that lens in a sector. We have not located an inspected source printing this exact mechanical formulation, but neither consequence should be advertised as a new foundational operator method. The scientific question is admissible mechanical attainment with the stated ports and resources.
+
 ## Direct primary-source comparison
 
 ### P1 — spectral transport framework
@@ -218,13 +242,19 @@ G. W. Milton, *A unifying perspective on linear continuum equations prevalent in
 
 Its introductory formulation explicitly covers time-dependent moduli, and Section 7 explains why physically changing material parameters can generate extra coupling terms. Thus describing our coefficients as time dependent does not by itself place the problem outside effective-operator theory. Our guided-spring derivation and its no-moving-equilibrium assumption must still be evaluated on their own physical merits. The paper's examples are not an automatic fabrication of our network.
 
+### P5 — the exact inverse-gap budget
+
+M. S. Moslehian, R. Nakamoto, and Y. Seo, *A Diaz–Metcalf type inequality for positive linear maps and its applications*, Electronic Journal of Linear Algebra **22**, 179–190 (2011), [journal article](https://doi.org/10.13001/1081-3810.1433), [primary full PDF](https://journals.uwyo.edu/index.php/ela/article/download/867/867/867).
+
+Theorem 2.1(i), journal p. 180, and its proof Eq. (2.8) were inspected in the full primary text. The two substitutions above identify the precise inherited constants; the paper is not cited as a spring-device construction.
+
 ### Source-access limits
 
-The publisher's full HTML for P2 and the parsed primary PDF texts for P1, P3, and P4 were available on 30 September 2026. PDF screenshot calls and attempts to download them for local rendering failed in this session. No visual figure, table, or unrendered symbol is used as evidence for a new claim; the operator identities are independently stated and derived above. P1's displayed body date differs from its arXiv submission and journal dates; bibliographic dating follows the latter. No full citation-network search or expert priority determination was completed.
+The publisher's full HTML for P2 and the parsed primary PDF texts for P1, P3, and P4 were available on 30 September 2026. For that P1–P4 comparison, PDF screenshot calls and attempts at local rendering failed. The later P5 comparison used its accessible full journal PDF. No visual figure, table, or unrendered symbol is used as evidence for a new claim; the operator identities are independently stated and derived above. P1's displayed body date differs from its arXiv submission and journal dates; bibliographic dating follows the latter. No full citation-network search or expert priority determination was completed.
 
 ## Consequence for the research claim
 
-The abstract disk, its positive-measure interpretation, and the monotonicity mechanism are standard operator consequences once the problem is normalized correctly. The project should not count each as an independent foundational discovery. This comparison does not invalidate the existing mechanical theorem or show that the complete sharp physical construction is already published.
+The abstract disk, its positive-measure interpretation, the monotonicity mechanism, and the two inverse-gap constants are established operator consequences. The project should not count each as an independent foundational discovery. This comparison does not invalidate the mechanical theorem or show that the complete sharp physical construction is already published.
 
 The remaining candidate contribution is the resource-matched mechanical result: an optimum over arbitrary reciprocal positive periodic networks, a small attaining architecture with stationary measured outputs, and an explicit positive-spring realization. Establishing its priority requires a source that supplies that combination or a rigorous reduction to one, not merely a similar circle. Conversely, a distinct mechanical vocabulary does not make a standard inequality new.
 

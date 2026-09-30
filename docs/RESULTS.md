@@ -98,6 +98,16 @@ Suppose a network attains $B_*>0$, its two measured coordinates are stationary f
 
 This is not a minimum spring count or a prohibition on three-coordinate nonreciprocity. The [proof and suboptimal control](PROOF.md#coordinate-minimum) retain the extra assumptions explicitly.
 
+## Clamped coordinate minimum
+
+For the independently defined clamped response, let $r$ be the hidden-coordinate count and $c_*=(\sqrt M-\sqrt m)^2$. Then
+
+$$
+|\kappa|\leq c_*\min(r,2)/4.
+$$
+
+Full clamped-ceiling attainment therefore requires at least four total coordinates, and the same architecture with its clamped-optimal allocation attains it. This statement allows constant damping cross-blocks and requires no force-controlled output stationarity. The [rank proof](PORT_WORK.md#four-coordinates-are-necessary-for-clamped-attainment) does not assert that the one-hidden-coordinate bound is sharp.
+
 ## Geometry and tolerance
 
 For the worked interval $[k_0,3k_0]$, eight strictly positive modulated axial springs and four positive fixed support springs realize the attaining tangent stiffness on ideal perpendicular guides. The proposed layout has fixed rest lengths, no prestress at the reference origin, and no moving guides. Finite-amplitude motion obeys nonlinear spring geometry and is not subject to the original exact linear budget without further analysis.
@@ -118,4 +128,4 @@ This is a coefficient-error bound, not tolerance to arbitrary damping, prestress
 
 ## Research boundaries
 
-No energy-efficiency optimum, inertial extension, autonomous controller, experimentally measured performance, or universal bulk odd-elasticity theorem is established. The [literature comparison](SOURCES.md) keeps the relation to broader operator/effective-response results open. Evidence for universal statements is the proof, not the size of the numerical test suite.
+No energy-efficiency optimum, universal inertial response bound, autonomous controller, experimentally measured performance, or universal bulk odd-elasticity theorem is established. A separate [small-mass consistency calculation](PHYSICAL_VALIDITY.md#a-controlled-small-mass-limit) proves stability and convergence for the same construction with scalar mass and drag; it does not extend the overdamped ceiling to finite mass. The [literature comparison](SOURCES.md) identifies inherited inequalities and the remaining realization questions. Evidence for universal statements is the proof, not the size of the numerical test suite.
