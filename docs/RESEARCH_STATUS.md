@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Results](RESULTS.md) · [Sources](SOURCES.md) · [Physical validity](PHYSICAL_VALIDITY.md)
 
-Updated 30 September 2026. **Research is ready for a focused ideal-theory manuscript.** This is a scope decision after the bounded significance and closest-prior assessment, not a prediction of acceptance or a certificate of exhaustive priority. Manuscript writing has not begun.
+Updated 30 September 2026. **Manuscript writing is on hold.** Research is complete for the focused ideal-theory scope below, following the bounded significance and closest-prior assessment. This does not certify exhaustive priority or a complete apparatus. Collaboration inquiries are welcome through the [README contact](../README.md).
 
 ## The compact research claim
 
@@ -41,8 +41,8 @@ The worked stiffness contrast gives a force-optimal relative response of about 0
 
 ## Research closure and writing boundary
 
-The research gate is closed positively **for the narrow theory scope above**. Fruchart–Scheibner–Vitelli's review is the selected physics anchor. Its [reading guide](TUTORIAL_OPTIONS.md), the [local tutorial bridge](TUTORIAL.md), and the [documentation map](README.md) now connect the external context to the model, proofs, and construction. The [scientific background guide](MANUSCRIPT_BACKGROUND.md) retains primary attribution. Manuscript writing has not begun. No new actuator search, topology sweep, bulk-material extension, or additional response objective is scheduled. Reopen research only for a concrete contradictory source, proof error, or a deliberate change of physical claim.
+The research gate is closed positively **for the narrow theory scope above**. The [tutorial bridge](TUTORIAL.md) connects the selected Fruchart–Scheibner–Vitelli review to the results; the [background guide](MANUSCRIPT_BACKGROUND.md) records primary attribution. No new actuator search, topology sweep, bulk-material extension, or additional response objective is scheduled. Reopen research only for a concrete contradictory source, proof error, or a deliberate change of physical claim.
 
 The manuscript should center the two sharp mechanical objectives and their common attaining family, with the clamped coordinate minimum and exact load interpretation. The spring synthesis establishes ideal mechanical admissibility; the normalized measure, tolerance, small-mass consistency, and failed capacitor screen provide supporting scope checks. They should not be presented as a collection of independent discoveries.
 
-All constants and benchmark values remain unchanged. The decision follows the written proofs, primary-source comparison, and internal critical review; passing numerical checks alone does not establish significance. No external review, fabrication, manuscript submission, or journal selection is recorded here.
+The decision follows the written proofs, primary-source comparison, and internal critical review; passing numerical checks alone does not establish significance. No external review, fabrication, or manuscript submission is recorded here.

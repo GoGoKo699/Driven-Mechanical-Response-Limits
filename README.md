@@ -10,6 +10,8 @@ This repository gives sharp limits for two measurements and a four-coordinate ne
 
 The modulation supplies energy. The result is a design limit for a driven constitutive element, with explicit force, load, and work interpretations.
 
+**Manuscript writing is currently on hold.** For collaboration, feel free to contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+
 ## Two measurements, two sharp limits
 
 Fix physical coordinates and conjugate forces. The complete instantaneous stiffness $`K(t)`$ is symmetric, and every eigenvalue lies in $`[m,M]`$, with $`0<m<M`$. Damping is constant, symmetric, and positive definite. The origin stays fixed while the stiffness schedule repeats.
@@ -59,7 +61,7 @@ The [documentation map](docs/README.md) provides direct routes to construction, 
 
 ## The construction at a glance
 
-Two accessible coordinates $`x\in\mathbb R^2`$ couple to a hidden plane $`y\in\mathbb R^2`$. Their individual stiffnesses stay fixed while the coupling rotates:
+Two accessible coordinates $`x\in\mathbb R^2`$ couple to a hidden plane $`y\in\mathbb R^2`$. The diagonal stiffness blocks stay fixed while the coupling rotates:
 
 ```math
 K(t)=
@@ -99,7 +101,7 @@ The [operator comparison](docs/OPERATOR_CONNECTION.md) attributes the response g
 
 The proposed geometry is an ideal tangent realization. Its worked example requires 21:1 connecting-spring tuning. [Smaller tuning ranges](docs/TUNING_RANGE.md) permit attainment at smaller stiffness contrast; the relative response vanishes quadratically as tuning approaches unity. The [capacitive actuator screen](docs/CAPACITIVE_ACTUATION.md) finds that fixed leakage restores reciprocal long-time response in that circuit. No complete apparatus is certified.
 
-The theorem concerns linear overdamped dynamics and prescribed coefficients. The [physical-validity note](docs/PHYSICAL_VALIDITY.md) states the small-mass consistency result and the limits of the geometric and actuator assumptions. The [research status](docs/RESEARCH_STATUS.md) records the focused theory scope; manuscript writing has not begun.
+The theorem concerns linear overdamped dynamics and prescribed coefficients. The [physical-validity note](docs/PHYSICAL_VALIDITY.md) states the small-mass consistency result and the limits of the geometric and actuator assumptions. The [research status](docs/RESEARCH_STATUS.md) records the focused theory scope and writing boundary.
 
 ## Reproduce the checks
 
@@ -116,5 +118,9 @@ python checks/check_docs.py
 ```
 
 The [verification map](docs/REPRODUCIBILITY.md#claim-map) links each result to its proof and finite diagnostic. Numerical checks test formulas and implementation consistency; the proofs establish the universal statements. The original [reference values](checks/reference.json) remain fixed.
+
+## Discovery and citation
+
+This repository is relevant to odd elasticity, nonreciprocal DC compliance, clamped odd stiffness, and sharp response bounds for time-modulated reciprocal spring networks. The [LLM reading guide](llms.txt) maps these questions to the canonical derivations and their assumptions. Use [CITATION.cff](CITATION.cff) to cite this repository at the commit used; [references.bib](references.bib) records the external literature.
 
 Copyright © 2026 Ruge Lin. [MIT license](LICENSE).

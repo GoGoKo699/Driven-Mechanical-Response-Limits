@@ -2,7 +2,7 @@
 
 [Home](../README.md) · [Tutorial bridge](TUTORIAL.md) · [Selected review](TUTORIAL_OPTIONS.md) · [Source register](SOURCES.md)
 
-This is a research and citation guide, not manuscript text. It consolidates the background needed for the current ideal-theory claim, separates established ingredients from the local result, and records the explanations a reader still needs. The canonical statements remain [Model](MODEL.md), [Results](RESULTS.md), [Proof](PROOF.md), and the linked companion derivations. Access and comparisons were checked on 30 September 2026.
+This is a research and citation guide, not manuscript text. It consolidates the background needed for the current ideal-theory claim, separates established ingredients from the local result, and links those explanations to the [local tutorial](TUTORIAL.md). The canonical statements remain [Model](MODEL.md), [Results](RESULTS.md), [Proof](PROOF.md), and the linked companion derivations. Access and comparisons were checked on 30 September 2026.
 
 ## 1. Begin with the measurement, not with a general claim of nonreciprocity
 
@@ -39,7 +39,7 @@ Driven mean odd response also precedes this project. Huang and collaborators' gr
 | Effective operators, projection, and attainable bounds | Milton's book, §§12.7–12.10 and Chapter 13; Kern–Miller–Milton (2020), Eqs. (1)–(9); [R2](SOURCES.md#r2) | A time-domain problem needs its own reduction; a spatial composite formula is not a mechanical proof |
 | Normalized matrix asymmetry | Brandner–Seifert (2013), Eq. (15) and Appendix A; [N1](SCALE_FREE_RESPONSE.md) | Optimize the established index over this stiffness class and distinguish it from load cancellation |
 
-The short proof uses a phase-weighted inner product, periodic energy identities, Cauchy–Schwarz, and an inverse chord inequality. The operator comparison explains the broader provenance; it need not become a prerequisite for reading the main theorem. Disk geometry, the dimensional constants, and the asymmetry index must receive attribution instead of being presented as independent new discoveries.
+The short proof uses a phase-weighted inner product, periodic quadratic identities, Cauchy–Schwarz, and an inverse chord inequality. The operator comparison explains the broader provenance; it need not become a prerequisite for reading the main theorem. Disk geometry, the dimensional constants, and the asymmetry index must receive attribution instead of being presented as independent new discoveries.
 
 The local result combines those tools with a four-coordinate reciprocal equality family, the clamped coordinate minimum, and port/resource interpretation. The separate force-response minimum retains its stationary-output and damping-block assumptions. Neither minimum says that four coordinates are needed for every nonzero odd response.
 
@@ -75,5 +75,3 @@ The [physical-validity note](PHYSICAL_VALIDITY.md) separates the tangent spring 
 | Discuss implementation limits | The specific primitive sources and actuator laws actually used, with their approximation boundaries |
 
 The [curated bibliography](../references.bib) provides reusable records for these central comparisons and tutorial candidates. It is not an instruction to cite every entry: the full linked source registers include additional supporting and contextual records. Strang's complete text was not inspected; peripheral abstract-only access limitations remain explicitly labeled in their original notes. The central Scheibner and Fodor–Souslov access gaps have been closed with full primary texts.
-
-At the present narrow theory scope, the necessary background is assembled and the selected review is connected to the results through the local tutorial and documentation map. Manuscript preparation remains a later stage. This is a bounded literature assessment, not an exhaustive priority guarantee. No new theorem, research campaign, apparatus certification, or manuscript is introduced by this guide.

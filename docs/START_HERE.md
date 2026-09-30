@@ -32,9 +32,7 @@ The number of coordinates alone is not the resource that explains an improvement
 
 ## What makes the proof short?
 
-Represent the two real force experiments by one complex bookkeeping vector. Over a period, one balance describes the constant applied force; another describes the positive elastic quadratic form. In the inner product weighted by the instantaneous stiffness, a projection inequality bounds the response. A scalar bound on the inverse stiffness then removes the details of the waveform and internal dimension.
-
-Complex numbers here combine two spatial experiments. Their imaginary part is not a phase lag under an oscillating probe force. The actual probe force stays constant.
+The [tutorial](TUTORIAL.md) explains how a weighted projection removes waveform and dimension dependence; the [proof](PROOF.md) gives the complete derivation.
 
 ## Three useful checks on understanding
 
