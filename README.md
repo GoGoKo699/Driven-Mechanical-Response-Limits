@@ -44,12 +44,15 @@ A force at one measured coordinate moves the other in the opposite sense to the 
 | Understand the physical question | [A short explanation](docs/START_HERE.md) |
 | Inspect the mathematical statement | [Model](docs/MODEL.md) → [Results](docs/RESULTS.md) → [Proof](docs/PROOF.md) |
 | Examine the device and its loads | [Construction and spring geometry](docs/REALIZATION.md) |
+| Compare force and displacement control | [Clamped work](docs/PORT_WORK.md) and [scale-free response](docs/SCALE_FREE_RESPONSE.md) |
 | Compare with existing work | [Sources and assumption register](docs/SOURCES.md) |
 | Reproduce the evidence | [Reproducibility and claim map](docs/REPRODUCIBILITY.md) |
 
 ## What the result includes
 
 The proof first resolves a response disk using the stiffness allocated to the measured directions, then optimizes over that allocation. An [operator comparison](docs/OPERATOR_CONNECTION.md) identifies the established resolvent structure and a sharper fixed-schedule budget given by the difference between slow- and fast-driving compliance. This distinguishes a fixed measured-stiffness budget from a fixed spectrum of the complete network.
+
+A [scale-free comparison](docs/SCALE_FREE_RESPONSE.md) puts the force and clamped experiments on a common, established matrix-asymmetry scale. It gives a sharp stiffness-contrast bound, a balanced attaining allocation, and an explicit distinction between large normalized nonreciprocity and a large directional ratio obtained by load cancellation. The dimensional compliance and work objectives remain separate.
 
 Four coordinates are the minimum for **exact ceiling attainment with both outputs stationary for every constant force**, when measured and internal coordinates have no direct damping cross-block. This is not a minimum for all nonreciprocal response or for the number of springs.
 
@@ -62,10 +65,12 @@ Use Python 3.11 or later in a virtual environment:
 ```sh
 python -m pip install -r requirements.txt
 python checks/run.py --output results.local.json
+python checks/port_work.py --output port-work.local.json
+python checks/scale_free.py --output scale-free.local.json
 python checks/check_docs.py
 ```
 
-The suite covers the bound, equality construction, forced/loaded/clamped dynamics, positive-spring synthesis, finite-length mechanics, topology controls, and coefficient-error bounds. The [claim map](docs/REPRODUCIBILITY.md#claim-map) distinguishes proofs from finite diagnostics. The checked reference values are in [checks/reference.json](checks/reference.json).
+The main suite covers the bound, equality construction, forced/loaded/clamped dynamics, positive-spring synthesis, finite-length mechanics, topology controls, coefficient-error bounds, and operator comparison. The two companion scripts test the work cycles and the common asymmetry bound. Their notes link each additional statement to its derivation. The [claim map](docs/REPRODUCIBILITY.md#claim-map) distinguishes proofs from finite diagnostics. The checked original reference values remain in [checks/reference.json](checks/reference.json).
 
 ## Scope
 

@@ -6,3 +6,4 @@ results.json
 *.egg-info/
 operator-results.local.json
 port-work.local.json
+scale-free.local.json
