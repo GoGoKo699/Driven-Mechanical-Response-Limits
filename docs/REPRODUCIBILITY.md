@@ -69,3 +69,5 @@ The [operator-comparison record](../provenance/OPERATOR_COMPARISON.md) documents
 The [physical-validity record](../provenance/PHYSICAL_VALIDITY.md) records the attribution correction, rank corollary, small-mass check, and concrete implementation boundary.
 
 The [capacitive-screen record](../provenance/CAPACITIVE_SCREEN.md) records the resolved actuator candidate and the retained ideal-theory scope.
+
+The [theory-scope record](../provenance/THEORY_SCOPE.md) records the bounded literature and significance assessment and the decision to proceed to manuscript preparation. Numerical checks do not establish that editorial judgment.

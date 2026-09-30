@@ -30,7 +30,7 @@ The [full author-hosted published PDF](https://millergroup.yale.edu/sites/defaul
 
 Sarah A. M. Loos, Simon Hermann, and Sabine H. L. Klapp, *Non-reciprocal hidden degrees of freedom: A unifying perspective on memory, feedback, and activity*, [arXiv:1910.08372](https://arxiv.org/abs/1910.08372).
 
-The retrieved primary abstract and prior checkpoint comparison establish internal-variable dynamics as relevant prior work. The direct full-HTML request failed in this consolidation. No unseen derivation is declared exhausted. Our laboratory couplings are reciprocal and time dependent; the rotating-coordinate description introduces a skew term. This distinction motivates comparison but is not itself novelty evidence.
+The [full primary PDF](https://arxiv.org/pdf/1910.08372), Section II, Eqs. (1)–(2), was inspected in the scope assessment. It starts from Markovian Langevin networks allowing unequal directed couplings and eliminates hidden coordinates into memory. Thus auxiliary-variable elimination and its thermodynamic interpretation are established. The inspected model does not impose our reciprocal positive instantaneous stiffness budget or supply its attaining spring construction. Different variable names or the use of a rotating frame would not alone establish novelty.
 
 ## Overdamped harmonic-control precedents
 
@@ -118,6 +118,28 @@ The [capacitive-actuation note](CAPACITIVE_ACTUATION.md#primary-sources-and-acce
 
 The [finite-tuning calculation](TUNING_RANGE.md) separately shows that the original 21:1 coefficient range can be reduced by narrowing the stiffness contrast. This is an algebraic design option, not a repair of the leakage obstruction or a measured actuator range.
 
-## Remaining scientific work
+## Focused paper-level comparison
 
-The [research status](RESEARCH_STATUS.md) retains a precisely scoped ideal theoretical realization after the concrete capacitive model failed the strict DC screen. The exact operator constants have identified precedents. Priority and significance of the mechanically constrained realization remain the paper-level questions; per-clause apparatus precedent and a verified hardware implementation are not claimed. Numerical tests cannot settle those questions.
+The final bounded comparison targets the closest mechanisms and exact mathematical ingredients. It is not an exhaustive citation-network search. The [work note](PORT_WORK.md#6-comparison-with-actual-odd-elastic-architectures) and [operator note](OPERATOR_CONNECTION.md#direct-primary-source-comparison) retain the detailed access records.
+
+| Primary predecessor | What is already established | Remaining distinction of this project |
+|---|---|---|
+| Moslehian–Nakamoto–Seo (2011), with positive-plus-skew resolvent methods | Exact inverse-gap constants and the response-region mechanism | An admissible reciprocal mechanical equality family under the same complete stiffness budget, with stationary ports and the clamped coordinate minimum |
+| Scheibner et al. (2020); Chen et al. (2021), work-note W1–W2 | Odd elastic response and oriented slow-cycle work; an active feed-forward elastic architecture | An optimum over prescribed positive reciprocal stiffness schedules; no claim to invent odd elasticity, its work law, or an operating odd element |
+| Lin et al. (2023), scale-free note N2 | Eliminating a driven frictional coordinate produces odd elasticity | Its coordinate-dependent dissipation and unconfined drive coordinate do not satisfy our full model; it prevents a bound over arbitrary driven spring devices |
+| Huang et al. (2023), R13 below | Oscillatory drive produces time-averaged odd elasticity, force deflection, and quasistatic work | Their history-dependent chiral contact forces differ from prescribed reciprocal linear stiffness; the inspected equations do not give our stiffness-budget optimum |
+| Rahimi–Park (2026), work-note W5 | Driven odd response with passive mechanical components and no electronic feedback | Contact changes and locked new equilibria differ from our fixed-equilibrium coefficient control; the broad mechanism is not a novelty claim |
+
+Full primary model text was inspected for the rows except Scheibner W1, whose attribution remains abstract-level. The Chen comparison concerns the constitutive and work passages; its experimental waves and simulated work cycles remain distinct. Rahimi–Park was already in the repository and was rechecked, not newly discovered in this assessment.
+
+### R13 — Driven mean odd elasticity is prior work
+
+R. Huang, R. Mandal, C. Scheibner, and V. Vitelli, *Odd elasticity in driven granular matter*, [arXiv:2311.18720v1](https://arxiv.org/html/2311.18720v1) (2023).
+
+The primary HTML, main Eqs. (1)–(5), and supplementary Sections S1.1, S2.2, and S2.5.2 were inspected. The model uses inertial grains and chiral Coulomb friction. Its contact forces retain history; the mean stress response is measured after subtracting the oscillatory baseline. The paper directly precedes the concepts of driven mean odd response and quasistatic loop work. It does not state the fixed full-spectrum, arbitrary-network sharp limit considered here. That specific comparison does not establish priority over all related granular or continuum theories.
+
+## Research decision
+
+The [scope assessment](RESEARCH_STATUS.md#why-this-supports-a-paper) is positive for a focused ideal-theory paper about constrained mechanical optimality and attainment. The inspected prior work supplies the broad phenomenon and the operator tools; the complete resource-matched realization and clamped coordinate result remain the defensible contribution. Working originality is supported at that scope, with no exhaustive priority certificate or publication-outcome prediction.
+
+The combined apparatus still lacks the requested per-clause precedent and verification. This is a retained limitation, not a new open-ended research program. A concrete subsuming source or proof defect would reopen the decision; additional numerical examples cannot settle priority or significance.

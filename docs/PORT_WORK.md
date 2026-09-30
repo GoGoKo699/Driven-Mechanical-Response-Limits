@@ -334,7 +334,7 @@ The primary abstract reports optimization of work and efficiency of deformation 
 
 L.-S. Lin et al., *Onsager's Variational Principle for Nonreciprocal Systems with Odd Elasticity*, Journal of the Physical Society of Japan **92**, 033001 (2023), [arXiv:2209.15363v2](https://arxiv.org/abs/2209.15363).
 
-The inspected primary abstract attributes nonreciprocal effective equations to eliminating an extra coordinate coupled to a nonequilibrium drive. This is relevant prior art for the mechanism, not a paper to exclude just because the extra variables are named differently. Its full HTML was unavailable in this pass. We do not assert that its complete variational model cannot be reduced to ours or vice versa.
+The later [full-text comparison](SCALE_FREE_RESPONSE.md#6-a-real-predecessor-exposes-the-physical-boundary) inspected the primary PDF's Eqs. (1)–(12). Eliminating a driven frictional coordinate produces an odd positional force, so this mechanism is established. Its coordinate-dependent dissipation and unconfined drive coordinate are outside the present full-network model. This is a specific constitutive distinction, not a novelty claim for eliminating hidden coordinates.
 
 ### W5 — Driven mechanics without electronic feedback
 

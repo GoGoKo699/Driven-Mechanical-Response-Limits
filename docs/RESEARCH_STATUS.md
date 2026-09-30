@@ -1,12 +1,12 @@
-# Research status and remaining decision
+# Research status and paper scope
 
 [Home](../README.md) · [Results](RESULTS.md) · [Sources](SOURCES.md) · [Physical validity](PHYSICAL_VALIDITY.md)
 
-Updated 30 September 2026. Manuscript writing has not begun. The scope remains the existing driven reciprocal mechanical element.
+Updated 30 September 2026. **Research is ready for a focused ideal-theory manuscript.** This is a scope decision after the bounded significance and closest-prior assessment, not a prediction of acceptance or a certificate of exhaustive priority. Manuscript writing has not begun.
 
 ## The compact research claim
 
-A prescribed schedule of reciprocal positive stiffnesses can produce a nonreciprocal steady response. Under a fixed full-network stiffness interval, the response has sharp limits independent of hidden dimension. A small construction attains them with stationary measured outputs, so its static load and clamped work laws have an exact operating meaning.
+Within the [declared reciprocal overdamped network class](MODEL.md), four mechanical coordinates are necessary and sufficient to attain the sharp clamped odd-stiffness ceiling. One rotating-coupling family attains that ceiling and the distinct force-compliance ceiling at different stiffness allocations, with stationary measured outputs and a positive-spring tangent realization in the stated parameter range.
 
 The physical usefulness established here is a design limit and an attaining constitutive element. There is no demonstrated advantage in actuator power, efficiency, broadband isolation, or a particular industrial task.
 
@@ -23,16 +23,26 @@ The physical usefulness established here is a design limit and an attaining cons
 | Is 21:1 tuning necessary for any nonzero ideal attainment? | No. The same decomposition works at smaller stiffness contrast for every tuning ratio greater than one, with positive supports. Its relative response becomes quadratically weak. |
 | Does the screened capacitive-piezoelectric implementation realize the DC target? | Only in its exactly isolated prepared-charge idealization. With fixed nonzero leakage, the complete circuit relaxes to zero voltage and a reciprocal static mechanical response. This implementation route is closed for the strict long-time target under those assumptions. |
 
-## What still determines the paper
+## Why this supports a paper
 
-The candidate contribution is the mechanically admissible attainment and its resource/port interpretation. The disk, inverse-gap constant, and standard asymmetry index should not be counted as separate foundational discoveries. The inspected operator papers do not supply the complete guided-spring construction; that observation is not an exhaustive priority certificate.
+The contribution is a constrained mechanical optimality and realization theorem. The universal bound limits every admissible finite network, while the construction satisfies the same full-network budget, reciprocal positive laboratory stiffness, and fixed conjugate ports. The clamped coordinate minimum completes an architecture question. The disk, inverse-gap constants, rotating-frame algebra, rank estimate, and standard asymmetry index are inherited or elementary tools, not separate foundational discoveries.
 
-The planned concrete actuator screen is complete for [positive capacitive piezoelectric shunts](CAPACITIVE_ACTUATION.md). Keeping leakage exposes an exact obstruction; frozen stiffness-tuning precedent does not establish the requested attracting DC response. We retain the paper candidate as **conditional mechanical theory with an ideal prescribed-coefficient construction**, without a verified apparatus claim. The requested per-assumption community-precedent threshold remains open for the complete apparatus.
+This gives a concrete design benchmark: adding hidden coordinates or waveform complexity cannot exceed the specified response ceiling without changing a resource or leaving the model. Stationary measured outputs also make the equality construction usable in an exact static load calculation. Maximizing displacement response and maximizing slow-cycle work per area choose different allocations; a mean compliance alone does not generally determine clamped work.
 
-The remaining high-level question is whether the sharp mechanical realization and its operational distinctions are significant enough at this scope, after the established operator ingredients are credited. Additional actuator variants or numerical cases are not a substitute for answering that question. A different independently supported constitutive realization could change the physical assessment, but it is not presumed here.
+The strongest skeptical objection is that the construction is short and natural once the standard operator structure is recognized, while the screened actuator fails the desired steady measurement. That limits the significance. Our assessment is nevertheless positive for a concise specialized theory paper: admissible attainment of a universal bound, with a minimum clamped coordinate count, is a complete result. No demonstrated technology advantage is needed to state that mathematical contribution, and none is inferred from it.
 
-Fabrication is not required to prove the mathematical theorem. A hardware-feasibility claim does require more than the present evidence. No large simulation campaign, unrelated application search, or additional response objective is needed to resolve this decision.
+The [focused comparison](SOURCES.md#focused-paper-level-comparison) separates existing driven odd-response mechanisms and work cycles from this constrained optimum. No inspected source supplies the complete bound, admissible equality family, and clamped coordinate minimum. This is the basis for a working originality claim at that exact scope. It is not proof that no publication can subsume the result; a source providing the same construction or a direct reduction would require reassessment.
 
-## Writing gate
+## Physical boundary and significance limit
 
-The implementation scope is now explicitly ideal theory; the screened leaky-capacitor implementation is excluded. Before manuscript drafting, settle the significance and priority of the mechanically constrained realization at that scope. Keep the central theorem, proof, construction, work account, and source map consistent with that decision. Passing code checks alone does not close this gate.
+The [capacitive screen](CAPACITIVE_ACTUATION.md) is complete and negative for fixed nonzero leakage. The paper therefore concerns prescribed mechanical coefficients and ideal constraints, with no verified complete apparatus. The requested per-assumption community-precedent threshold remains unfulfilled for the combined guided-slider apparatus; that gap is not relabeled as successful device validation. Established harmonic-control primitives support the model class, while the exact geometry is an ideal synthesis result.
+
+The worked stiffness contrast gives a force-optimal relative response of about 0.134, or a maximum normalized asymmetry of about 0.144. Smaller component tuning ranges permit smaller contrasts but quadratically weaker responses. These are modest constitutive effects. Internal cycling consumes power during holding, and slow work cycles do not establish efficient energy conversion. Actuator bandwidth, control complexity, controller losses, and a practical isolation task are outside the optimization budget.
+
+## Research closure and writing boundary
+
+The research gate is closed positively **for the narrow theory scope above**. The next stage is manuscript preparation. No new actuator search, topology sweep, bulk-material extension, or additional response objective is scheduled. Reopen research only for a concrete contradictory source, proof error, or a deliberate change of physical claim.
+
+The manuscript should center the two sharp mechanical objectives and their common attaining family, with the clamped coordinate minimum and exact load interpretation. The spring synthesis establishes ideal mechanical admissibility; the normalized measure, tolerance, small-mass consistency, and failed capacitor screen provide supporting scope checks. They should not be presented as a collection of independent discoveries.
+
+All constants and benchmark values remain unchanged. The decision follows the written proofs, primary-source comparison, and internal critical review; passing numerical checks alone does not establish significance. No external review, fabrication, manuscript submission, or journal selection is recorded here.

@@ -82,6 +82,8 @@ The main suite covers the bound, equality construction, forced/loaded/clamped dy
 
 The main result concerns linear overdamped dynamics, constant damping, prescribed periodic stiffness, fixed equilibrium, and normalized force/displacement ports. It does not establish a universal inertial, feedback-controlled, broadband, or bulk-material response law. The proposed geometry requires 21:1 connecting-spring tuning in the worked design; it is not a fabricated device, and controller losses are not optimized.
 
-Finite tuning permits ideal attainment at smaller contrast, with a quadratically smaller relative response. A concrete capacitive-piezoelectric candidate illustrates why electrical states matter: fixed leakage restores reciprocal long-time response, despite the tunable frozen stiffness. The [source comparison](docs/SOURCES.md) and [research status](docs/RESEARCH_STATUS.md) retain the ideal-theory scope. This is a research repository, not a manuscript or a hardware report.
+Finite tuning permits ideal attainment at smaller contrast, with a quadratically smaller relative response. A concrete capacitive-piezoelectric candidate illustrates why electrical states matter: fixed leakage restores reciprocal long-time response, despite the tunable frozen stiffness.
+
+The [source comparison](docs/SOURCES.md#focused-paper-level-comparison) and [scope decision](docs/RESEARCH_STATUS.md) support a focused theoretical paper about constrained mechanical optimality and attainment. The broad odd-response phenomenon and the operator inequalities are established prior work. The research phase is complete at this ideal scope; manuscript writing has not begun, and no complete apparatus is certified.
 
 Copyright © 2026 Ruge Lin. [MIT license](LICENSE).
