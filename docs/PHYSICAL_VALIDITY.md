@@ -67,7 +67,7 @@ hx+bw_0=F,
 bx+[(g-\mu\Omega^2)I-\gamma\Omega J]w_0=0.
 ```
 
-The stability condition makes this the attracting response. Identifying $`J`$ with $`i`$ gives $`\chi_\mu=\operatorname{Re}C_\mu I+\operatorname{Im}C_\mu J`$, where
+The stability condition makes this the attracting response. Identifying $`J`$ with $`i`$ gives $`\chi_\mu=\mathrm{Re}\,C_\mu I+\mathrm{Im}\,C_\mu J`$, where
 
 ```math
 C_\mu=\frac{g-\mu\Omega^2-i\gamma\Omega}

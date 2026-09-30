@@ -10,4 +10,6 @@ No manuscript, new research extension, external outreach, public release tag, or
 
 Use GitHub-native Markdown with short fenced `math` displays and protected inline math delimited by a dollar sign and backtick on each side. Keep table-cell mathematics free of literal vertical bars; use TeX commands for absolute values and norms. No TeX document wrappers or equation tags. Keep theorem statements, proof, and evidence linked. Verify local section links as well as file destinations. Fruchart–Scheibner–Vitelli's review is the selected teaching anchor; the local tutorial supplies the bridge to this model and does not replace the canonical proofs.
 
+The observed reader renderer rejects `\operatorname`. Use upright `\mathrm{...}` labels with explicit spacing for named operations. A successful standalone MathJax render does not establish compatibility with the reader's macro restrictions.
+
 Before a merge run `python checks/run.py --output results.local.json` and `python checks/check_docs.py`. The numerical scripts require assertions enabled. New scientific claims need explicit proofs and declared assumptions, not just more numerical cases. Preserve the source hashes in `provenance/INPUTS.json`.

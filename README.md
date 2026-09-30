@@ -70,7 +70,7 @@ bR(t)^T & gI_2
 \qquad R(t)=e^{\Omega tJ}.
 ```
 
-Here $`J_{12}=-1`$, $`J_{21}=1`$, $`g=m+M-h`$, and $`b^2=(M-h)(h-m)`$. The full spectrum is always $`(m,m,M,M)`$. The construction uses block-diagonal damping $`\Gamma=\operatorname{diag}(\Gamma_x,\gamma_yI_2)`$, with $`\Gamma_x\succ0`$ and $`\gamma_y>0`$. Both optima use $`|\Omega|=\sqrt{mM}/\gamma_y`$.
+Here $`J_{12}=-1`$, $`J_{21}=1`$, $`g=m+M-h`$, and $`b^2=(M-h)(h-m)`$. The full spectrum is always $`(m,m,M,M)`$. The construction uses block-diagonal damping $`\Gamma=\mathrm{diag}(\Gamma_x,\gamma_yI_2)`$, with $`\Gamma_x\succ0`$ and $`\gamma_y>0`$. Both optima use $`|\Omega|=\sqrt{mM}/\gamma_y`$.
 
 | Objective | Measured allocation $`h`$ | Hidden allocation $`g`$ |
 |---|---|---|

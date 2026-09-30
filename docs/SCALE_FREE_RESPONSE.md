@@ -121,11 +121,11 @@ No internal coordinates gives $`G=\overline A`$ and zero asymmetry directly. Dam
 Normalize the force scalar by $`w=\sqrt D\,z`$ and the clamped scalar by $`w=z/\sqrt D`$. Both inequalities become
 
 ```math
-|w|^2-2\xi\operatorname{Re}w+2|\operatorname{Im}w|+1\leq0,
+|w|^2-2\xi\,\mathrm{Re}\,w+2|\mathrm{Im}\,w|+1\leq0,
 \qquad \xi=\frac{k}{\sqrt D}.
 ```
 
-For $`t=|\operatorname{Im}w|/\operatorname{Re}w`$, existence of a positive real part requires
+For $`t=|\mathrm{Im}\,w|/\mathrm{Re}\,w`$, existence of a positive real part requires
 
 ```math
 (\xi-t)^2\geq1+t^2.

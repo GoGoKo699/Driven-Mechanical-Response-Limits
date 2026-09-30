@@ -17,8 +17,8 @@ Start with two measured sliders and any number of hidden coordinates. A **port**
 The symmetric and skew parts of any real response matrix are
 
 ```math
-\operatorname{Sym}Q=\frac{Q+Q^T}{2},\qquad
-\operatorname{Skew}Q=\frac{Q-Q^T}{2}.
+\mathrm{Sym}\,Q=\frac{Q+Q^T}{2},\qquad
+\mathrm{Skew}\,Q=\frac{Q-Q^T}{2}.
 ```
 
 Exchange asymmetry means that exchanging the forcing and measurement directions changes the response. A sideways displacement by itself is insufficient: ordinary anisotropic springs can produce one.
@@ -64,7 +64,7 @@ The theorem permits arbitrary finite dimension, period, and waveform within the 
 Separate the direct and exchanged force responses using
 
 ```math
-\alpha=\tfrac12\operatorname{tr}\chi,\qquad
+\alpha=\tfrac12\,\mathrm{tr}\,\chi,\qquad
 \beta=\tfrac12(\chi_{21}-\chi_{12}).
 ```
 
@@ -76,7 +76,7 @@ Two averaged identities do the work: force balance and a quadratic identity obta
 \beta^2\leq(\alpha-1/h)(j-\alpha).
 ```
 
-Here $`h=\overline{\operatorname{tr}(P^TKP)}/2`$ measures allocated stiffness, while $`j=\overline{\operatorname{tr}(P^TK^{-1}P)}/2`$ uses the inverse of the **complete** stiffness. A scalar inverse bound on $`[m,M]`$ removes waveform details; optimizing over $`h`$ gives the global ceiling below.
+Here $`h=\overline{\mathrm{tr}(P^TKP)}/2`$ measures allocated stiffness, while $`j=\overline{\mathrm{tr}(P^TK^{-1}P)}/2`$ uses the inverse of the **complete** stiffness. A scalar inverse bound on $`[m,M]`$ removes waveform details; optimizing over $`h`$ gives the global ceiling below.
 
 The [short proof](PROOF.md#weighted-projection) supplies every algebraic step. Its [operator comparison](OPERATOR_CONNECTION.md#the-exact-inverse-gap-constants-are-established) credits the established resolvent geometry and exact inverse-gap constants. The mechanical question is whether admissible springs can attain the bound.
 
@@ -105,7 +105,7 @@ This property makes clamping and force control agree for this family: $`G=\chi^{
 
 ## Two optima and two minimum statements
 
-For clamping, define $`\kappa=(G_{12}-G_{21})/2`$, so $`G=\operatorname{Sym}G-\kappa J`$. The sharp ceilings are
+For clamping, define $`\kappa=(G_{12}-G_{21})/2`$, so $`G=\mathrm{Sym}\,G-\kappa J`$. The sharp ceilings are
 
 ```math
 \lvert\beta\rvert\leq\frac12

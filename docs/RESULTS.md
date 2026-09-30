@@ -14,7 +14,7 @@ In particular $`1/h\leq\alpha\leq j`$. The disk is a statement about two scalar 
 
 ## Fixed-schedule refinement
 
-For a fixed phase-weighted stiffness schedule, write $`a_{\rm s}=\operatorname{tr}(P^T\overline{K^{-1}}P)/2`$ and $`a_{\rm f}=\operatorname{tr}(P^T(\overline K)^{-1}P)/2`$. The inverse in the second expression is taken after averaging the full stiffness. These are the slow- and fast-modulation direct-response limits with the probe force constant. Then
+For a fixed phase-weighted stiffness schedule, write $`a_{\rm s}=\mathrm{tr}(P^T\overline{K^{-1}}P)/2`$ and $`a_{\rm f}=\mathrm{tr}(P^T(\overline K)^{-1}P)/2`$. The inverse in the second expression is taken after averaging the full stiffness. These are the slow- and fast-modulation direct-response limits with the probe force constant. Then
 
 ```math
 \beta^2\leq(\alpha-a_{\rm f})(a_{\rm s}-\alpha).
@@ -72,7 +72,7 @@ Use $`R(t)=\exp(\Omega tJ)`$ and
 K(t)=\begin{pmatrix}hI_2&bR(t)\\bR(t)^T&gI_2\end{pmatrix}.
 ```
 
-Its exact spectrum is $`(m,m,M,M)`$. Take damping $`\operatorname{diag}(\Gamma_x,\gamma_yI_2)`$, with $`\Gamma_x`$ positive symmetric and $`\gamma_y>0`$. The response has the form $`\chi=\operatorname{Re}C\,I_2+\operatorname{Im}C\,J`$, where
+Its exact spectrum is $`(m,m,M,M)`$. Take damping $`\mathrm{diag}(\Gamma_x,\gamma_yI_2)`$, with $`\Gamma_x`$ positive symmetric and $`\gamma_y>0`$. The response has the form $`\chi=\mathrm{Re}\,C\,I_2+\mathrm{Im}\,C\,J`$, where
 
 ```math
 C=\frac{g-i\nu}{D-ih\nu},\qquad \nu=\gamma_y\Omega.

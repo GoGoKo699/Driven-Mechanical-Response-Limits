@@ -24,11 +24,11 @@ The stiffness is real symmetric and uniformly positive, the modulation is prescr
 The mean applied reaction is $`\overline F=Gx`$. Its instantaneous expression also contains $`\Gamma_{xy}\dot y`$, whose period average vanishes. Define
 
 ```math
-g_0=\tfrac12\operatorname{tr}G,\qquad
+g_0=\tfrac12\,\mathrm{tr}\,G,\qquad
 \kappa=\tfrac12(G_{12}-G_{21}).
 ```
 
-Thus $`G=\operatorname{Sym}G-\kappa J`$, with $`J_{12}=-1`$ and $`J_{21}=1`$. This sign convention makes positive $`\kappa`$ deliver positive work during a counterclockwise slow displacement cycle.
+Thus $`G=\mathrm{Sym}\,G-\kappa J`$, with $`J_{12}=-1`$ and $`J_{21}=1`$. This sign convention makes positive $`\kappa`$ deliver positive work during a counterclockwise slow displacement cycle.
 
 In general $`G`$ is **not** the inverse of the force-controlled mean compliance. The original rotating planar trap is a counterexample: it has a nonzero mean cross-compliance but, with both coordinates clamped, $`G=\overline K`$ is symmetric. For the attaining four-coordinate family, stationary measured outputs do make $`G=\chi^{-1}`$ exactly at zero probe frequency.
 
@@ -56,7 +56,7 @@ G_{\mathrm s}=\overline{A-BC^{-1}B^T},
 G_{\mathrm f}=\overline A-\overline B(\overline C)^{-1}\overline B^T.
 ```
 
-These are the average of the frozen clamped Schur complement and the Schur complement of the averaged full matrix. Put $`g_{\mathrm s,f}=\operatorname{tr}G_{\mathrm s,f}/2`$. Then
+These are the average of the frozen clamped Schur complement and the Schur complement of the averaged full matrix. Put $`g_{\mathrm s,f}=\mathrm{tr}\,G_{\mathrm s,f}/2`$. Then
 
 ```math
 \kappa^2\leq(g_0-g_{\mathrm s})(g_{\mathrm f}-g_0).
@@ -79,7 +79,7 @@ z=\overline{v^\dagger u},\qquad
 f^\dagger Gf=\overline{f^\dagger Af}-z=g_0+i\kappa.
 ```
 
-The period-averaged energy identity is $`\operatorname{Re}z=\overline{u^\dagger Cu}`$. Define
+The period-averaged energy identity is $`\mathrm{Re}\,z=\overline{u^\dagger Cu}`$. Define
 
 ```math
 u_0=(\overline C)^{-1}\overline v,\quad
@@ -90,11 +90,11 @@ t_0=\overline v^{\dagger}(\overline C)^{-1}\overline v,
 \rho=\overline{v^\dagger C^{-1}v}.
 ```
 
-Here $`u_0`$ is a constant hidden reference displacement. In the $`C`$-weighted phase inner product, the vectors $`u-u_0`$ and $`C^{-1}v-u_0`$ have squared norms $`\operatorname{Re}z-t_0`$ and $`\rho-t_0`$. Their inner product is $`z-t_0`$. Cauchy–Schwarz gives
+Here $`u_0`$ is a constant hidden reference displacement. In the $`C`$-weighted phase inner product, the vectors $`u-u_0`$ and $`C^{-1}v-u_0`$ have squared norms $`\mathrm{Re}\,z-t_0`$ and $`\rho-t_0`$. Their inner product is $`z-t_0`$. Cauchy–Schwarz gives
 
 ```math
-(\operatorname{Im}z)^2
-\leq(\operatorname{Re}z-t_0)(\rho-\operatorname{Re}z).
+(\mathrm{Im}\,z)^2
+\leq(\mathrm{Re}\,z-t_0)(\rho-\mathrm{Re}\,z).
 ```
 
 Since $`g_{\mathrm s}=\overline{f^\dagger Af}-\rho`$ and $`g_{\mathrm f}=\overline{f^\dagger Af}-t_0`$, this is the stated disk. In particular $`|\kappa|\leq(\rho-t_0)/2\leq\rho/2`$.
@@ -132,13 +132,13 @@ The same proof gives a coordinate-count consequence without requiring stationary
 
 ```math
 H(t)=BC^{-1}B^T\preceq c_*I_2,\qquad
-\operatorname{rank}H(t)\leq\min(r,2).
+\mathrm{rank}\,H(t)\leq\min(r,2).
 ```
 
-For $`f=(1,i)^T/\sqrt2`$, reality and symmetry of $`H`$ imply $`f^\dagger Hf=\operatorname{tr}H/2`$. Hence
+For $`f=(1,i)^T/\sqrt2`$, reality and symmetry of $`H`$ imply $`f^\dagger Hf=\mathrm{tr}\,H/2`$. Hence
 
 ```math
-\rho=\tfrac12\overline{\operatorname{tr}H}
+\rho=\tfrac12\overline{\mathrm{tr}\,H}
 \leq\tfrac{c_*}{2}\min(r,2),
 ```
 
@@ -214,7 +214,7 @@ For the rotating architecture, the stronger finite-rate result below avoids a ge
 
 ### Exact dynamics for arbitrary port motion
 
-For the rotating architecture with $`\Gamma=\operatorname{diag}(\gamma_xI_2,\gamma_yI_2)`$, transform only the hidden variables, $`w=R(\Omega t)y`$. Then
+For the rotating architecture with $`\Gamma=\mathrm{diag}(\gamma_xI_2,\gamma_yI_2)`$, transform only the hidden variables, $`w=R(\Omega t)y`$. Then
 
 ```math
 \gamma_y\dot w+(gI_2-\gamma_y\Omega J)w=-bx,
