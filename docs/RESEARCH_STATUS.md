@@ -2,7 +2,11 @@
 
 [Home](../README.md) · [Results](RESULTS.md) · [Sources](SOURCES.md) · [Physical validity](PHYSICAL_VALIDITY.md)
 
-Updated 30 September 2026. **Manuscript writing is on hold.** Research is complete for the focused ideal-theory scope below, following the bounded significance and closest-prior assessment. This does not certify exhaustive priority or a complete apparatus. Collaboration inquiries are welcome through the [README contact](../README.md).
+Updated 30 September 2026. Research is complete for the focused ideal-theory scope below, following the bounded significance and closest-prior assessment. This does not certify exhaustive priority or a complete apparatus.
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact [Ruge Lin](mailto:gogoko699@gmail.com).
 
 ## The compact research claim
 

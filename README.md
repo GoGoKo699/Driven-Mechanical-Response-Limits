@@ -10,7 +10,9 @@ This repository gives sharp limits for two measurements and a four-coordinate ne
 
 The modulation supplies energy. The result is a design limit for a driven constitutive element, with explicit force, load, and work interpretations.
 
-**Manuscript writing is currently on hold.** For collaboration, feel free to contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact [Ruge Lin](mailto:gogoko699@gmail.com).
 
 ## Two measurements, two sharp limits
 

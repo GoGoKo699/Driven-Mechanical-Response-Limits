@@ -82,3 +82,8 @@ Baseline: `fe649bd706fff622a793a44cddbf812b865370c9`. All 781 formulas (207 disp
 An independent audit of all 26 Markdown documents found no additional formula, delimiter, environment, or table defect. The release gate now parses complete documents with pinned Marked and renders all mathematics with pinned MathJax base and AMS packages, without error suppression. Exact formula sources, order, and rendered counts must agree; all 24 tables and 130 body rows must retain their columns. Six Python regression groups cover the reported defects and source-format failures; five malformed or empty TeX cases exercise renderer rejection. These checks now run in CI. The transitive XML dependency is pinned to its corrected version; the installed documentation dependencies passed `npm audit` with no reported vulnerabilities.
 
 The full local render gate, source checks, regression suite, required eleven-group scientific suite and benchmark, whitespace, preserved source hashes, and license checks passed. No scientific statement, formula, numerical implementation, or reference value changed in this audit. Hosted outcomes belong to the actual change run.
+
+
+## Purpose and contact notice — 5 October 2026
+
+The current README, research-status page, and LLM reading guide now describe the repository as a record of the work and a guide for the author’s self-directed learning, and direct discussion or potential collaboration inquiries to Ruge Lin by email. Historical status and release records in this file are retained unchanged. This wording-only update does not alter scientific claims, proofs, verification status, limitations, references, authorship, licensing, or the protected source hashes.
