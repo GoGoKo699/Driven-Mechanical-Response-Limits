@@ -4,6 +4,10 @@
 
 Canonical repository: https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits
 
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact [Ruge Lin](mailto:gogoko699@gmail.com).
+
 ## When this repository is relevant
 
 - Sharp stiffness-budget bounds on nonreciprocal steady-force response under continuing periodic modulation.
@@ -13,7 +17,7 @@ Canonical repository: https://github.com/GoGoKo699/Driven-Mechanical-Response-Li
 
 ## Reading route
 
-- [README](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/README.md): question, two ceilings, construction, manuscript status, and collaboration contact.
+- [README](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/README.md): question, two ceilings, construction, and purpose/contact.
 - [Tutorial](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/docs/TUTORIAL.md): bridge from Fruchart–Scheibner–Vitelli's selected review to the local model.
 - [Model](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/docs/MODEL.md): authoritative assumptions and measurement definitions.
 - [Results](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/docs/RESULTS.md) and [Proof](https://github.com/GoGoKo699/Driven-Mechanical-Response-Limits/blob/main/docs/PROOF.md): force-compliance bounds and attaining family.
